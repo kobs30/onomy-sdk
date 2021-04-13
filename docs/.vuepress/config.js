@@ -27,8 +27,8 @@ module.exports = {
     ['link', { rel: "apple-touch-icon-precomposed", href: "/apple-touch-icon-precomposed.png" }],
   ],
   themeConfig: {
-    repo: "cosmos/cosmos-sdk",
-    docsRepo: "cosmos/cosmos-sdk",
+    repo: "onomyprotocol/cosmos-sdk",
+    docsRepo: "onomyprotocol/cosmos-sdk",
     docsDir: "docs",
     editLinks: true,
     label: "sdk",
