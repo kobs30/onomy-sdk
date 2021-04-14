@@ -10,11 +10,11 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 const custom = "custom"

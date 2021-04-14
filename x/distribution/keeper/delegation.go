@@ -3,10 +3,10 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution/types"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution/types"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // initialize starting info for a new delegation

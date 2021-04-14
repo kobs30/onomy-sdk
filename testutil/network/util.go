@@ -14,12 +14,12 @@ import (
 	"github.com/tendermint/tendermint/types"
 	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/onomyprotocol/cosmos-sdk/server/api"
-	servergrpc "github.com/onomyprotocol/cosmos-sdk/server/grpc"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	banktypes "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/onomyprotocol/cosmos-sdk/x/genutil/types"
+	"github.com/onomyprotocol/onomy-sdk/server/api"
+	servergrpc "github.com/onomyprotocol/onomy-sdk/server/grpc"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	banktypes "github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil"
+	genutiltypes "github.com/onomyprotocol/onomy-sdk/x/genutil/types"
 )
 
 func startInProcess(cfg Config, val *Validator) error {

@@ -7,12 +7,12 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	grpctypes "github.com/onomyprotocol/cosmos-sdk/types/grpc"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	grpctypes "github.com/onomyprotocol/onomy-sdk/types/grpc"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 func (s *IntegrationTestSuite) TestTotalSupplyGRPCHandler() {

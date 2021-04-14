@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // create a new ValidatorHistoricalRewards

@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authz "github.com/onomyprotocol/cosmos-sdk/x/authz"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/keeper"
-	bank "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authz "github.com/onomyprotocol/onomy-sdk/x/authz"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/keeper"
+	bank "github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 type GenesisTestSuite struct {

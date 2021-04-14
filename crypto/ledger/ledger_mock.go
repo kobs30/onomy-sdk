@@ -13,10 +13,10 @@ import (
 
 	"github.com/cosmos/go-bip39"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	csecp256k1 "github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	csecp256k1 "github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // If ledger support (build tag) has been enabled, which implies a CGO dependency,

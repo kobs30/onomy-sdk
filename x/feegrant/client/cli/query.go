@@ -6,11 +6,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/version"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/version"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

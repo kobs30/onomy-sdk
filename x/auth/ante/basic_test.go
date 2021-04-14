@@ -3,12 +3,12 @@ package ante_test
 import (
 	"strings"
 
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types/multisig"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/ante"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types/multisig"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/ante"
 )
 
 func (suite *AnteTestSuite) TestValidateBasic() {

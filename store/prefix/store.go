@@ -5,10 +5,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/cachekv"
-	"github.com/onomyprotocol/cosmos-sdk/store/listenkv"
-	"github.com/onomyprotocol/cosmos-sdk/store/tracekv"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/cachekv"
+	"github.com/onomyprotocol/onomy-sdk/store/listenkv"
+	"github.com/onomyprotocol/onomy-sdk/store/tracekv"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 var _ types.KVStore = Store{}

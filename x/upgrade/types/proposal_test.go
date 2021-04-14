@@ -6,10 +6,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	gov "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	gov "github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade/types"
 )
 
 type ProposalWrapper struct {

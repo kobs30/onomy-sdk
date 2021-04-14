@@ -7,7 +7,7 @@ import (
 	"github.com/coinbase/rosetta-sdk-go/types"
 	crgerrs "github.com/tendermint/cosmos-rosetta-gateway/errors"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // ---------- cosmos-rosetta-gateway.types.NetworkInformationProvider implementation ------------ //

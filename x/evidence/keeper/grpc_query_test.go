@@ -3,10 +3,10 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 
 	tmbytes "github.com/tendermint/tendermint/libs/bytes"
 )

@@ -19,11 +19,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	"google.golang.org/grpc/codes"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/grpc/tmservice"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	banktypes "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/client/grpc/tmservice"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	banktypes "github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 // https://github.com/improbable-eng/grpc-web/blob/master/go/grpcweb/wrapper_test.go used as a reference

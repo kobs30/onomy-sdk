@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v043 "github.com/onomyprotocol/cosmos-sdk/x/bank/legacy/v043"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v043 "github.com/onomyprotocol/onomy-sdk/x/bank/legacy/v043"
 )
 
 // Migrator is a struct for handling in-place store migrations.

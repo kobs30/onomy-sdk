@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/params/types"
 )
 
 var (

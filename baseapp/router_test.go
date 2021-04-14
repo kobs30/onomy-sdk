@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 var testHandler = func(_ sdk.Context, _ sdk.Msg) (*sdk.Result, error) {

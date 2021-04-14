@@ -3,7 +3,7 @@ package listenkv
 import (
 	"io"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 var _ types.KVStore = &Store{}

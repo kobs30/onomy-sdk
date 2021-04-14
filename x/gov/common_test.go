@@ -8,11 +8,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 var (

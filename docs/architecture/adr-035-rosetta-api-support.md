@@ -162,12 +162,12 @@ type OfflineClient interface {
 ### 2. Cosmos SDK Implementation
 
 The cosmos sdk implementation, based on version, takes care of satisfying the `Client` interface.
-In Stargate, Launchpad and 0.37, we have introduced the concept of rosetta.Msg, this message is not in the shared repository as the sdk.Msg type differs between cosmos-sdk versions.
+In Stargate, Launchpad and 0.37, we have introduced the concept of rosetta.Msg, this message is not in the shared repository as the sdk.Msg type differs between onomy-sdk versions.
 
 The rosetta.Msg interface follows:
 
 ```go
-// Msg represents a cosmos-sdk message that can be converted from and to a rosetta operation.
+// Msg represents a onomy-sdk message that can be converted from and to a rosetta operation.
 type Msg interface {
 	sdk.Msg
 	ToOperations(withStatus, hasError bool) []*types.Operation

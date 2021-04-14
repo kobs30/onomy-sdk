@@ -6,9 +6,9 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/crisis/types"
-	paramtypes "github.com/onomyprotocol/cosmos-sdk/x/params/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/crisis/types"
+	paramtypes "github.com/onomyprotocol/onomy-sdk/x/params/types"
 )
 
 // Keeper - crisis keeper

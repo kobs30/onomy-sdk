@@ -5,14 +5,14 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	kmultisig "github.com/onomyprotocol/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types/multisig"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	signingtypes "github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	kmultisig "github.com/onomyprotocol/onomy-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types/multisig"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	signingtypes "github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 // TxConfigTestSuite provides a test suite that can be used to test that a TxConfig implementation is correct.

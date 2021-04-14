@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	v036gov "github.com/onomyprotocol/cosmos-sdk/x/gov/legacy/v036"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	v036gov "github.com/onomyprotocol/onomy-sdk/x/gov/legacy/v036"
 )
 
 const (
@@ -168,5 +168,5 @@ func ErrEmptyValue(codespace string) error {
 }
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(ParameterChangeProposal{}, "cosmos-sdk/ParameterChangeProposal", nil)
+	cdc.RegisterConcrete(ParameterChangeProposal{}, "onomy-sdk/ParameterChangeProposal", nil)
 }

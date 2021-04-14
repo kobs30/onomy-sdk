@@ -5,10 +5,10 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/telemetry"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
+	"github.com/onomyprotocol/onomy-sdk/telemetry"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
 )
 
 // BeginBlocker check for infraction evidence or downtime of validators

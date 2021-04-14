@@ -9,9 +9,9 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/server/rosetta"
+	"github.com/onomyprotocol/onomy-sdk/server/rosetta"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec"
 
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
@@ -26,13 +26,13 @@ import (
 	"github.com/tendermint/tendermint/proxy"
 	"github.com/tendermint/tendermint/rpc/client/local"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/server/api"
-	"github.com/onomyprotocol/cosmos-sdk/server/config"
-	servergrpc "github.com/onomyprotocol/cosmos-sdk/server/grpc"
-	"github.com/onomyprotocol/cosmos-sdk/server/types"
-	storetypes "github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/server/api"
+	"github.com/onomyprotocol/onomy-sdk/server/config"
+	servergrpc "github.com/onomyprotocol/onomy-sdk/server/grpc"
+	"github.com/onomyprotocol/onomy-sdk/server/types"
+	storetypes "github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 // Tendermint full-node start flags

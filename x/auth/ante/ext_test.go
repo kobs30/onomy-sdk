@@ -1,11 +1,11 @@
 package ante_test
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/ante"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/tx"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/ante"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/tx"
 )
 
 func (suite *AnteTestSuite) TestRejectExtensionOptionsDecorator() {

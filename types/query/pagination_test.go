@@ -10,16 +10,16 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/store"
-	"github.com/onomyprotocol/cosmos-sdk/store/prefix"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/address"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/store"
+	"github.com/onomyprotocol/onomy-sdk/store/prefix"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/address"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 const (

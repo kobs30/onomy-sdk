@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/address"
+	"github.com/onomyprotocol/onomy-sdk/types/address"
 )
 
 func TestStoreKeySuite(t *testing.T) {

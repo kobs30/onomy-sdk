@@ -7,9 +7,9 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/server/grpc/gogoreflection"
-	"github.com/onomyprotocol/cosmos-sdk/server/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/server/grpc/gogoreflection"
+	"github.com/onomyprotocol/onomy-sdk/server/types"
 )
 
 // StartGRPCServer starts a gRPC server on the given address.

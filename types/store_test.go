@@ -6,9 +6,9 @@ import (
 	"github.com/stretchr/testify/suite"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/rootmulti"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/store/rootmulti"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 type storeTestSuite struct {

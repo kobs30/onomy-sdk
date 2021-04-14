@@ -2,7 +2,7 @@
 package types
 
 import (
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 // x/evidence module sentinel errors

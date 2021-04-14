@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 
 	"github.com/gorilla/mux"
 )

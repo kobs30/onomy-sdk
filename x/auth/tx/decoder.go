@@ -1,11 +1,11 @@
 package tx
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/unknownproto"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/unknownproto"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/tx"
 )
 
 // DefaultTxDecoder returns a default protobuf TxDecoder using the provided Marshaler.

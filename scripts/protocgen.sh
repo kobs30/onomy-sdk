@@ -4,7 +4,7 @@ set -eo pipefail
 
 protoc_gen_gocosmos() {
   if ! grep "github.com/gogo/protobuf => github.com/regen-network/protobuf" go.mod &>/dev/null ; then
-    echo -e "\tPlease run this command from somewhere inside the cosmos-sdk folder."
+    echo -e "\tPlease run this command from somewhere inside the onomy-sdk folder."
     return 1
   fi
 
@@ -19,7 +19,7 @@ for dir in $proto_dirs; do
     -I "proto" \
     -I "third_party/proto" \
     --gocosmos_out=plugins=interfacetype+grpc,\
-Mgoogle/protobuf/any.proto=github.com/onomyprotocol/cosmos-sdk/codec/types:. \
+Mgoogle/protobuf/any.proto=github.com/onomyprotocol/onomy-sdk/codec/types:. \
     --grpc-gateway_out=logtostderr=true,allow_colon_final_segments=true:. \
   $(find "${dir}" -maxdepth 1 -name '*.proto')
 
@@ -36,8 +36,8 @@ go mod tidy
 
 # generate codec/testdata proto code
 buf protoc -I "proto" -I "third_party/proto" -I "testutil/testdata" --gocosmos_out=plugins=interfacetype+grpc,\
-Mgoogle/protobuf/any.proto=github.com/onomyprotocol/cosmos-sdk/codec/types:. ./testutil/testdata/*.proto
+Mgoogle/protobuf/any.proto=github.com/onomyprotocol/onomy-sdk/codec/types:. ./testutil/testdata/*.proto
 
 # move proto files to the right places
-cp -r github.com/onomyprotocol/cosmos-sdk/* ./
+cp -r github.com/onomyprotocol/onomy-sdk/* ./
 rm -rf github.com

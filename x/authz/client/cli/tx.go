@@ -9,17 +9,17 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
-	"github.com/onomyprotocol/cosmos-sdk/version"
-	authclient "github.com/onomyprotocol/cosmos-sdk/x/auth/client"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/types"
-	bank "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	staking "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/version"
+	authclient "github.com/onomyprotocol/onomy-sdk/x/auth/client"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/types"
+	bank "github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	staking "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 const FlagSpendLimit = "spend-limit"

@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 func TestMsgUnjailGetSignBytes(t *testing.T) {
@@ -14,7 +14,7 @@ func TestMsgUnjailGetSignBytes(t *testing.T) {
 	bytes := msg.GetSignBytes()
 	require.Equal(
 		t,
-		`{"type":"cosmos-sdk/MsgUnjail","value":{"address":"cosmosvaloper1v93xxeqhg9nn6"}}`,
+		`{"type":"onomy-sdk/MsgUnjail","value":{"address":"cosmosvaloper1v93xxeqhg9nn6"}}`,
 		string(bytes),
 	)
 }

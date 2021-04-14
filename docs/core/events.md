@@ -49,7 +49,7 @@ The following examples show how to query Events using the SDK.
 | `message.action='/cosmos.bank.v1beta1.Msg/Send'` | Query all transactions containing a x/bank `Send` [Service `Msg`](../building-modules/msg-services.md). Note the `'`s around the value.                  |
 | `message.action='send'`                          | Query all transactions containing a x/bank `Send` [legacy `Msg`](../building-modules/msg-services.md#legacy-amino-msgs). Note the `'`s around the value. |
 | `message.module='bank'`                          | Query all transactions containing messages from the x/bank module. Note the `'`s around the value.                                                       |
-| `create_validator.validator='cosmosval1...'`     | x/staking-specific Event, see [x/staking SPEC](../../../cosmos-sdk/x/staking/spec/07_events.md).                                                         |
+| `create_validator.validator='cosmosval1...'`     | x/staking-specific Event, see [x/staking SPEC](../../../onomy-sdk/x/staking/spec/07_events.md).                                                         |
 
 ## EventManager
 
@@ -57,13 +57,13 @@ In Cosmos SDK applications, Events are managed by an abstraction called the `Eve
 Internally, the `EventManager` tracks a list of Events for the entire execution flow of a
 transaction or `BeginBlock`/`EndBlock`.
 
-+++ https://github.com/onomyprotocol/cosmos-sdk/blob/v0.42.1/types/events.go#L17-L25
++++ https://github.com/onomyprotocol/onomy-sdk/blob/v0.42.1/types/events.go#L17-L25
 
 The `EventManager` comes with a set of useful methods to manage Events. The method
 that is used most by module and application developers is `EmitEvent` that tracks
 an Event in the `EventManager`.
 
-+++ https://github.com/onomyprotocol/cosmos-sdk/blob/v0.42.1/types/events.go#L33-L37
++++ https://github.com/onomyprotocol/onomy-sdk/blob/v0.42.1/types/events.go#L33-L37
 
 Module developers should handle Event emission via the `EventManager#EmitEvent` in each message
 `Handler` and in each `BeginBlock`/`EndBlock` handler. The `EventManager` is accessed via
@@ -111,7 +111,7 @@ The main `eventCategory` you can subscribe to are:
 These Events are triggered from the `state` package after a block is committed. You can get the
 full list of Event categories [on the Tendermint Godoc page](https://godoc.org/github.com/tendermint/tendermint/types#pkg-constants).
 
-The `type` and `attribute` value of the `query` allow you to filter the specific Event you are looking for. For example, a `transfer` transaction triggers an Event of type `Transfer` and has `Recipient` and `Sender` as `attributes` (as defined in the [`events.go` file of the `bank` module](https://github.com/onomyprotocol/cosmos-sdk/blob/v0.42.1/x/bank/types/events.go)). Subscribing to this Event would be done like so:
+The `type` and `attribute` value of the `query` allow you to filter the specific Event you are looking for. For example, a `transfer` transaction triggers an Event of type `Transfer` and has `Recipient` and `Sender` as `attributes` (as defined in the [`events.go` file of the `bank` module](https://github.com/onomyprotocol/onomy-sdk/blob/v0.42.1/x/bank/types/events.go)). Subscribing to this Event would be done like so:
 
 ```json
 {

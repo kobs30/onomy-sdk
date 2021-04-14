@@ -1,8 +1,8 @@
 package signing
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
 )
 
 // SignModeHandler defines a interface to be implemented by types which will handle

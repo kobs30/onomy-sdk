@@ -8,9 +8,9 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/cachekv"
-	"github.com/onomyprotocol/cosmos-sdk/store/dbadapter"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/cachekv"
+	"github.com/onomyprotocol/onomy-sdk/store/dbadapter"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 func newCacheKVStore() types.CacheKVStore {

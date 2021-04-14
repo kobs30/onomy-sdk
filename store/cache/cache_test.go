@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/cache"
-	iavlstore "github.com/onomyprotocol/cosmos-sdk/store/iavl"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/cache"
+	iavlstore "github.com/onomyprotocol/onomy-sdk/store/iavl"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 func TestGetOrSetStoreCache(t *testing.T) {

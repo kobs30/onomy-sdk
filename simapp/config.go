@@ -3,7 +3,7 @@ package simapp
 import (
 	"flag"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/types/simulation"
 )
 
 // List of available flags for the simulator

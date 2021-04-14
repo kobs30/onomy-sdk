@@ -10,8 +10,8 @@ import (
 
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/address"
-	"github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/address"
+	"github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 // signature holds the r and s values of an ECDSA signature.

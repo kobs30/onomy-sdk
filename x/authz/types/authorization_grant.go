@@ -5,9 +5,9 @@ import (
 
 	proto "github.com/gogo/protobuf/proto"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/exported"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/exported"
 )
 
 // NewAuthorizationGrant returns new AuthrizationGrant

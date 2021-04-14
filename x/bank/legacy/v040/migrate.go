@@ -1,10 +1,10 @@
 package v040
 
 import (
-	v039auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v039"
-	v036supply "github.com/onomyprotocol/cosmos-sdk/x/bank/legacy/v036"
-	v038bank "github.com/onomyprotocol/cosmos-sdk/x/bank/legacy/v038"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	v039auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v039"
+	v036supply "github.com/onomyprotocol/onomy-sdk/x/bank/legacy/v036"
+	v038bank "github.com/onomyprotocol/onomy-sdk/x/bank/legacy/v038"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 // Migrate accepts exported v0.39 x/auth and v0.38 x/bank genesis state and

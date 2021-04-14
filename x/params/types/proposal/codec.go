@@ -1,14 +1,14 @@
 package proposal
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 // RegisterLegacyAminoCodec registers all necessary param module types with a given LegacyAmino codec.
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&ParameterChangeProposal{}, "cosmos-sdk/ParameterChangeProposal", nil)
+	cdc.RegisterConcrete(&ParameterChangeProposal{}, "onomy-sdk/ParameterChangeProposal", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

@@ -1,12 +1,12 @@
 package keeper
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 
 	abci "github.com/tendermint/tendermint/abci/types"
 )

@@ -5,10 +5,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	clientrest "github.com/onomyprotocol/cosmos-sdk/client/rest"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	clientrest "github.com/onomyprotocol/onomy-sdk/client/rest"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
 )
 
 // REST Variable names

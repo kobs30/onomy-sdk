@@ -6,12 +6,12 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	bankexported "github.com/onomyprotocol/cosmos-sdk/x/bank/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	bankexported "github.com/onomyprotocol/onomy-sdk/x/bank/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil/types"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // SetGenTxsInAppGenesisState - sets the genesis transactions in the app genesis state

@@ -9,15 +9,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/server"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	simcmd "github.com/onomyprotocol/cosmos-sdk/simapp/simd/cmd"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil"
-	genutiltest "github.com/onomyprotocol/cosmos-sdk/x/genutil/client/testutil"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/server"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	simcmd "github.com/onomyprotocol/onomy-sdk/simapp/simd/cmd"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil"
+	genutiltest "github.com/onomyprotocol/onomy-sdk/x/genutil/client/testutil"
 )
 
 var testMbm = module.NewBasicManager(genutil.AppModuleBasic{})

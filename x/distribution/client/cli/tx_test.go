@@ -5,17 +5,17 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/simapp/params"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
 
 	"github.com/stretchr/testify/require"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 func Test_splitAndCall_NoMessages(t *testing.T) {

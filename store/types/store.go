@@ -8,8 +8,8 @@ import (
 	tmstrings "github.com/tendermint/tendermint/libs/strings"
 	dbm "github.com/tendermint/tm-db"
 
-	snapshottypes "github.com/onomyprotocol/cosmos-sdk/snapshots/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
+	snapshottypes "github.com/onomyprotocol/onomy-sdk/snapshots/types"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
 )
 
 type Store interface {

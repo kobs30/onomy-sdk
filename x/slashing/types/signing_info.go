@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // NewValidatorSigningInfo creates a new ValidatorSigningInfo instance

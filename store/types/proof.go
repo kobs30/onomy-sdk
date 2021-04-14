@@ -5,7 +5,7 @@ import (
 	"github.com/tendermint/tendermint/crypto/merkle"
 	tmmerkle "github.com/tendermint/tendermint/proto/tendermint/crypto"
 
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 const (

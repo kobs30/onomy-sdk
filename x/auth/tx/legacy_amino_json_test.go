@@ -5,12 +5,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	cdctypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	signingtypes "github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/legacytx"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	cdctypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	signingtypes "github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/legacy/legacytx"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 var (

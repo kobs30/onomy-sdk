@@ -9,9 +9,9 @@ import (
 	math "math"
 	math_bits "math/bits"
 
-	types "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	types1 "github.com/onomyprotocol/cosmos-sdk/crypto/types"
 	proto "github.com/gogo/protobuf/proto"
+	types "github.com/onomyprotocol/onomy-sdk/codec/types"
+	types1 "github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

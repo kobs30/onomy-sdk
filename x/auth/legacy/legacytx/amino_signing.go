@@ -3,12 +3,12 @@ package legacytx
 import (
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types/multisig"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	signingtypes "github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types/multisig"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	signingtypes "github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 // stdTxSignModeHandler is a SignModeHandler that handles SIGN_MODE_LEGACY_AMINO_JSON

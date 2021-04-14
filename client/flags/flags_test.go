@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
 )
 
 func TestParseGasSetting(t *testing.T) {

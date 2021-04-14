@@ -3,13 +3,13 @@ package rest
 import (
 	"net/http"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	govrest "github.com/onomyprotocol/cosmos-sdk/x/gov/client/rest"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	paramscutils "github.com/onomyprotocol/cosmos-sdk/x/params/client/utils"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/types/proposal"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	govrest "github.com/onomyprotocol/onomy-sdk/x/gov/client/rest"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	paramscutils "github.com/onomyprotocol/onomy-sdk/x/params/client/utils"
+	"github.com/onomyprotocol/onomy-sdk/x/params/types/proposal"
 )
 
 // ProposalRESTHandler returns a ProposalRESTHandler that exposes the param

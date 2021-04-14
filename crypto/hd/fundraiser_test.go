@@ -13,8 +13,8 @@ import (
 
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
 )
 
 type addrData struct {

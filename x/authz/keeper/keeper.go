@@ -8,13 +8,13 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/types"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/types"
 )
 
 type Keeper struct {

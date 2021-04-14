@@ -3,13 +3,13 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec"
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	keep "github.com/onomyprotocol/cosmos-sdk/x/mint/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	keep "github.com/onomyprotocol/onomy-sdk/x/mint/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/mint/types"
 
 	abci "github.com/tendermint/tendermint/abci/types"
 )

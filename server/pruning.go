@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cast"
 
-	"github.com/onomyprotocol/cosmos-sdk/server/types"
-	"github.com/onomyprotocol/cosmos-sdk/store"
-	storetypes "github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/server/types"
+	"github.com/onomyprotocol/onomy-sdk/store"
+	storetypes "github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 // GetPruningOptionsFromFlags parses command flags and returns the correct

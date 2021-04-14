@@ -1,9 +1,9 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	store "github.com/onomyprotocol/cosmos-sdk/store/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	store "github.com/onomyprotocol/onomy-sdk/store/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // UpgradeStoreLoader is used to prepare baseapp with a fixed StoreLoader

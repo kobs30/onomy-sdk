@@ -5,14 +5,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v038auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v038"
-	v039auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v039"
-	v036supply "github.com/onomyprotocol/cosmos-sdk/x/bank/legacy/v036"
-	v038bank "github.com/onomyprotocol/cosmos-sdk/x/bank/legacy/v038"
-	v040bank "github.com/onomyprotocol/cosmos-sdk/x/bank/legacy/v040"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v038auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v038"
+	v039auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v039"
+	v036supply "github.com/onomyprotocol/onomy-sdk/x/bank/legacy/v036"
+	v038bank "github.com/onomyprotocol/onomy-sdk/x/bank/legacy/v038"
+	v040bank "github.com/onomyprotocol/onomy-sdk/x/bank/legacy/v040"
 )
 
 func TestMigrate(t *testing.T) {

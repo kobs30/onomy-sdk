@@ -3,8 +3,8 @@ package signing
 import (
 	"fmt"
 
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 // SignatureV2 is a convenience type that is easier to use in application logic

@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // GetBondedPool returns the bonded tokens pool's module account

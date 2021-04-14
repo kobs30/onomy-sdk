@@ -16,13 +16,13 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 	"github.com/tendermint/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/client/input"
-	"github.com/onomyprotocol/cosmos-sdk/server"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/client/input"
+	"github.com/onomyprotocol/onomy-sdk/server"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil"
 )
 
 const (

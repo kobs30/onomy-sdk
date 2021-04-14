@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 // GetDepositParams returns the current DepositParams from the global param store

@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 )
 
 type EvidenceUnmarshaler interface {

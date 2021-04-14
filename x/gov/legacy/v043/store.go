@@ -1,12 +1,12 @@
 package v043
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/store/prefix"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/address"
-	v040gov "github.com/onomyprotocol/cosmos-sdk/x/gov/legacy/v040"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/store/prefix"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/address"
+	v040gov "github.com/onomyprotocol/onomy-sdk/x/gov/legacy/v040"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 const proposalIDLen = 8

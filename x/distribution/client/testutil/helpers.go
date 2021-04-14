@@ -5,8 +5,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	distrcli "github.com/onomyprotocol/cosmos-sdk/x/distribution/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	distrcli "github.com/onomyprotocol/onomy-sdk/x/distribution/client/cli"
 )
 
 func MsgWithdrawDelegatorRewardExec(clientCtx client.Context, valAddr fmt.Stringer, extraArgs ...string) ([]byte, error) {

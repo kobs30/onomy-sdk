@@ -1,14 +1,14 @@
 package keeper
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/store/prefix"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	vestexported "github.com/onomyprotocol/cosmos-sdk/x/auth/vesting/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	paramtypes "github.com/onomyprotocol/cosmos-sdk/x/params/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/store/prefix"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	vestexported "github.com/onomyprotocol/onomy-sdk/x/auth/vesting/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	paramtypes "github.com/onomyprotocol/onomy-sdk/x/params/types"
 )
 
 var _ Keeper = (*BaseKeeper)(nil)

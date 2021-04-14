@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
 	"github.com/stretchr/testify/require"
 )
 

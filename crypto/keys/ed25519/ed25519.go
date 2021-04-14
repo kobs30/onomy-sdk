@@ -10,9 +10,9 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/tmhash"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 //-------------------------------------

@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client"
 
 	"github.com/stretchr/testify/require"
 
 	"github.com/otiai10/copy"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
 )
 
 func Test_runMigrateCmd(t *testing.T) {

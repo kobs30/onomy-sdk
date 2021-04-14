@@ -6,12 +6,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/std"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/std"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 func makeCodec(bm module.BasicManager) *codec.LegacyAmino {

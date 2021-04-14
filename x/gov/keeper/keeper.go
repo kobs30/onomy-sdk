@@ -6,10 +6,10 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 // Keeper defines the governance module Keeper

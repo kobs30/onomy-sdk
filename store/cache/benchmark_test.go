@@ -3,7 +3,7 @@ package cache
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 func freshMgr() *CommitKVStoreCacheManager {

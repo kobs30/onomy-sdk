@@ -5,8 +5,8 @@
 package mocks
 
 import (
-	types "github.com/onomyprotocol/cosmos-sdk/types"
 	gomock "github.com/golang/mock/gomock"
+	types "github.com/onomyprotocol/onomy-sdk/types"
 	reflect "reflect"
 )
 

@@ -6,12 +6,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	clienttx "github.com/onomyprotocol/cosmos-sdk/client/tx"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/legacytx"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	clienttx "github.com/onomyprotocol/onomy-sdk/client/tx"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/legacy/legacytx"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 type (

@@ -3,8 +3,8 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/crisis/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/crisis/types"
 )
 
 var _ types.MsgServer = Keeper{}

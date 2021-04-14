@@ -13,10 +13,10 @@ import (
 	"github.com/pkg/errors"
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // Context implements a typical context created in SDK modules for transaction

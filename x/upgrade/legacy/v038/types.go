@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	v036gov "github.com/onomyprotocol/cosmos-sdk/x/gov/legacy/v036"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	v036gov "github.com/onomyprotocol/onomy-sdk/x/gov/legacy/v036"
 )
 
 const (
@@ -162,6 +162,6 @@ func (sup CancelSoftwareUpgradeProposal) String() string {
 }
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(SoftwareUpgradeProposal{}, "cosmos-sdk/SoftwareUpgradeProposal", nil)
-	cdc.RegisterConcrete(CancelSoftwareUpgradeProposal{}, "cosmos-sdk/CancelSoftwareUpgradeProposal", nil)
+	cdc.RegisterConcrete(SoftwareUpgradeProposal{}, "onomy-sdk/SoftwareUpgradeProposal", nil)
+	cdc.RegisterConcrete(CancelSoftwareUpgradeProposal{}, "onomy-sdk/CancelSoftwareUpgradeProposal", nil)
 }

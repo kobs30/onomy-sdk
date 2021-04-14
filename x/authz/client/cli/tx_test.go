@@ -11,24 +11,24 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/client/cli"
-	govcli "github.com/onomyprotocol/cosmos-sdk/x/gov/client/cli"
-	govtestutil "github.com/onomyprotocol/cosmos-sdk/x/gov/client/testutil"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	stakingcli "github.com/onomyprotocol/cosmos-sdk/x/staking/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/client/cli"
+	govcli "github.com/onomyprotocol/onomy-sdk/x/gov/client/cli"
+	govtestutil "github.com/onomyprotocol/onomy-sdk/x/gov/client/testutil"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	stakingcli "github.com/onomyprotocol/onomy-sdk/x/staking/client/cli"
 
-	authztestutil "github.com/onomyprotocol/cosmos-sdk/x/authz/client/testutil"
-	bankcli "github.com/onomyprotocol/cosmos-sdk/x/bank/client/testutil"
-	banktestutil "github.com/onomyprotocol/cosmos-sdk/x/bank/client/testutil"
-	bank "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	authztestutil "github.com/onomyprotocol/onomy-sdk/x/authz/client/testutil"
+	bankcli "github.com/onomyprotocol/onomy-sdk/x/bank/client/testutil"
+	banktestutil "github.com/onomyprotocol/onomy-sdk/x/bank/client/testutil"
+	bank "github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 type IntegrationTestSuite struct {

@@ -5,12 +5,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v038auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v038"
-	v039auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v039"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v038auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v038"
+	v039auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v039"
 )
 
 func TestMigrate(t *testing.T) {
@@ -63,7 +63,7 @@ func TestMigrate(t *testing.T) {
   },
   "accounts": [
     {
-      "type": "cosmos-sdk/Account",
+      "type": "onomy-sdk/Account",
       "value": {
         "address": "cosmos1j7skdhh9raxdmfhmcy2gxz8hgn0jnhfmujjsfe",
         "coins": [
@@ -81,7 +81,7 @@ func TestMigrate(t *testing.T) {
       }
     },
     {
-      "type": "cosmos-sdk/Account",
+      "type": "onomy-sdk/Account",
       "value": {
         "address": "cosmos1v57fx2l2rt6ehujuu99u2fw05779m5e2ux4z2h",
         "coins": [

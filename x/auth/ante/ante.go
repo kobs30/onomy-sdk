@@ -1,11 +1,11 @@
 package ante
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	authsigning "github.com/onomyprotocol/onomy-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 // HandlerOptions are the options required for constructing a default SDK AnteHandler.

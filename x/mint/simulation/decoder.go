@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
-	"github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
+	"github.com/onomyprotocol/onomy-sdk/x/mint/types"
 )
 
 // NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

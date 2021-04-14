@@ -3,8 +3,8 @@ package keeper
 import (
 	gogotypes "github.com/gogo/protobuf/types"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution/types"
 )
 
 // get the delegator withdraw address, defaulting to the delegator address

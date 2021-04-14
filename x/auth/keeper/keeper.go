@@ -6,12 +6,12 @@ import (
 	gogotypes "github.com/gogo/protobuf/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	paramtypes "github.com/onomyprotocol/cosmos-sdk/x/params/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	paramtypes "github.com/onomyprotocol/onomy-sdk/x/params/types"
 )
 
 // AccountKeeperI is the interface contract that x/auth's keeper implements.

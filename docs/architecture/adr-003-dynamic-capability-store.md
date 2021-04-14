@@ -341,4 +341,4 @@ Proposed.
 
 ## References
 
-- [Original discussion](https://github.com/onomyprotocol/cosmos-sdk/pull/5230#discussion_r343978513)
+- [Original discussion](https://github.com/onomyprotocol/onomy-sdk/pull/5230#discussion_r343978513)

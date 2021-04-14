@@ -10,7 +10,7 @@ with particular kinds of accounts.
 
    ```go
    import (
-       "github.com/onomyprotocol/cosmos-sdk/x/bank"
+       "github.com/onomyprotocol/onomy-sdk/x/bank"
    )
    ```
 

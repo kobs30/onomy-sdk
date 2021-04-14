@@ -9,9 +9,9 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade/types"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade/types"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 func mustParseTime(s string) time.Time {

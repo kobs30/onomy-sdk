@@ -20,14 +20,14 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/server"
-	"github.com/onomyprotocol/cosmos-sdk/server/types"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/server"
+	"github.com/onomyprotocol/onomy-sdk/server/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil"
 )
 
 func TestExportCmd_ConsensusParams(t *testing.T) {

@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 // NewAccountWithAddress implements AccountKeeperI.

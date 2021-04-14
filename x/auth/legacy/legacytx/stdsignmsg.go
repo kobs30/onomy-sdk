@@ -1,8 +1,8 @@
 package legacytx
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 var _ types.UnpackInterfacesMessage = StdSignMsg{}

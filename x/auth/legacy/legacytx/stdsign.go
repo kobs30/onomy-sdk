@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types/multisig"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types/multisig"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
 	"gopkg.in/yaml.v2"
 )
 

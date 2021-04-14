@@ -3,8 +3,8 @@ package types
 import (
 	tmprotocrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
 
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // DelegationI delegation bond for a delegated proof of stake system

@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types"
 )
 
 var coinStrs = []string{

@@ -6,9 +6,9 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 var _ cryptotypes.PubKey = (*PubKey)(nil)

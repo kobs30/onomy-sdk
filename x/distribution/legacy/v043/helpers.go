@@ -1,10 +1,10 @@
 package v043
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/store/prefix"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/address"
-	v040auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v040"
+	"github.com/onomyprotocol/onomy-sdk/store/prefix"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/address"
+	v040auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v040"
 )
 
 // MigratePrefixAddress is a helper function that migrates all keys of format:

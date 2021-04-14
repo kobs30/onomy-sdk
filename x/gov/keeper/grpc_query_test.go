@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 func (suite *KeeperTestSuite) TestGRPCQueryProposal() {

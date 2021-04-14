@@ -3,7 +3,7 @@ package simulation_test
 import (
 	"math/big"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 func init() {

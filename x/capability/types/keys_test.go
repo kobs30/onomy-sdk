@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/capability/types"
+	"github.com/onomyprotocol/onomy-sdk/x/capability/types"
 )
 
 func TestRevCapabilityKey(t *testing.T) {

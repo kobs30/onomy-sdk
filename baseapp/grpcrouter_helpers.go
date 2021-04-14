@@ -8,8 +8,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	"google.golang.org/grpc"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // QueryServiceTestHelper provides a helper for making grpc query service

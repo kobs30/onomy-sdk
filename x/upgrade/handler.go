@@ -1,11 +1,11 @@
 package upgrade
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade/types"
 )
 
 // NewSoftwareUpgradeProposalHandler creates a governance handler to manage new proposal types.

@@ -5,7 +5,7 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // NewDeposit creates a new Deposit instance

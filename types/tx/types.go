@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 // MaxGasWanted defines the max gas allowed.

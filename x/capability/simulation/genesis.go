@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	"github.com/onomyprotocol/cosmos-sdk/x/capability/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	"github.com/onomyprotocol/onomy-sdk/x/capability/types"
 )
 
 // Simulation parameter constants

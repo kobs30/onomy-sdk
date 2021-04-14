@@ -5,21 +5,21 @@ import (
 	"fmt"
 	"time"
 
-	minttypes "github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	minttypes "github.com/onomyprotocol/onomy-sdk/x/mint/types"
 
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
+	"github.com/onomyprotocol/onomy-sdk/x/staking"
 )
 
 var (

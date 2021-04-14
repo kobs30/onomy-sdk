@@ -5,11 +5,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	signingtypes "github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	signingtypes "github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 func TestLegacyAminoJSONHandler_GetSignBytes(t *testing.T) {

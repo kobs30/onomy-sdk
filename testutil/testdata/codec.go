@@ -3,9 +3,9 @@ package testdata
 import (
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
 )
 
 func NewTestInterfaceRegistry() types.InterfaceRegistry {

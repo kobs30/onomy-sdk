@@ -13,9 +13,9 @@ import (
 	tmbytes "github.com/tendermint/tendermint/libs/bytes"
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/rootmulti"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/store/rootmulti"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 // GetNode returns an RPC client. If the context's client is not defined, an

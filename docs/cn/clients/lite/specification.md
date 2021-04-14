@@ -4,11 +4,11 @@
 
 ## 构建并验证 ABCI 状态的证明
 
-众所周知，基于 cosmos-sdk 的应用程序的存储包含多个子库。 每个子目录由 IAVL 存储实现。 这些子组件由简单的 Merkle 树组成。 创建树时，我们需要从这些子库中提取名字、高度和存储根哈希以构建一组简单的 Merkle 叶节点，然后计算从叶节点到根的哈希。 简单 Merkle 树的根哈希是 AppHash，它将包含在块头中。
+众所周知，基于 onomy-sdk 的应用程序的存储包含多个子库。 每个子目录由 IAVL 存储实现。 这些子组件由简单的 Merkle 树组成。 创建树时，我们需要从这些子库中提取名字、高度和存储根哈希以构建一组简单的 Merkle 叶节点，然后计算从叶节点到根的哈希。 简单 Merkle 树的根哈希是 AppHash，它将包含在块头中。
 
 ![Simple Merkle Tree](../../../kr/clients/lite/pics/simpleMerkleTree.png)
 
-正如我们在[LCD 信任传播](https://github.com/irisnet/cosmos-sdk/tree/bianjie/lcd_spec/docs/spec/lcd#trust-propagation)中所讨论的那样，可以通过检查针对可信验证人集的投票权来验证 AppHash。 这里我们只需要建立从 ABCI 状态到 AppHash 的证明。 证据包含两部分：
+正如我们在[LCD 信任传播](https://github.com/irisnet/onomy-sdk/tree/bianjie/lcd_spec/docs/spec/lcd#trust-propagation)中所讨论的那样，可以通过检查针对可信验证人集的投票权来验证 AppHash。 这里我们只需要建立从 ABCI 状态到 AppHash 的证明。 证据包含两部分：
 
 - IAVL 证明
 - 子库到 AppHash 的证明

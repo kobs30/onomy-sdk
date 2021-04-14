@@ -5,10 +5,10 @@
 package mocks
 
 import (
-	client "github.com/onomyprotocol/cosmos-sdk/client"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	types "github.com/onomyprotocol/cosmos-sdk/types"
 	gomock "github.com/golang/mock/gomock"
+	client "github.com/onomyprotocol/onomy-sdk/client"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	types "github.com/onomyprotocol/onomy-sdk/types"
 	reflect "reflect"
 )
 

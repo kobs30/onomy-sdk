@@ -8,14 +8,14 @@ import (
 	"github.com/spf13/cobra"
 	flag "github.com/spf13/pflag"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
-	"github.com/onomyprotocol/cosmos-sdk/version"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/version"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // default values

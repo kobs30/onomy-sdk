@@ -1,8 +1,8 @@
 package types
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
 )
 
 // UpgradeHandler specifies the type of function that is called when an upgrade

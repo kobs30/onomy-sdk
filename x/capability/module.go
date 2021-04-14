@@ -11,15 +11,15 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cdctypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/capability/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/capability/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/capability/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cdctypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/capability/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/capability/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/capability/types"
 )
 
 var (

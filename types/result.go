@@ -14,8 +14,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
 )
 
 var cdc = codec.NewLegacyAmino()

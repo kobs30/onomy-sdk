@@ -1,17 +1,17 @@
 package v043
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/store/prefix"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v040auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v040"
-	v040bank "github.com/onomyprotocol/cosmos-sdk/x/bank/legacy/v040"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/store/prefix"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v040auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v040"
+	v040bank "github.com/onomyprotocol/onomy-sdk/x/bank/legacy/v040"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 // migrateSupply migrates the supply to be stored by denom key instead in a
 // single blob.
-// ref: https://github.com/onomyprotocol/cosmos-sdk/issues/7092
+// ref: https://github.com/onomyprotocol/onomy-sdk/issues/7092
 func migrateSupply(store sdk.KVStore, cdc codec.BinaryMarshaler) error {
 	// Old supply was stored as a single blob under the SupplyKey.
 	var oldSupplyI v040bank.SupplyI

@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 type WeightedProposalContent interface {

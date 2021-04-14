@@ -10,12 +10,12 @@ import (
 	"github.com/tendermint/tendermint/p2p"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	"github.com/onomyprotocol/cosmos-sdk/version"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/version"
 )
 
 // ValidatorInfo is info about the node's validator, same as Tendermint,

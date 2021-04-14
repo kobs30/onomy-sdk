@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 // Get a free address for a test tendermint server

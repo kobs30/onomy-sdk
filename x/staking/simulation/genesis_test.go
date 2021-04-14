@@ -7,13 +7,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

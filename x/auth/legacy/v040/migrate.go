@@ -1,11 +1,11 @@
 package v040
 
 import (
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	v039auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v039"
-	v040auth "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	v040vesting "github.com/onomyprotocol/cosmos-sdk/x/auth/vesting/types"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	v039auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v039"
+	v040auth "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	v040vesting "github.com/onomyprotocol/onomy-sdk/x/auth/vesting/types"
 )
 
 // convertBaseAccount converts a 0.39 BaseAccount to a 0.40 BaseAccount.

@@ -1,9 +1,9 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
 )
 
 // RegisterInterfaces registers the interfaces types with the interface registry

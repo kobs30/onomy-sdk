@@ -3,8 +3,8 @@ package types
 import (
 	"time"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 var _ FeeAllowanceI = (*PeriodicFeeAllowance)(nil)

@@ -1,7 +1,7 @@
 package baseapp
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 type state struct {

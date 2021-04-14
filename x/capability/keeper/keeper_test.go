@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	banktypes "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/capability/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/capability/types"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	banktypes "github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/x/capability/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/capability/types"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 type KeeperTestSuite struct {

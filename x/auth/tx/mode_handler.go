@@ -3,8 +3,8 @@ package tx
 import (
 	"fmt"
 
-	signingtypes "github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	signingtypes "github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 // DefaultSignModes are the default sign modes enabled for protobuf transactions.

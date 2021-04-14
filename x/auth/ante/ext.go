@@ -1,9 +1,9 @@
 package ante
 
 import (
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 type HasExtensionOptionsTx interface {

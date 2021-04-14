@@ -3,8 +3,8 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade/types"
 )
 
 var _ types.QueryServer = Keeper{}

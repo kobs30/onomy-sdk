@@ -1,11 +1,11 @@
 package rosetta
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	authcodec "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	bankcodec "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	authcodec "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	bankcodec "github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 // MakeCodec generates the codec required to interact

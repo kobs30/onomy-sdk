@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 func TestErrorHandling(t *testing.T) {

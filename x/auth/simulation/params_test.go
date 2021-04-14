@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/simulation"
 )
 
 func TestParamChanges(t *testing.T) {

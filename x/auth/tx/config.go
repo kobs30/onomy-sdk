@@ -3,13 +3,13 @@ package tx
 import (
 	"fmt"
 
-	signingtypes "github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
+	signingtypes "github.com/onomyprotocol/onomy-sdk/types/tx/signing"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 type config struct {

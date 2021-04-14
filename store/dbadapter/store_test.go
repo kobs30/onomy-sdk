@@ -5,14 +5,14 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/cachekv"
+	"github.com/onomyprotocol/onomy-sdk/store/cachekv"
 
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/dbadapter"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
-	"github.com/onomyprotocol/cosmos-sdk/tests/mocks"
+	"github.com/onomyprotocol/onomy-sdk/store/dbadapter"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/tests/mocks"
 )
 
 var errFoo = errors.New("dummy")

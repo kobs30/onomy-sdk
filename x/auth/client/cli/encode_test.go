@@ -7,11 +7,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	simappparams "github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	simappparams "github.com/onomyprotocol/onomy-sdk/simapp/params"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 func TestGetCommandEncode(t *testing.T) {

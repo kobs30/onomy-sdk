@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/keys"
+	"github.com/onomyprotocol/onomy-sdk/client/keys"
 )
 
 func TestConstructors(t *testing.T) {

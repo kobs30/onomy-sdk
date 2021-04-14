@@ -4,10 +4,10 @@ package v034
 import (
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/bech32/legacybech32"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/bech32/legacybech32"
 )
 
 const (

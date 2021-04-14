@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 const (
@@ -18,7 +18,7 @@ var _ govtypes.Content = &CommunityPoolSpendProposal{}
 
 func init() {
 	govtypes.RegisterProposalType(ProposalTypeCommunityPoolSpend)
-	govtypes.RegisterProposalTypeCodec(&CommunityPoolSpendProposal{}, "cosmos-sdk/CommunityPoolSpendProposal")
+	govtypes.RegisterProposalTypeCodec(&CommunityPoolSpendProposal{}, "onomy-sdk/CommunityPoolSpendProposal")
 }
 
 // NewCommunityPoolSpendProposal creates a new community pool spned proposal.

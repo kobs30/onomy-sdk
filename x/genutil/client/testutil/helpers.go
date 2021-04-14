@@ -9,12 +9,12 @@ import (
 	"github.com/tendermint/tendermint/libs/cli"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/server"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	genutilcli "github.com/onomyprotocol/cosmos-sdk/x/genutil/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/server"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	genutilcli "github.com/onomyprotocol/onomy-sdk/x/genutil/client/cli"
 )
 
 func ExecInitCmd(testMbm module.BasicManager, home string, cdc codec.JSONMarshaler) error {

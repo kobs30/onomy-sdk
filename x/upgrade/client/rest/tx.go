@@ -3,17 +3,17 @@ package rest
 import (
 	"net/http"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
 
 	"github.com/gorilla/mux"
 
-	govrest "github.com/onomyprotocol/cosmos-sdk/x/gov/client/rest"
+	govrest "github.com/onomyprotocol/onomy-sdk/x/gov/client/rest"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade/types"
 )
 
 func registerTxHandlers(

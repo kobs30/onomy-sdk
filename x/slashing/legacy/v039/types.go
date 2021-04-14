@@ -3,7 +3,7 @@ package v039
 import (
 	"time"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 const (

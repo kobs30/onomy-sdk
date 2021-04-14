@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 type utilsTestSuite struct {

@@ -3,12 +3,12 @@ package keyring
 import (
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // Info is the publicly exposed information about a keypair

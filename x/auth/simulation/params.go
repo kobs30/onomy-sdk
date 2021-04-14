@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/simulation"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/x/simulation"
 )
 
 const (

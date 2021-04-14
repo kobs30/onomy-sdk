@@ -12,12 +12,12 @@ import (
 
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/bech32/legacybech32"
-	v034auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v034"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/bech32/legacybech32"
+	v034auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v034"
 )
 
 const (
@@ -522,9 +522,9 @@ func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cryptocodec.RegisterCrypto(cdc)
 	cdc.RegisterInterface((*GenesisAccount)(nil), nil)
 	cdc.RegisterInterface((*Account)(nil), nil)
-	cdc.RegisterConcrete(&BaseAccount{}, "cosmos-sdk/Account", nil)
-	cdc.RegisterConcrete(&BaseVestingAccount{}, "cosmos-sdk/BaseVestingAccount", nil)
-	cdc.RegisterConcrete(&ContinuousVestingAccount{}, "cosmos-sdk/ContinuousVestingAccount", nil)
-	cdc.RegisterConcrete(&DelayedVestingAccount{}, "cosmos-sdk/DelayedVestingAccount", nil)
-	cdc.RegisterConcrete(&ModuleAccount{}, "cosmos-sdk/ModuleAccount", nil)
+	cdc.RegisterConcrete(&BaseAccount{}, "onomy-sdk/Account", nil)
+	cdc.RegisterConcrete(&BaseVestingAccount{}, "onomy-sdk/BaseVestingAccount", nil)
+	cdc.RegisterConcrete(&ContinuousVestingAccount{}, "onomy-sdk/ContinuousVestingAccount", nil)
+	cdc.RegisterConcrete(&DelayedVestingAccount{}, "onomy-sdk/DelayedVestingAccount", nil)
+	cdc.RegisterConcrete(&ModuleAccount{}, "onomy-sdk/ModuleAccount", nil)
 }

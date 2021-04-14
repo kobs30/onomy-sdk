@@ -7,21 +7,21 @@ import (
 
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/simapp/helpers"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/ante"
-	authsign "github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/tx"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/simapp/helpers"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/ante"
+	authsign "github.com/onomyprotocol/onomy-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/tx"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/types"
 )
 
 func (suite *AnteTestSuite) TestDeductFeesNoDelegation() {

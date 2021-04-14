@@ -4,18 +4,18 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/cachekv"
+	"github.com/onomyprotocol/onomy-sdk/store/cachekv"
 
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
 	tiavl "github.com/cosmos/iavl"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/dbadapter"
-	"github.com/onomyprotocol/cosmos-sdk/store/gaskv"
-	"github.com/onomyprotocol/cosmos-sdk/store/iavl"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/store/dbadapter"
+	"github.com/onomyprotocol/onomy-sdk/store/gaskv"
+	"github.com/onomyprotocol/onomy-sdk/store/iavl"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // copied from iavl/store_test.go

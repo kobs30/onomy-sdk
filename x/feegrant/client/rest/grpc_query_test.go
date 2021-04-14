@@ -6,16 +6,16 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	banktestutil "github.com/onomyprotocol/cosmos-sdk/x/bank/client/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/client/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/types"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	banktestutil "github.com/onomyprotocol/onomy-sdk/x/bank/client/testutil"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/types"
 )
 
 type IntegrationTestSuite struct {

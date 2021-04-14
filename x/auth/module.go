@@ -12,17 +12,17 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/client/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/client/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/client/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 var (

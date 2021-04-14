@@ -7,37 +7,37 @@ parent:
   <h1> Cosmos SDK </h1>
 </div>
 
-![banner](docs/cosmos-sdk-image.jpg)
+![banner](docs/onomy-sdk-image.jpg)
 
 <div align="center">
-  <a href="https://github.com/onomyprotocol/cosmos-sdk/releases/latest">
-    <img alt="Version" src="https://img.shields.io/github/tag/onomyprotocol/cosmos-sdk.svg" />
+  <a href="https://github.com/onomyprotocol/onomy-sdk/releases/latest">
+    <img alt="Version" src="https://img.shields.io/github/tag/onomyprotocol/onomy-sdk.svg" />
   </a>
-  <a href="https://github.com/onomyprotocol/cosmos-sdk/blob/master/LICENSE">
-    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/onomyprotocol/cosmos-sdk.svg" />
+  <a href="https://github.com/onomyprotocol/onomy-sdk/blob/master/LICENSE">
+    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/onomyprotocol/onomy-sdk.svg" />
   </a>
-  <a href="https://pkg.go.dev/github.com/onomyprotocol/cosmos-sdk?tab=doc">
-    <img alt="GoDoc" src="https://godoc.org/github.com/onomyprotocol/cosmos-sdk?status.svg" />
+  <a href="https://pkg.go.dev/github.com/onomyprotocol/onomy-sdk?tab=doc">
+    <img alt="GoDoc" src="https://godoc.org/github.com/onomyprotocol/onomy-sdk?status.svg" />
   </a>
-  <a href="https://goreportcard.com/report/github.com/onomyprotocol/cosmos-sdk">
-    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/onomyprotocol/cosmos-sdk" />
+  <a href="https://goreportcard.com/report/github.com/onomyprotocol/onomy-sdk">
+    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/onomyprotocol/onomy-sdk" />
   </a>
-  <a href="https://codecov.io/gh/onomyprotocol/cosmos-sdk">
-    <img alt="Code Coverage" src="https://codecov.io/gh/onomyprotocol/cosmos-sdk/branch/master/graph/badge.svg" />
+  <a href="https://codecov.io/gh/onomyprotocol/onomy-sdk">
+    <img alt="Code Coverage" src="https://codecov.io/gh/onomyprotocol/onomy-sdk/branch/master/graph/badge.svg" />
   </a>
 </div>
 <div align="center">
-  <a href="https://github.com/onomyprotocol/cosmos-sdk">
-    <img alt="Lines Of Code" src="https://tokei.rs/b1/github/onomyprotocol/cosmos-sdk" />
+  <a href="https://github.com/onomyprotocol/onomy-sdk">
+    <img alt="Lines Of Code" src="https://tokei.rs/b1/github/onomyprotocol/onomy-sdk" />
   </a>
   <a href="https://discord.gg/AzefAFd">
     <img alt="Discord" src="https://img.shields.io/discord/669268347736686612.svg" />
   </a>
-  <a href="https://sourcegraph.com/github.com/onomyprotocol/cosmos-sdk?badge">
-    <img alt="Imported by" src="https://sourcegraph.com/github.com/onomyprotocol/cosmos-sdk/-/badge.svg" />
+  <a href="https://sourcegraph.com/github.com/onomyprotocol/onomy-sdk?badge">
+    <img alt="Imported by" src="https://sourcegraph.com/github.com/onomyprotocol/onomy-sdk/-/badge.svg" />
   </a>
-    <img alt="Sims" src="https://github.com/onomyprotocol/cosmos-sdk/workflows/Sims/badge.svg" />
-    <img alt="Lint Satus" src="https://github.com/onomyprotocol/cosmos-sdk/workflows/Lint/badge.svg" />
+    <img alt="Sims" src="https://github.com/onomyprotocol/onomy-sdk/workflows/Sims/badge.svg" />
+    <img alt="Lint Satus" src="https://github.com/onomyprotocol/onomy-sdk/workflows/Lint/badge.svg" />
 </div>
 
 

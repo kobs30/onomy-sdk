@@ -7,13 +7,13 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/grpc/tmservice"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	qtypes "github.com/onomyprotocol/cosmos-sdk/types/query"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	"github.com/onomyprotocol/cosmos-sdk/version"
+	"github.com/onomyprotocol/onomy-sdk/client/grpc/tmservice"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	qtypes "github.com/onomyprotocol/onomy-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/version"
 )
 
 type IntegrationTestSuite struct {

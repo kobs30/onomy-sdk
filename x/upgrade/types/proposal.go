@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	gov "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	gov "github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 const (
@@ -20,9 +20,9 @@ var _ gov.Content = &SoftwareUpgradeProposal{}
 
 func init() {
 	gov.RegisterProposalType(ProposalTypeSoftwareUpgrade)
-	gov.RegisterProposalTypeCodec(&SoftwareUpgradeProposal{}, "cosmos-sdk/SoftwareUpgradeProposal")
+	gov.RegisterProposalTypeCodec(&SoftwareUpgradeProposal{}, "onomy-sdk/SoftwareUpgradeProposal")
 	gov.RegisterProposalType(ProposalTypeCancelSoftwareUpgrade)
-	gov.RegisterProposalTypeCodec(&CancelSoftwareUpgradeProposal{}, "cosmos-sdk/CancelSoftwareUpgradeProposal")
+	gov.RegisterProposalTypeCodec(&CancelSoftwareUpgradeProposal{}, "onomy-sdk/CancelSoftwareUpgradeProposal")
 }
 
 func (sup *SoftwareUpgradeProposal) GetTitle() string       { return sup.Title }

@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/keys"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
+	"github.com/onomyprotocol/onomy-sdk/client/keys"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
 )
 
 type testCases struct {

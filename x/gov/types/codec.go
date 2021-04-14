@@ -1,22 +1,22 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
 )
 
 // RegisterLegacyAminoCodec registers all the necessary types and interfaces for the
 // governance module.
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cdc.RegisterInterface((*Content)(nil), nil)
-	cdc.RegisterConcrete(&MsgSubmitProposal{}, "cosmos-sdk/MsgSubmitProposal", nil)
-	cdc.RegisterConcrete(&MsgDeposit{}, "cosmos-sdk/MsgDeposit", nil)
-	cdc.RegisterConcrete(&MsgVote{}, "cosmos-sdk/MsgVote", nil)
-	cdc.RegisterConcrete(&MsgVoteWeighted{}, "cosmos-sdk/MsgVoteWeighted", nil)
-	cdc.RegisterConcrete(&TextProposal{}, "cosmos-sdk/TextProposal", nil)
+	cdc.RegisterConcrete(&MsgSubmitProposal{}, "onomy-sdk/MsgSubmitProposal", nil)
+	cdc.RegisterConcrete(&MsgDeposit{}, "onomy-sdk/MsgDeposit", nil)
+	cdc.RegisterConcrete(&MsgVote{}, "onomy-sdk/MsgVote", nil)
+	cdc.RegisterConcrete(&MsgVoteWeighted{}, "onomy-sdk/MsgVoteWeighted", nil)
+	cdc.RegisterConcrete(&TextProposal{}, "onomy-sdk/TextProposal", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

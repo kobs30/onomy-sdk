@@ -6,8 +6,8 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
 )
 
 func TestPrepareConfigForTxCreateValidator(t *testing.T) {

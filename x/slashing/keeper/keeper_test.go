@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/testslashing"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/teststaking"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/testslashing"
+	"github.com/onomyprotocol/onomy-sdk/x/staking"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/teststaking"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 func TestUnJailNotBonded(t *testing.T) {

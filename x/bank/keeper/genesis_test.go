@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	minttypes "github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	minttypes "github.com/onomyprotocol/onomy-sdk/x/mint/types"
 )
 
 func (suite *IntegrationTestSuite) TestExportGenesis() {

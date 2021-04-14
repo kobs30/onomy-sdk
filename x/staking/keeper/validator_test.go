@@ -10,12 +10,12 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/teststaking"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/teststaking"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 func newMonikerValidator(t testing.TB, operator sdk.ValAddress, pubKey cryptotypes.PubKey, moniker string) types.Validator {

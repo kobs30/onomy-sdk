@@ -5,11 +5,11 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/ante"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/ante"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/types"
 )
 
 // Keeper manages state of all fee grants, as well as calculating approval.

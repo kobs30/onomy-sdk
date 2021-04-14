@@ -3,8 +3,8 @@ package store
 import (
 	"bytes"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkkv "github.com/onomyprotocol/cosmos-sdk/types/kv"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkkv "github.com/onomyprotocol/onomy-sdk/types/kv"
 )
 
 // Gets the first item.

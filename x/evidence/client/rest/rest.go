@@ -3,8 +3,8 @@ package rest
 import (
 	"net/http"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/rest"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/rest"
 
 	"github.com/gorilla/mux"
 )

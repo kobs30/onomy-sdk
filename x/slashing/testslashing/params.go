@@ -1,7 +1,7 @@
 package testslashing
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
 )
 
 // TestParams construct default slashing params for tests.

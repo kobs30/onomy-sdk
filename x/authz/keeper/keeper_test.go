@@ -6,17 +6,17 @@ import (
 
 	proto "github.com/gogo/protobuf/proto"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
 
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmtime "github.com/tendermint/tendermint/types/time"
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/types"
-	banktypes "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/types"
+	banktypes "github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 type TestSuite struct {

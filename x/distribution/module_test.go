@@ -7,9 +7,9 @@ import (
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution/types"
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {

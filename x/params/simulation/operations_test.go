@@ -8,10 +8,10 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/types/proposal"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/params/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/params/types/proposal"
 )
 
 type MockParamChange struct {

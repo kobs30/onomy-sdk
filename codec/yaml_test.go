@@ -3,12 +3,12 @@ package codec_test
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
 )
 
 func TestMarshalYAML(t *testing.T) {

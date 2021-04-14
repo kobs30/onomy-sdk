@@ -10,15 +10,15 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	banktypes "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil/client/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	banktypes "github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 type IntegrationTestSuite struct {

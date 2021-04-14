@@ -7,13 +7,13 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/multisig"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/ledger"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerr "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/multisig"
+	"github.com/onomyprotocol/onomy-sdk/crypto/ledger"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerr "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 const (

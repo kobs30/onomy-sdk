@@ -1,9 +1,9 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // nolint:deadcode,unused,varcheck

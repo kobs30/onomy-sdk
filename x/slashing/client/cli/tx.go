@@ -3,12 +3,12 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
 )
 
 // NewTxCmd returns a root CLI command handler for all x/slashing transaction commands.

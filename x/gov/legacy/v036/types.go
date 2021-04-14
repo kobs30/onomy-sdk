@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v034gov "github.com/onomyprotocol/cosmos-sdk/x/gov/legacy/v034"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v034gov "github.com/onomyprotocol/onomy-sdk/x/gov/legacy/v034"
 )
 
 const (
@@ -128,5 +128,5 @@ func ValidateAbstract(c Content) error {
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cdc.RegisterInterface((*Content)(nil), nil)
-	cdc.RegisterConcrete(TextProposal{}, "cosmos-sdk/TextProposal", nil)
+	cdc.RegisterConcrete(TextProposal{}, "onomy-sdk/TextProposal", nil)
 }

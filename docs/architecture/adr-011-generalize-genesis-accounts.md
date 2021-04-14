@@ -63,11 +63,11 @@ The `auth` codec must have all custom account types registered to marshal them. 
 An example custom account definition:
 
 ```go
-import authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+import authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
 
 // Register the module account type with the auth module codec so it can decode module accounts stored in a genesis file
 func init() {
-    authtypes.RegisterAccountTypeCodec(ModuleAccount{}, "cosmos-sdk/ModuleAccount")
+    authtypes.RegisterAccountTypeCodec(ModuleAccount{}, "onomy-sdk/ModuleAccount")
 }
 
 type ModuleAccount struct {

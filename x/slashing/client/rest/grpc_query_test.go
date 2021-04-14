@@ -8,12 +8,12 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	grpctypes "github.com/onomyprotocol/cosmos-sdk/types/grpc"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	grpctypes "github.com/onomyprotocol/onomy-sdk/types/grpc"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
 )
 
 type IntegrationTestSuite struct {

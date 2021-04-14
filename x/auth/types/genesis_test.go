@@ -7,10 +7,10 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/require"
 
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 func TestSanitize(t *testing.T) {

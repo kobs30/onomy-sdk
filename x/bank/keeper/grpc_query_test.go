@@ -4,14 +4,14 @@ import (
 	gocontext "context"
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
 
-	minttypes "github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	minttypes "github.com/onomyprotocol/onomy-sdk/x/mint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 func (suite *IntegrationTestSuite) TestQueryBalance() {

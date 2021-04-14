@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
 )
 
 // SignatureAlgo defines the interface for a keyring supported algorithm.

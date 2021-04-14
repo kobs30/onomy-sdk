@@ -3,10 +3,10 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/types/proposal"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/x/params/types"
+	"github.com/onomyprotocol/onomy-sdk/x/params/types/proposal"
 )
 
 // NewQueryCmd returns a root CLI command handler for all x/params query commands.

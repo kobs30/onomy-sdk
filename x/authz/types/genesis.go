@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/exported"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/exported"
 )
 
 // NewGenesisState creates new GenesisState object

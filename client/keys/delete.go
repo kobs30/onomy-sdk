@@ -3,9 +3,9 @@ package keys
 import (
 	"bufio"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/input"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/input"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
 
 	"github.com/spf13/cobra"
 )

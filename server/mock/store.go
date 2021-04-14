@@ -5,8 +5,8 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	store "github.com/onomyprotocol/cosmos-sdk/store/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	store "github.com/onomyprotocol/onomy-sdk/store/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 var _ sdk.MultiStore = multiStore{}

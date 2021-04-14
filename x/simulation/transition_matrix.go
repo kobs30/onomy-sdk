@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/types/simulation"
 )
 
 // TransitionMatrix is _almost_ a left stochastic matrix.  It is technically

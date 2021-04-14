@@ -1,6 +1,6 @@
 package types
 
-import "github.com/onomyprotocol/cosmos-sdk/codec/types"
+import "github.com/onomyprotocol/onomy-sdk/codec/types"
 
 var _ types.UnpackInterfacesMessage = GenesisState{}
 

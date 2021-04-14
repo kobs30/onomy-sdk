@@ -1,22 +1,22 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 // RegisterLegacyAminoCodec registers the necessary x/distribution interfaces and concrete types
 // on the provided LegacyAmino codec. These types are used for Amino JSON serialization.
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&MsgWithdrawDelegatorReward{}, "cosmos-sdk/MsgWithdrawDelegationReward", nil)
-	cdc.RegisterConcrete(&MsgWithdrawValidatorCommission{}, "cosmos-sdk/MsgWithdrawValidatorCommission", nil)
-	cdc.RegisterConcrete(&MsgSetWithdrawAddress{}, "cosmos-sdk/MsgModifyWithdrawAddress", nil)
-	cdc.RegisterConcrete(&MsgFundCommunityPool{}, "cosmos-sdk/MsgFundCommunityPool", nil)
-	cdc.RegisterConcrete(&CommunityPoolSpendProposal{}, "cosmos-sdk/CommunityPoolSpendProposal", nil)
+	cdc.RegisterConcrete(&MsgWithdrawDelegatorReward{}, "onomy-sdk/MsgWithdrawDelegationReward", nil)
+	cdc.RegisterConcrete(&MsgWithdrawValidatorCommission{}, "onomy-sdk/MsgWithdrawValidatorCommission", nil)
+	cdc.RegisterConcrete(&MsgSetWithdrawAddress{}, "onomy-sdk/MsgModifyWithdrawAddress", nil)
+	cdc.RegisterConcrete(&MsgFundCommunityPool{}, "onomy-sdk/MsgFundCommunityPool", nil)
+	cdc.RegisterConcrete(&CommunityPoolSpendProposal{}, "onomy-sdk/CommunityPoolSpendProposal", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

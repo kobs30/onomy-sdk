@@ -6,12 +6,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authclient "github.com/onomyprotocol/cosmos-sdk/x/auth/client"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/client/rest"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authclient "github.com/onomyprotocol/onomy-sdk/x/auth/client"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/client/rest"
 )
 
 const (

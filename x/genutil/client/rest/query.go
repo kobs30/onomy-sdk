@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil/types"
 )
 
 // QueryGenesisTxs writes the genesis transactions to the response if no error

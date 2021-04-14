@@ -15,15 +15,15 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	storetypes "github.com/onomyprotocol/cosmos-sdk/store/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade"
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/upgrade/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	storetypes "github.com/onomyprotocol/onomy-sdk/store/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/upgrade/types"
 )
 
 type TestSuite struct {

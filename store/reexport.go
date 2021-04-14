@@ -1,10 +1,10 @@
 package store
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
-// Import cosmos-sdk/types/store.go for convenience.
+// Import onomy-sdk/types/store.go for convenience.
 type (
 	PruningOptions   = types.PruningOptions
 	Store            = types.Store

@@ -1,18 +1,18 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
 )
 
 // RegisterLegacyAminoCodec registers the necessary x/bank interfaces and concrete types
 // on the provided LegacyAmino codec. These types are used for Amino JSON serialization.
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&MsgSend{}, "cosmos-sdk/MsgSend", nil)
-	cdc.RegisterConcrete(&MsgMultiSend{}, "cosmos-sdk/MsgMultiSend", nil)
+	cdc.RegisterConcrete(&MsgSend{}, "onomy-sdk/MsgSend", nil)
+	cdc.RegisterConcrete(&MsgMultiSend{}, "onomy-sdk/MsgMultiSend", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

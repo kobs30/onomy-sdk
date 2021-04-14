@@ -3,10 +3,10 @@ package keeper_test
 import (
 	"strings"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/exported"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/exported"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 
 	abci "github.com/tendermint/tendermint/abci/types"
 )

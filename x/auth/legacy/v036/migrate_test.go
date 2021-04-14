@@ -3,8 +3,8 @@ package v036
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/types"
-	v034auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v034"
+	"github.com/onomyprotocol/onomy-sdk/types"
+	v034auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v034"
 
 	"github.com/stretchr/testify/require"
 )

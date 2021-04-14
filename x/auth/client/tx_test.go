@@ -7,17 +7,17 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authclient "github.com/onomyprotocol/cosmos-sdk/x/auth/client"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/legacytx"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authclient "github.com/onomyprotocol/onomy-sdk/x/auth/client"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/legacy/legacytx"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 var (
@@ -153,6 +153,6 @@ func makeCodec() *codec.LegacyAmino {
 	sdk.RegisterLegacyAminoCodec(cdc)
 	cryptocodec.RegisterCrypto(cdc)
 	authtypes.RegisterLegacyAminoCodec(cdc)
-	cdc.RegisterConcrete(testdata.TestMsg{}, "cosmos-sdk/Test", nil)
+	cdc.RegisterConcrete(testdata.TestMsg{}, "onomy-sdk/Test", nil)
 	return cdc
 }

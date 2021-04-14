@@ -6,14 +6,14 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
-	"github.com/onomyprotocol/cosmos-sdk/version"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	paramscutils "github.com/onomyprotocol/cosmos-sdk/x/params/client/utils"
-	paramproposal "github.com/onomyprotocol/cosmos-sdk/x/params/types/proposal"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/version"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	paramscutils "github.com/onomyprotocol/onomy-sdk/x/params/client/utils"
+	paramproposal "github.com/onomyprotocol/onomy-sdk/x/params/types/proposal"
 )
 
 // NewSubmitParamChangeProposalTxCmd returns a CLI command handler for creating

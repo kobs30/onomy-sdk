@@ -1,8 +1,8 @@
 package ante
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 // AccountKeeper defines the contract needed for AccountKeeper related APIs.

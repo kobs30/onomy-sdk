@@ -3,10 +3,10 @@ package mint
 import (
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/telemetry"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/mint/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	"github.com/onomyprotocol/onomy-sdk/telemetry"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/mint/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/mint/types"
 )
 
 // BeginBlocker mints new tokens for the previous block.

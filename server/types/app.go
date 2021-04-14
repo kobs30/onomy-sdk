@@ -11,9 +11,9 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/server/api"
-	"github.com/onomyprotocol/cosmos-sdk/server/config"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/server/api"
+	"github.com/onomyprotocol/onomy-sdk/server/config"
 )
 
 type (

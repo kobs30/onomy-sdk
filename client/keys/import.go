@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/input"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/input"
 )
 
 // ImportKeyCommand imports private keys from a keyfile.

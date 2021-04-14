@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"sort"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/types/simulation"
 )
 
 // entry kinds for use within OperationEntry

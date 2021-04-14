@@ -3,7 +3,7 @@ package keys
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client"
 )
 
 const flagListNames = "list-names"

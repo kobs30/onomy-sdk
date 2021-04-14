@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec"
 
 	"github.com/stretchr/testify/require"
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	keep "github.com/onomyprotocol/cosmos-sdk/x/auth/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	keep "github.com/onomyprotocol/onomy-sdk/x/auth/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 func TestQueryAccount(t *testing.T) {

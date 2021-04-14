@@ -5,11 +5,11 @@ package v036
 import (
 	"fmt"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v034distr "github.com/onomyprotocol/cosmos-sdk/x/distribution/legacy/v034"
-	v034accounts "github.com/onomyprotocol/cosmos-sdk/x/genaccounts/legacy/v034"
-	v034gov "github.com/onomyprotocol/cosmos-sdk/x/gov/legacy/v034"
-	v034staking "github.com/onomyprotocol/cosmos-sdk/x/staking/legacy/v034"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v034distr "github.com/onomyprotocol/onomy-sdk/x/distribution/legacy/v034"
+	v034accounts "github.com/onomyprotocol/onomy-sdk/x/genaccounts/legacy/v034"
+	v034gov "github.com/onomyprotocol/onomy-sdk/x/gov/legacy/v034"
+	v034staking "github.com/onomyprotocol/onomy-sdk/x/staking/legacy/v034"
 
 	"github.com/tendermint/tendermint/crypto"
 )

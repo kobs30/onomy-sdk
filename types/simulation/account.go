@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // Account contains a privkey, pubkey, address tuple

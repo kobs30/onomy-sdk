@@ -5,8 +5,8 @@ package types
 
 import (
 	fmt "fmt"
-	types "github.com/onomyprotocol/cosmos-sdk/codec/types"
 	proto "github.com/gogo/protobuf/proto"
+	types "github.com/onomyprotocol/onomy-sdk/codec/types"
 	io "io"
 	math "math"
 	math_bits "math/bits"

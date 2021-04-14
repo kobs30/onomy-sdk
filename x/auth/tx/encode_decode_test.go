@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"testing"
 
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/tx"
-	signingtypes "github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/types/tx"
+	signingtypes "github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
 )
 
 func TestDefaultTxDecoderError(t *testing.T) {

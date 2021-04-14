@@ -1,8 +1,8 @@
 package simapp
 
 import (
-	simappparams "github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	"github.com/onomyprotocol/cosmos-sdk/std"
+	simappparams "github.com/onomyprotocol/onomy-sdk/simapp/params"
+	"github.com/onomyprotocol/onomy-sdk/std"
 )
 
 // MakeTestEncodingConfig creates an EncodingConfig for testing. This function

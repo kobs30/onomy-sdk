@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 const (

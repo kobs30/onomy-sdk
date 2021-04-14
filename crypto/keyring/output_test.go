@@ -6,10 +6,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	kmultisig "github.com/onomyprotocol/cosmos-sdk/crypto/keys/multisig"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	kmultisig "github.com/onomyprotocol/onomy-sdk/crypto/keys/multisig"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 func TestBech32KeysOutput(t *testing.T) {

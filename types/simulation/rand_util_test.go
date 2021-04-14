@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/simulation"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/simulation"
 )
 
 func TestRandSubsetCoins(t *testing.T) {

@@ -3,11 +3,11 @@ package staking_test
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/teststaking"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/staking"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/teststaking"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 func BenchmarkValidateGenesis10Validators(b *testing.B) {

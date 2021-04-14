@@ -5,8 +5,8 @@ import (
 
 	proto "github.com/gogo/protobuf/proto"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/exported"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/exported"
 )
 
 var _ types.UnpackInterfacesMessage = GenesisState{}

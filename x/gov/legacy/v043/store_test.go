@@ -7,13 +7,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v040gov "github.com/onomyprotocol/cosmos-sdk/x/gov/legacy/v040"
-	v043gov "github.com/onomyprotocol/cosmos-sdk/x/gov/legacy/v043"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v040gov "github.com/onomyprotocol/onomy-sdk/x/gov/legacy/v040"
+	v043gov "github.com/onomyprotocol/onomy-sdk/x/gov/legacy/v043"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 func TestMigrateStore(t *testing.T) {

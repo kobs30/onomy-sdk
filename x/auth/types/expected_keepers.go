@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // BankKeeper defines the contract needed for supply related APIs (noalias)

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/onomyprotocol/cosmos-sdk/cosmovisor"
+	"github.com/onomyprotocol/onomy-sdk/cosmovisor"
 )
 
 func main() {

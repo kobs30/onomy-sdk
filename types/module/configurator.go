@@ -3,15 +3,15 @@ package module
 import (
 	"github.com/gogo/protobuf/grpc"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 // Configurator provides the hooks to allow modules to configure and register
 // their services in the RegisterServices method. It is designed to eventually
 // support module object capabilities isolation as described in
-// https://github.com/onomyprotocol/cosmos-sdk/issues/7093
+// https://github.com/onomyprotocol/onomy-sdk/issues/7093
 type Configurator interface {
 	// MsgServer returns a grpc.Server instance which allows registering services
 	// that will handle TxBody.messages in transactions. These Msg's WILL NOT

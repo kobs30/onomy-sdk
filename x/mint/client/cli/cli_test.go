@@ -10,12 +10,12 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	testnet "github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/mint/client/cli"
-	minttypes "github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	testnet "github.com/onomyprotocol/onomy-sdk/testutil/network"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/mint/client/cli"
+	minttypes "github.com/onomyprotocol/onomy-sdk/x/mint/types"
 )
 
 type IntegrationTestSuite struct {

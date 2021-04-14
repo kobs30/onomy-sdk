@@ -5,16 +5,16 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/simapp/helpers"
-	simappparams "github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/simulation"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/simapp/helpers"
+	simappparams "github.com/onomyprotocol/onomy-sdk/simapp/params"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/types"
+	"github.com/onomyprotocol/onomy-sdk/x/simulation"
 )
 
 // Simulation operation weights constants

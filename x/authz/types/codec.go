@@ -1,12 +1,12 @@
 package types
 
 import (
-	types "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/exported"
-	bank "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	staking "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	types "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/exported"
+	bank "github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	staking "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // RegisterInterfaces registers the interfaces types with the interface registry

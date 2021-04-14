@@ -6,7 +6,7 @@ import (
 	"github.com/gogo/protobuf/jsonpb"
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
 )
 
 var defaultJM = &jsonpb.Marshaler{OrigName: true, EmitDefaults: true, AnyResolver: nil}

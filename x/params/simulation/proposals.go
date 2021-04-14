@@ -1,9 +1,9 @@
 package simulation
 
 import (
-	simappparams "github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/simulation"
+	simappparams "github.com/onomyprotocol/onomy-sdk/simapp/params"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/simulation"
 )
 
 // OpWeightSubmitParamChangeProposal app params key for param change proposal

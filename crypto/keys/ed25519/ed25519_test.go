@@ -10,12 +10,12 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	tmed25519 "github.com/tendermint/tendermint/crypto/ed25519"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 func TestSignAndValidateEd25519(t *testing.T) {

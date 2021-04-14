@@ -1,10 +1,10 @@
 ---
-project_name: cosmos-sdk
+project_name: onomy-sdk
 
 release:
   github:
     owner: cosmos
-    name: cosmos-sdk
+    name: onomy-sdk
 
 builds:
   - skip: true

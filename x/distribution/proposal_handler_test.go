@@ -6,11 +6,11 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution"
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution/types"
 )
 
 var (

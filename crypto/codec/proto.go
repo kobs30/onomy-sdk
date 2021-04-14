@@ -1,12 +1,12 @@
 package codec
 
 import (
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/multisig"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256r1"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/multisig"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256r1"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 // RegisterInterfaces registers the sdk.Tx interface.

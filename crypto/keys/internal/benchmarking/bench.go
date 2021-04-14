@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 // The code in this file is adapted from agl/ed25519.

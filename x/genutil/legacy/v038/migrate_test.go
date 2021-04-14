@@ -3,12 +3,12 @@ package v038_test
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	v036auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v036"
-	v036genaccounts "github.com/onomyprotocol/cosmos-sdk/x/genaccounts/legacy/v036"
-	v038 "github.com/onomyprotocol/cosmos-sdk/x/genutil/legacy/v038"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil/types"
-	v036staking "github.com/onomyprotocol/cosmos-sdk/x/staking/legacy/v036"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	v036auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v036"
+	v036genaccounts "github.com/onomyprotocol/onomy-sdk/x/genaccounts/legacy/v036"
+	v038 "github.com/onomyprotocol/onomy-sdk/x/genutil/legacy/v038"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil/types"
+	v036staking "github.com/onomyprotocol/onomy-sdk/x/staking/legacy/v036"
 
 	"github.com/stretchr/testify/require"
 )

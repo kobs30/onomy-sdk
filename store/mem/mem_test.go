@@ -3,12 +3,12 @@ package mem_test
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/cachekv"
+	"github.com/onomyprotocol/onomy-sdk/store/cachekv"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/mem"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/mem"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 func TestStore(t *testing.T) {

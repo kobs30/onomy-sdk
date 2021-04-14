@@ -10,15 +10,15 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/telemetry"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	"github.com/onomyprotocol/cosmos-sdk/x/crisis/client/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/crisis/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/crisis/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/telemetry"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	"github.com/onomyprotocol/onomy-sdk/x/crisis/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/crisis/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/crisis/types"
 )
 
 var (

@@ -1,9 +1,9 @@
 package client
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	signingtypes "github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	signingtypes "github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 type (

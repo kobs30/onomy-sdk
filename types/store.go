@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
 )
 
 type (

@@ -7,11 +7,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	gcutils "github.com/onomyprotocol/cosmos-sdk/x/gov/client/utils"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	gcutils "github.com/onomyprotocol/onomy-sdk/x/gov/client/utils"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 func registerQueryRoutes(clientCtx client.Context, r *mux.Router) {

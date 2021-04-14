@@ -6,11 +6,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	authtx "github.com/onomyprotocol/cosmos-sdk/x/auth/tx"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	authtx "github.com/onomyprotocol/onomy-sdk/x/auth/tx"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // contains checks if the a given query contains one of the tx types

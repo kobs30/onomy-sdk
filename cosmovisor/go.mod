@@ -1,4 +1,4 @@
-module github.com/onomyprotocol/cosmos-sdk/cosmovisor
+module github.com/onomyprotocol/onomy-sdk/cosmovisor
 
 go 1.14
 

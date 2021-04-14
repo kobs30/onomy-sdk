@@ -13,18 +13,18 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cdctypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/client/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/client/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
-	stakingkeeper "github.com/onomyprotocol/cosmos-sdk/x/staking/keeper"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cdctypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/client/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
+	stakingkeeper "github.com/onomyprotocol/onomy-sdk/x/staking/keeper"
 )
 
 var (

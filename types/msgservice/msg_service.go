@@ -7,8 +7,8 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"google.golang.org/grpc"
 
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // RegisterMsgServiceDesc registers all type_urls from Msg services described

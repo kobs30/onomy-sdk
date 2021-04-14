@@ -13,13 +13,13 @@ import (
 	"github.com/tendermint/tendermint/crypto/armor"
 	"github.com/tendermint/tendermint/crypto/xsalsa20symmetric"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	"github.com/onomyprotocol/cosmos-sdk/crypto"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	"github.com/onomyprotocol/onomy-sdk/crypto"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/types"
 )
 
 func TestArmorUnarmorPrivKey(t *testing.T) {

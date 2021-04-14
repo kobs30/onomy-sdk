@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/input"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/input"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
 )
 
 const (

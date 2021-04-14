@@ -8,7 +8,7 @@
 
 ![Simple Merkle Tree](./pics/simpleMerkleTree.png)
 
-[LCD 신뢰 전파](https://github.com/irisnet/cosmos-sdk/tree/bianjie/lcd_spec/docs/spec/lcd#trust-propagation)에서 설명했던바와 같이, 앱해시는 신뢰할 수 있는 검증인 세트의 보팅파워(총 스테이킹 수량)를 검증하는 방식으로 확인할 수 있습니다. 이 절차에는 ABCI 상태에서부터 앱해시 증거를 찾으면 됩니다. 증거에는 다음과 같은 정보가 포함되어있습니다:
+[LCD 신뢰 전파](https://github.com/irisnet/onomy-sdk/tree/bianjie/lcd_spec/docs/spec/lcd#trust-propagation)에서 설명했던바와 같이, 앱해시는 신뢰할 수 있는 검증인 세트의 보팅파워(총 스테이킹 수량)를 검증하는 방식으로 확인할 수 있습니다. 이 절차에는 ABCI 상태에서부터 앱해시 증거를 찾으면 됩니다. 증거에는 다음과 같은 정보가 포함되어있습니다:
 
 * IAVL 증거
 * 섭스토어에서 앱해시까지의 증거

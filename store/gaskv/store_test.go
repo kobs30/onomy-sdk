@@ -6,9 +6,9 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/dbadapter"
-	"github.com/onomyprotocol/cosmos-sdk/store/gaskv"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/dbadapter"
+	"github.com/onomyprotocol/onomy-sdk/store/gaskv"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 
 	"github.com/stretchr/testify/require"
 )

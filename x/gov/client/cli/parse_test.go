@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
 )
 
 func TestParseSubmitProposalFlags(t *testing.T) {

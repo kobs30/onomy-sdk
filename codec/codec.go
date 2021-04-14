@@ -3,7 +3,7 @@ package codec
 import (
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
 )
 
 type (

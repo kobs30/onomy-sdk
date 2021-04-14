@@ -1,8 +1,8 @@
 package keyring
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 // Language is a language to create the BIP 39 mnemonic in.

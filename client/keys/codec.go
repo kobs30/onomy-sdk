@@ -1,11 +1,11 @@
 package keys
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
 )
 
-// TODO: remove this file https://github.com/onomyprotocol/cosmos-sdk/issues/8047
+// TODO: remove this file https://github.com/onomyprotocol/onomy-sdk/issues/8047
 
 // KeysCdc defines codec to be used with key operations
 var KeysCdc *codec.LegacyAmino

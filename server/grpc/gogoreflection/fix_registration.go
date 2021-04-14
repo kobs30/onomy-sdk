@@ -23,7 +23,7 @@ var importsToFix = map[string]string{
 // fixRegistration is required because certain files register themselves in a way
 // but are imported by other files in a different way.
 // NOTE(fdymylja): This fix should not be needed and should be addressed in some CI.
-// Currently every cosmos-sdk proto file is importing gogo.proto as gogoproto/gogo.proto,
+// Currently every onomy-sdk proto file is importing gogo.proto as gogoproto/gogo.proto,
 // but gogo.proto registers itself as gogo.proto, same goes for cosmos.proto.
 func fixRegistration(registeredAs, importedAs string) error {
 	raw := gogoproto.FileDescriptor(registeredAs)

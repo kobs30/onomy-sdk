@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client"
 )
 
 func TestPaginate(t *testing.T) {

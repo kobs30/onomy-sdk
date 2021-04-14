@@ -7,12 +7,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 )
 
 func TestDecodeStore(t *testing.T) {

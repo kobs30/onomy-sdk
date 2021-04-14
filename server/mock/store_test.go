@@ -7,7 +7,7 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 func TestStore(t *testing.T) {

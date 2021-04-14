@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/snapshots"
-	"github.com/onomyprotocol/cosmos-sdk/snapshots/types"
+	"github.com/onomyprotocol/onomy-sdk/snapshots"
+	"github.com/onomyprotocol/onomy-sdk/snapshots/types"
 )
 
 func TestManager_List(t *testing.T) {

@@ -8,16 +8,16 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	kmultisig "github.com/onomyprotocol/cosmos-sdk/crypto/keys/multisig"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	kmultisig "github.com/onomyprotocol/onomy-sdk/crypto/keys/multisig"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
 )
 
 var (
@@ -163,7 +163,7 @@ func TestTxValidateBasic(t *testing.T) {
 func TestDefaultTxEncoder(t *testing.T) {
 	cdc := codec.NewLegacyAmino()
 	sdk.RegisterLegacyAminoCodec(cdc)
-	cdc.RegisterConcrete(testdata.TestMsg{}, "cosmos-sdk/Test", nil)
+	cdc.RegisterConcrete(testdata.TestMsg{}, "onomy-sdk/Test", nil)
 	encoder := DefaultTxEncoder(cdc)
 
 	msgs := []sdk.Msg{testdata.NewTestMsg(addr)}

@@ -9,11 +9,11 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/vesting/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/vesting/client/cli"
 )
 
 type IntegrationTestSuite struct {

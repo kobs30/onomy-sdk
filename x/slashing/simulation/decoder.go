@@ -6,10 +6,10 @@ import (
 
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
 )
 
 // NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

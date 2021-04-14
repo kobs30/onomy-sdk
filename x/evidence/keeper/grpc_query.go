@@ -6,14 +6,14 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/prefix"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/store/prefix"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
 
 	proto "github.com/gogo/protobuf/proto"
 
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 )
 
 var _ types.QueryServer = Keeper{}

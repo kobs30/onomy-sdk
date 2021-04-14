@@ -8,12 +8,12 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/teststaking"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing"
+	"github.com/onomyprotocol/onomy-sdk/x/staking"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/teststaking"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 func TestBeginBlocker(t *testing.T) {

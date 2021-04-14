@@ -6,8 +6,8 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/unknownproto"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
+	"github.com/onomyprotocol/onomy-sdk/codec/unknownproto"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
 )
 
 var n1BBlob []byte

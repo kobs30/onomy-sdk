@@ -3,9 +3,9 @@ package v036
 import (
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/onomyprotocol/cosmos-sdk/types"
-	v034distr "github.com/onomyprotocol/cosmos-sdk/x/distribution/legacy/v034"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	"github.com/onomyprotocol/onomy-sdk/types"
+	v034distr "github.com/onomyprotocol/onomy-sdk/x/distribution/legacy/v034"
 
 	"github.com/stretchr/testify/require"
 )

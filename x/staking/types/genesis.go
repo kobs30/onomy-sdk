@@ -3,8 +3,8 @@ package types
 import (
 	"encoding/json"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
 )
 
 // NewGenesisState creates a new GenesisState instanc e

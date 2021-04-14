@@ -3,7 +3,7 @@ package utils
 import (
 	"strings"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 // NormalizeVoteOption - normalize user specified vote option

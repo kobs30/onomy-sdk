@@ -3,11 +3,11 @@ package params
 import (
 	"fmt"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/types/proposal"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/x/params/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/params/types/proposal"
 )
 
 // NewParamChangeProposalHandler creates a new governance Handler for a ParamChangeProposal

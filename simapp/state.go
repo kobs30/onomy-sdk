@@ -11,15 +11,15 @@ import (
 	tmjson "github.com/tendermint/tendermint/libs/json"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	simappparams "github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	banktypes "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	simappparams "github.com/onomyprotocol/onomy-sdk/simapp/params"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	banktypes "github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // AppStateFn returns the initial application state using a genesis or the simulation parameters.

@@ -3,8 +3,8 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 )
 
 type msgServer struct {

@@ -13,10 +13,10 @@ import (
 	"google.golang.org/grpc/encoding/proto"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	grpctypes "github.com/onomyprotocol/cosmos-sdk/types/grpc"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	grpctypes "github.com/onomyprotocol/onomy-sdk/types/grpc"
+	"github.com/onomyprotocol/onomy-sdk/types/tx"
 )
 
 var _ gogogrpc.ClientConn = Context{}

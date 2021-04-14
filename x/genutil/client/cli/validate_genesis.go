@@ -7,9 +7,9 @@ import (
 	"github.com/spf13/cobra"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/server"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/server"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
 )
 
 const chainUpgradeGuide = "https://docs.cosmos.network/master/migrations/chain-upgrade-guide-040.html"

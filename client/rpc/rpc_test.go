@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/rpc"
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/client/rpc"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
 )
 
 type IntegrationTestSuite struct {

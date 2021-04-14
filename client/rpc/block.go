@@ -9,10 +9,10 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
 )
 
 // BlockCommand returns the verified block data for a given heights

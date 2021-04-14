@@ -17,14 +17,14 @@ import (
 	"github.com/tendermint/crypto/bcrypt"
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/input"
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	"github.com/onomyprotocol/cosmos-sdk/crypto"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/ledger"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/client/input"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	"github.com/onomyprotocol/onomy-sdk/crypto"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/ledger"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 // Backend options for Keyring

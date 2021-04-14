@@ -10,12 +10,12 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	authsigning "github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 func TestRegisterMsgService(t *testing.T) {

@@ -3,10 +3,10 @@ package crisis
 import (
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/telemetry"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/crisis/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/crisis/types"
+	"github.com/onomyprotocol/onomy-sdk/telemetry"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/crisis/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/crisis/types"
 )
 
 // check all registered invariants

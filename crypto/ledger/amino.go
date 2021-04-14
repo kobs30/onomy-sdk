@@ -1,8 +1,8 @@
 package ledger
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptoAmino "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptoAmino "github.com/onomyprotocol/onomy-sdk/crypto/codec"
 )
 
 var cdc = codec.NewLegacyAmino()

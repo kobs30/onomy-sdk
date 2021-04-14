@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v034distr "github.com/onomyprotocol/cosmos-sdk/x/distribution/legacy/v034"
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution/types"
-	v036gov "github.com/onomyprotocol/cosmos-sdk/x/gov/legacy/v036"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v034distr "github.com/onomyprotocol/onomy-sdk/x/distribution/legacy/v034"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution/types"
+	v036gov "github.com/onomyprotocol/onomy-sdk/x/gov/legacy/v036"
 )
 
 // ----------------------------------------------------------------------------
@@ -129,5 +129,5 @@ func (csp CommunityPoolSpendProposal) String() string {
 }
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(CommunityPoolSpendProposal{}, "cosmos-sdk/CommunityPoolSpendProposal", nil)
+	cdc.RegisterConcrete(CommunityPoolSpendProposal{}, "onomy-sdk/CommunityPoolSpendProposal", nil)
 }

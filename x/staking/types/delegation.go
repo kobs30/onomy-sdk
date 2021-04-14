@@ -8,8 +8,8 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // Implements Delegation interface

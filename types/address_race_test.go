@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types"
 	"github.com/stretchr/testify/require"
 )
 

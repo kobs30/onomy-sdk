@@ -5,13 +5,13 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	clientrest "github.com/onomyprotocol/cosmos-sdk/client/rest"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution/types"
-	govrest "github.com/onomyprotocol/cosmos-sdk/x/gov/client/rest"
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	clientrest "github.com/onomyprotocol/onomy-sdk/client/rest"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution/types"
+	govrest "github.com/onomyprotocol/onomy-sdk/x/gov/client/rest"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 func RegisterHandlers(clientCtx client.Context, rtr *mux.Router) {

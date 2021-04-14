@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil/client/cli"
 )
 
 func TestGetMigrationCallback(t *testing.T) {

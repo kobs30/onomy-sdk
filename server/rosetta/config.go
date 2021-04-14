@@ -9,8 +9,8 @@ import (
 	"github.com/spf13/pflag"
 	crg "github.com/tendermint/cosmos-rosetta-gateway/server"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
 )
 
 // configuration defaults constants

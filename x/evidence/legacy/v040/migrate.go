@@ -3,9 +3,9 @@ package v040
 import (
 	"fmt"
 
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	v038evidence "github.com/onomyprotocol/cosmos-sdk/x/evidence/legacy/v038"
-	v040evidence "github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	v038evidence "github.com/onomyprotocol/onomy-sdk/x/evidence/legacy/v038"
+	v040evidence "github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 )
 
 func migrateEvidence(oldEvidence v038evidence.Evidence) *codectypes.Any {

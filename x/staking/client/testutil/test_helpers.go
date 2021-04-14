@@ -3,12 +3,12 @@ package testutil
 import (
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	stakingcli "github.com/onomyprotocol/cosmos-sdk/x/staking/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	stakingcli "github.com/onomyprotocol/onomy-sdk/x/staking/client/cli"
 )
 
 var commonArgs = []string{

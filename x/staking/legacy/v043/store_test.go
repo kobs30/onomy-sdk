@@ -7,13 +7,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v040staking "github.com/onomyprotocol/cosmos-sdk/x/staking/legacy/v040"
-	v043staking "github.com/onomyprotocol/cosmos-sdk/x/staking/legacy/v043"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/teststaking"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v040staking "github.com/onomyprotocol/onomy-sdk/x/staking/legacy/v040"
+	v043staking "github.com/onomyprotocol/onomy-sdk/x/staking/legacy/v043"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/teststaking"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 func TestStoreMigration(t *testing.T) {

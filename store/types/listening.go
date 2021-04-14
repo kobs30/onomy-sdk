@@ -3,7 +3,7 @@ package types
 import (
 	"io"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec"
 )
 
 // WriteListener interface for streaming data out from a listenkv.Store

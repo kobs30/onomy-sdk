@@ -9,16 +9,16 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/testslashing"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/teststaking"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/testslashing"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
+	"github.com/onomyprotocol/onomy-sdk/x/staking"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/teststaking"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 func TestCannotUnjailUnlessJailed(t *testing.T) {

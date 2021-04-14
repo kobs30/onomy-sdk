@@ -1,9 +1,9 @@
 package auth
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 // InitGenesis - Init store state from genesis data

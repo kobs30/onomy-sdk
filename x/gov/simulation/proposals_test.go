@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	simappparams "github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/simulation"
+	simappparams "github.com/onomyprotocol/onomy-sdk/simapp/params"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/simulation"
 )
 
 func TestProposalContents(t *testing.T) {

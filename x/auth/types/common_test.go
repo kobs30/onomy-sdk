@@ -1,7 +1,7 @@
 package types_test
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
 )
 
 var (

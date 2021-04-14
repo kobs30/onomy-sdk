@@ -6,7 +6,7 @@
 
 Run:
 
-`go get github.com/onomyprotocol/cosmos-sdk/cosmovisor/cmd/cosmovisor`
+`go get github.com/onomyprotocol/onomy-sdk/cosmovisor/cmd/cosmovisor`
 
 ## Command Line Arguments And Environment Variables
 
@@ -88,7 +88,7 @@ shipped along the Cosmos SDK's source code.
 First compile `simd`:
 
 ```
-cd cosmos-sdk/
+cd onomy-sdk/
 make build
 ```
 

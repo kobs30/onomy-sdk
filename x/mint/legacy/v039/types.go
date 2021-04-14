@@ -1,6 +1,6 @@
 package v039
 
-import sdk "github.com/onomyprotocol/cosmos-sdk/types"
+import sdk "github.com/onomyprotocol/onomy-sdk/types"
 
 const (
 	ModuleName = "mint"

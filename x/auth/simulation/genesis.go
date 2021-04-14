@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"math/rand"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	"github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	vestingtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/vesting/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	"github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	vestingtypes "github.com/onomyprotocol/onomy-sdk/x/auth/vesting/types"
 )
 
 // Simulation parameter constants

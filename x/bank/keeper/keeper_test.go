@@ -4,21 +4,21 @@ import (
 	"testing"
 	"time"
 
-	minttypes "github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	minttypes "github.com/onomyprotocol/onomy-sdk/x/mint/types"
 
 	"github.com/stretchr/testify/suite"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authkeeper "github.com/onomyprotocol/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	vesting "github.com/onomyprotocol/cosmos-sdk/x/auth/vesting/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authkeeper "github.com/onomyprotocol/onomy-sdk/x/auth/keeper"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	vesting "github.com/onomyprotocol/onomy-sdk/x/auth/vesting/types"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 const (

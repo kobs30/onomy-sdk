@@ -13,14 +13,14 @@ import (
 	tmcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/cachekv"
-	"github.com/onomyprotocol/cosmos-sdk/store/listenkv"
-	"github.com/onomyprotocol/cosmos-sdk/store/tracekv"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
-	"github.com/onomyprotocol/cosmos-sdk/telemetry"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
+	"github.com/onomyprotocol/onomy-sdk/store/cachekv"
+	"github.com/onomyprotocol/onomy-sdk/store/listenkv"
+	"github.com/onomyprotocol/onomy-sdk/store/tracekv"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/telemetry"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
 )
 
 const (

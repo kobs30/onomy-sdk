@@ -6,7 +6,7 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	govtypes "github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	govtypes "github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 const (
@@ -19,7 +19,7 @@ var _ govtypes.Content = &ParameterChangeProposal{}
 
 func init() {
 	govtypes.RegisterProposalType(ProposalTypeChange)
-	govtypes.RegisterProposalTypeCodec(&ParameterChangeProposal{}, "cosmos-sdk/ParameterChangeProposal")
+	govtypes.RegisterProposalTypeCodec(&ParameterChangeProposal{}, "onomy-sdk/ParameterChangeProposal")
 }
 
 func NewParameterChangeProposal(title, description string, changes []ParamChange) *ParameterChangeProposal {

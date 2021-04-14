@@ -3,9 +3,9 @@ package exported
 import (
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // VestingAccount defines an account type that vests coins via a vesting schedule.

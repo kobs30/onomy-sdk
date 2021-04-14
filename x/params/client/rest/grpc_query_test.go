@@ -7,9 +7,9 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	"github.com/onomyprotocol/cosmos-sdk/x/params/types/proposal"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	"github.com/onomyprotocol/onomy-sdk/x/params/types/proposal"
 )
 
 type IntegrationTestSuite struct {

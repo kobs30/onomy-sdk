@@ -21,15 +21,15 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/snapshots"
-	snapshottypes "github.com/onomyprotocol/cosmos-sdk/snapshots/types"
-	"github.com/onomyprotocol/cosmos-sdk/store/rootmulti"
-	store "github.com/onomyprotocol/cosmos-sdk/store/types"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/legacytx"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/snapshots"
+	snapshottypes "github.com/onomyprotocol/onomy-sdk/snapshots/types"
+	"github.com/onomyprotocol/onomy-sdk/store/rootmulti"
+	store "github.com/onomyprotocol/onomy-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/legacy/legacytx"
 )
 
 var (
@@ -91,11 +91,11 @@ func registerTestCodec(cdc *codec.LegacyAmino) {
 	sdk.RegisterLegacyAminoCodec(cdc)
 
 	// register test types
-	cdc.RegisterConcrete(&txTest{}, "cosmos-sdk/baseapp/txTest", nil)
-	cdc.RegisterConcrete(&msgCounter{}, "cosmos-sdk/baseapp/msgCounter", nil)
-	cdc.RegisterConcrete(&msgCounter2{}, "cosmos-sdk/baseapp/msgCounter2", nil)
-	cdc.RegisterConcrete(&msgKeyValue{}, "cosmos-sdk/baseapp/msgKeyValue", nil)
-	cdc.RegisterConcrete(&msgNoRoute{}, "cosmos-sdk/baseapp/msgNoRoute", nil)
+	cdc.RegisterConcrete(&txTest{}, "onomy-sdk/baseapp/txTest", nil)
+	cdc.RegisterConcrete(&msgCounter{}, "onomy-sdk/baseapp/msgCounter", nil)
+	cdc.RegisterConcrete(&msgCounter2{}, "onomy-sdk/baseapp/msgCounter2", nil)
+	cdc.RegisterConcrete(&msgKeyValue{}, "onomy-sdk/baseapp/msgKeyValue", nil)
+	cdc.RegisterConcrete(&msgNoRoute{}, "onomy-sdk/baseapp/msgNoRoute", nil)
 }
 
 // aminoTxEncoder creates a amino TxEncoder for testing purposes.
@@ -1250,7 +1250,7 @@ func TestRunInvalidTransaction(t *testing.T) {
 		// new codec so we can encode the tx, but we shouldn't be able to decode
 		newCdc := codec.NewLegacyAmino()
 		registerTestCodec(newCdc)
-		newCdc.RegisterConcrete(&msgNoDecode{}, "cosmos-sdk/baseapp/msgNoDecode", nil)
+		newCdc.RegisterConcrete(&msgNoDecode{}, "onomy-sdk/baseapp/msgNoDecode", nil)
 
 		txBytes, err := newCdc.MarshalBinaryBare(tx)
 		require.NoError(t, err)

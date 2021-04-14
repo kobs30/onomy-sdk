@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // NewGenesisState creates a new GenesisState object

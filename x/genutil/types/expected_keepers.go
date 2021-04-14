@@ -5,10 +5,10 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	auth "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	bankexported "github.com/onomyprotocol/cosmos-sdk/x/bank/exported"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	auth "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	bankexported "github.com/onomyprotocol/onomy-sdk/x/bank/exported"
 )
 
 // StakingKeeper defines the expected staking keeper (noalias)

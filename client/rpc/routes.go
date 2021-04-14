@@ -3,7 +3,7 @@ package rpc
 import (
 	"github.com/gorilla/mux"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client"
 )
 
 // Register REST endpoints.

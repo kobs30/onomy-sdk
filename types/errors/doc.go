@@ -1,5 +1,5 @@
 /*
-Package errors implements custom error interfaces for cosmos-sdk.
+Package errors implements custom error interfaces for onomy-sdk.
 
 Error declarations should be generic and cover broad range of cases. Each
 returned error instance can wrap a generic error declaration to provide more

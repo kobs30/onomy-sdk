@@ -10,9 +10,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/tx"
 )
 
 // GRPCQueryRouter returns the GRPCQueryRouter of a BaseApp.

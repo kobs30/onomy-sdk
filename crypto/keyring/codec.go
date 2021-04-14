@@ -1,9 +1,9 @@
 package keyring
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
 )
 
 func init() {

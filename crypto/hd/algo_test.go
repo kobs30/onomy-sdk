@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/hd"
+	"github.com/onomyprotocol/onomy-sdk/crypto/hd"
 )
 
 func TestDefaults(t *testing.T) {

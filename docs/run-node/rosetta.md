@@ -24,7 +24,7 @@ import (
 
 "context"
 "github.com/coinbase/rosetta-sdk-go/types"
-"github.com/onomyprotocol/cosmos-sdk/server/rosetta"
+"github.com/onomyprotocol/onomy-sdk/server/rosetta"
 )
 
 // CustomClient embeds the standard cosmos client
@@ -66,7 +66,7 @@ Example:
 package app
 import (
 
-"github.com/onomyprotocol/cosmos-sdk/server"
+"github.com/onomyprotocol/onomy-sdk/server"
 "github.com/spf13/cobra"
 )
 

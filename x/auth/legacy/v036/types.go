@@ -1,7 +1,7 @@
 // DONTCOVER
 package v036
 
-import v034auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v034"
+import v034auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v034"
 
 const (
 	ModuleName = "auth"

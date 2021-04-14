@@ -6,11 +6,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	gcutils "github.com/onomyprotocol/cosmos-sdk/x/gov/client/utils"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	gcutils "github.com/onomyprotocol/onomy-sdk/x/gov/client/utils"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 func registerTxHandlers(clientCtx client.Context, r *mux.Router, phs []ProposalRESTHandler) {

@@ -3,9 +3,9 @@ package common
 import (
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution/types"
 )
 
 // QueryDelegationRewards queries a delegation rewards between a delegator and a

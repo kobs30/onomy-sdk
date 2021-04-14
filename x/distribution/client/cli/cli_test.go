@@ -13,15 +13,15 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	testnet "github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/distribution/client/cli"
-	distrtestutil "github.com/onomyprotocol/cosmos-sdk/x/distribution/client/testutil"
-	minttypes "github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	testnet "github.com/onomyprotocol/onomy-sdk/testutil/network"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/distribution/client/cli"
+	distrtestutil "github.com/onomyprotocol/onomy-sdk/x/distribution/client/testutil"
+	minttypes "github.com/onomyprotocol/onomy-sdk/x/mint/types"
 )
 
 type IntegrationTestSuite struct {

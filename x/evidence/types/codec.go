@@ -1,20 +1,20 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/exported"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/exported"
 )
 
 // RegisterLegacyAminoCodec registers all the necessary types and interfaces for the
 // evidence module.
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cdc.RegisterInterface((*exported.Evidence)(nil), nil)
-	cdc.RegisterConcrete(&MsgSubmitEvidence{}, "cosmos-sdk/MsgSubmitEvidence", nil)
-	cdc.RegisterConcrete(&Equivocation{}, "cosmos-sdk/Equivocation", nil)
+	cdc.RegisterConcrete(&MsgSubmitEvidence{}, "onomy-sdk/MsgSubmitEvidence", nil)
+	cdc.RegisterConcrete(&Equivocation{}, "onomy-sdk/Equivocation", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

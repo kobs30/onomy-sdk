@@ -1,8 +1,8 @@
 package rootmulti
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/store/dbadapter"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/dbadapter"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 var commithash = []byte("FAKE_HASH")

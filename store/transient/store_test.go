@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/transient"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/transient"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 var k, v = []byte("hello"), []byte("world")

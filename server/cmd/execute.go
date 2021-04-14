@@ -8,9 +8,9 @@ import (
 	tmcfg "github.com/tendermint/tendermint/config"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/server"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/server"
 )
 
 // Execute executes the root command of an application. It handles creating a

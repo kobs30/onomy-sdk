@@ -15,18 +15,18 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	govclient "github.com/onomyprotocol/cosmos-sdk/x/gov/client"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/client/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/client/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	govclient "github.com/onomyprotocol/onomy-sdk/x/gov/client"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/client/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 var (

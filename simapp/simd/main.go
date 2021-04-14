@@ -3,10 +3,10 @@ package main
 import (
 	"os"
 
-	"github.com/onomyprotocol/cosmos-sdk/server"
-	svrcmd "github.com/onomyprotocol/cosmos-sdk/server/cmd"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/simapp/simd/cmd"
+	"github.com/onomyprotocol/onomy-sdk/server"
+	svrcmd "github.com/onomyprotocol/onomy-sdk/server/cmd"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/simapp/simd/cmd"
 )
 
 func main() {

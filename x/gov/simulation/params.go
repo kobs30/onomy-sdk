@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"math/rand"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/simulation"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/x/simulation"
 )
 
 const (

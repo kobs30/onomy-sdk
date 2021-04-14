@@ -9,9 +9,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	"github.com/tendermint/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/types/simulation"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 const (

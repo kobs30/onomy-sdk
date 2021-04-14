@@ -1,21 +1,21 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/msgservice"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/msgservice"
 )
 
 // RegisterLegacyAminoCodec registers the necessary x/staking interfaces and concrete types
 // on the provided LegacyAmino codec. These types are used for Amino JSON serialization.
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&MsgCreateValidator{}, "cosmos-sdk/MsgCreateValidator", nil)
-	cdc.RegisterConcrete(&MsgEditValidator{}, "cosmos-sdk/MsgEditValidator", nil)
-	cdc.RegisterConcrete(&MsgDelegate{}, "cosmos-sdk/MsgDelegate", nil)
-	cdc.RegisterConcrete(&MsgUndelegate{}, "cosmos-sdk/MsgUndelegate", nil)
-	cdc.RegisterConcrete(&MsgBeginRedelegate{}, "cosmos-sdk/MsgBeginRedelegate", nil)
+	cdc.RegisterConcrete(&MsgCreateValidator{}, "onomy-sdk/MsgCreateValidator", nil)
+	cdc.RegisterConcrete(&MsgEditValidator{}, "onomy-sdk/MsgEditValidator", nil)
+	cdc.RegisterConcrete(&MsgDelegate{}, "onomy-sdk/MsgDelegate", nil)
+	cdc.RegisterConcrete(&MsgUndelegate{}, "onomy-sdk/MsgUndelegate", nil)
+	cdc.RegisterConcrete(&MsgBeginRedelegate{}, "onomy-sdk/MsgBeginRedelegate", nil)
 }
 
 // RegisterInterfaces registers the x/staking interfaces types with the interface registry

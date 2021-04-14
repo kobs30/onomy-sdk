@@ -3,8 +3,8 @@ package types
 import (
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // NewGenesisState creates a new genesis state for the governance module

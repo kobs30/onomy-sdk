@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/onomyprotocol/cosmos-sdk/internal/conv"
-	"github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/internal/conv"
+	"github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 // Len is the length of base addresses

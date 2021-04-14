@@ -1,12 +1,12 @@
 package keeper
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/telemetry"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	paramtypes "github.com/onomyprotocol/cosmos-sdk/x/params/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/telemetry"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	paramtypes "github.com/onomyprotocol/onomy-sdk/x/params/types"
 )
 
 // SendKeeper defines a module interface that facilitates the transfer of coins

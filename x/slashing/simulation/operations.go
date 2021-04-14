@@ -4,16 +4,16 @@ import (
 	"errors"
 	"math/rand"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/simapp/helpers"
-	simappparams "github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
-	stakingkeeper "github.com/onomyprotocol/cosmos-sdk/x/staking/keeper"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/simapp/helpers"
+	simappparams "github.com/onomyprotocol/onomy-sdk/simapp/params"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
+	stakingkeeper "github.com/onomyprotocol/onomy-sdk/x/staking/keeper"
 )
 
 // Simulation operation weights constants

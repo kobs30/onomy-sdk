@@ -1,9 +1,9 @@
 package feegrant
 
 import (
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/feegrant/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/feegrant/types"
 )
 
 // GenesisState contains a set of fee allowances, persisted from the store

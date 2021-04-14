@@ -6,15 +6,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	grpctypes "github.com/onomyprotocol/cosmos-sdk/types/grpc"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	grpctypes "github.com/onomyprotocol/onomy-sdk/types/grpc"
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/onomyprotocol/cosmos-sdk/testutil/network"
-	minttypes "github.com/onomyprotocol/cosmos-sdk/x/mint/types"
+	"github.com/onomyprotocol/onomy-sdk/testutil/network"
+	minttypes "github.com/onomyprotocol/onomy-sdk/x/mint/types"
 )
 
 type IntegrationTestSuite struct {

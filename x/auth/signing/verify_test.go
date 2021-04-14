@@ -6,17 +6,17 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	kmultisig "github.com/onomyprotocol/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types/multisig"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/ante"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/legacytx"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	kmultisig "github.com/onomyprotocol/onomy-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types/multisig"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/ante"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/legacy/legacytx"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 func TestVerifySignature(t *testing.T) {
@@ -34,7 +34,7 @@ func TestVerifySignature(t *testing.T) {
 	cdc := codec.NewLegacyAmino()
 	sdk.RegisterLegacyAminoCodec(cdc)
 	types.RegisterLegacyAminoCodec(cdc)
-	cdc.RegisterConcrete(testdata.TestMsg{}, "cosmos-sdk/Test", nil)
+	cdc.RegisterConcrete(testdata.TestMsg{}, "onomy-sdk/Test", nil)
 
 	acc1 := app.AccountKeeper.NewAccountWithAddress(ctx, addr)
 	_ = app.AccountKeeper.NewAccountWithAddress(ctx, addr1)

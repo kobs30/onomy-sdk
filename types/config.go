@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/onomyprotocol/cosmos-sdk/version"
+	"github.com/onomyprotocol/onomy-sdk/version"
 )
 
 // DefaultKeyringServiceName defines a default service name for the keyring.
@@ -28,7 +28,7 @@ type Config struct {
 	sealedch chan struct{}
 }
 
-// cosmos-sdk wide global singleton
+// onomy-sdk wide global singleton
 var (
 	sdkConfig  *Config
 	initConfig sync.Once

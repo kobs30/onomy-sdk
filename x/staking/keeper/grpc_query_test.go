@@ -7,12 +7,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/teststaking"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/teststaking"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 func (suite *KeeperTestSuite) TestGRPCQueryValidators() {

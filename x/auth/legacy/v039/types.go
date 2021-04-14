@@ -10,13 +10,13 @@ import (
 
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/legacy"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v034auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v034"
-	v038auth "github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/v038"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/legacy"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v034auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v034"
+	v038auth "github.com/onomyprotocol/onomy-sdk/x/auth/legacy/v038"
 )
 
 const (
@@ -419,10 +419,10 @@ func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cryptocodec.RegisterCrypto(cdc)
 	cdc.RegisterInterface((*v038auth.GenesisAccount)(nil), nil)
 	cdc.RegisterInterface((*v038auth.Account)(nil), nil)
-	cdc.RegisterConcrete(&BaseAccount{}, "cosmos-sdk/Account", nil)
-	cdc.RegisterConcrete(&BaseVestingAccount{}, "cosmos-sdk/BaseVestingAccount", nil)
-	cdc.RegisterConcrete(&ContinuousVestingAccount{}, "cosmos-sdk/ContinuousVestingAccount", nil)
-	cdc.RegisterConcrete(&DelayedVestingAccount{}, "cosmos-sdk/DelayedVestingAccount", nil)
-	cdc.RegisterConcrete(&PeriodicVestingAccount{}, "cosmos-sdk/PeriodicVestingAccount", nil)
-	cdc.RegisterConcrete(&ModuleAccount{}, "cosmos-sdk/ModuleAccount", nil)
+	cdc.RegisterConcrete(&BaseAccount{}, "onomy-sdk/Account", nil)
+	cdc.RegisterConcrete(&BaseVestingAccount{}, "onomy-sdk/BaseVestingAccount", nil)
+	cdc.RegisterConcrete(&ContinuousVestingAccount{}, "onomy-sdk/ContinuousVestingAccount", nil)
+	cdc.RegisterConcrete(&DelayedVestingAccount{}, "onomy-sdk/DelayedVestingAccount", nil)
+	cdc.RegisterConcrete(&PeriodicVestingAccount{}, "onomy-sdk/PeriodicVestingAccount", nil)
+	cdc.RegisterConcrete(&ModuleAccount{}, "onomy-sdk/ModuleAccount", nil)
 }

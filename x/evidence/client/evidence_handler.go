@@ -3,8 +3,8 @@ package client
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/client/rest"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/client/rest"
 )
 
 type (

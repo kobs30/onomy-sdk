@@ -3,9 +3,9 @@ package signing
 import (
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
 )
 
 // SignModeHandlerMap is SignModeHandler that aggregates multiple SignModeHandler's into

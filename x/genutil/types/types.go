@@ -3,8 +3,8 @@ package types
 import (
 	"encoding/json"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 // DONTCOVER

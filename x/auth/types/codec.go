@@ -1,10 +1,10 @@
 package types
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	"github.com/onomyprotocol/cosmos-sdk/x/auth/legacy/legacytx"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	"github.com/onomyprotocol/onomy-sdk/x/auth/legacy/legacytx"
 )
 
 // RegisterLegacyAminoCodec registers the account interfaces and concrete types on the
@@ -13,8 +13,8 @@ func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cdc.RegisterInterface((*ModuleAccountI)(nil), nil)
 	cdc.RegisterInterface((*GenesisAccount)(nil), nil)
 	cdc.RegisterInterface((*AccountI)(nil), nil)
-	cdc.RegisterConcrete(&BaseAccount{}, "cosmos-sdk/BaseAccount", nil)
-	cdc.RegisterConcrete(&ModuleAccount{}, "cosmos-sdk/ModuleAccount", nil)
+	cdc.RegisterConcrete(&BaseAccount{}, "onomy-sdk/BaseAccount", nil)
+	cdc.RegisterConcrete(&ModuleAccount{}, "onomy-sdk/ModuleAccount", nil)
 
 	legacytx.RegisterLegacyAminoCodec(cdc)
 }

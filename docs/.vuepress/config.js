@@ -27,15 +27,15 @@ module.exports = {
     ['link', { rel: "apple-touch-icon-precomposed", href: "/apple-touch-icon-precomposed.png" }],
   ],
   themeConfig: {
-    repo: "onomyprotocol/cosmos-sdk",
-    docsRepo: "onomyprotocol/cosmos-sdk",
+    repo: "onomyprotocol/onomy-sdk",
+    docsRepo: "onomyprotocol/onomy-sdk",
     docsDir: "docs",
     editLinks: true,
     label: "sdk",
     algolia: {
       id: "BH4D9OD16A",
       key: "ac317234e6a42074175369b2f42e9754",
-      index: "cosmos-sdk"
+      index: "onomy-sdk"
     },
     versions: [
       {
@@ -76,7 +76,7 @@ module.exports = {
             },
             {
               title: "SDK API Reference",
-              path: "https://godoc.org/github.com/onomyprotocol/cosmos-sdk"
+              path: "https://godoc.org/github.com/onomyprotocol/onomy-sdk"
             },
             {
               title: "REST API Spec",
@@ -185,11 +185,11 @@ module.exports = {
             {
               title: "Contributing to the docs",
               url:
-                "https://github.com/onomyprotocol/cosmos-sdk/blob/master/docs/DOCS_README.md"
+                "https://github.com/onomyprotocol/onomy-sdk/blob/master/docs/DOCS_README.md"
             },
             {
               title: "Source code on GitHub",
-              url: "https://github.com/onomyprotocol/cosmos-sdk/"
+              url: "https://github.com/onomyprotocol/onomy-sdk/"
             }
           ]
         }

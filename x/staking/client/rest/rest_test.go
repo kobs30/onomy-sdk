@@ -5,8 +5,8 @@ package rest_test
 import (
 	"fmt"
 
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 func (s *IntegrationTestSuite) TestLegacyGetValidators() {

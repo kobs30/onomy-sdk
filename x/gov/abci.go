@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/telemetry"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/gov/types"
+	"github.com/onomyprotocol/onomy-sdk/telemetry"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/gov/types"
 )
 
 // EndBlocker called every block, process inflation, update validator set.

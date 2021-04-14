@@ -4,12 +4,12 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	authsign "github.com/onomyprotocol/cosmos-sdk/x/auth/signing"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	authsign "github.com/onomyprotocol/onomy-sdk/x/auth/signing"
 )
 
 // SimAppChainID hardcoded chainID for simulation

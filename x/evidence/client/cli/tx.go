@@ -1,8 +1,8 @@
 package cli
 
 import (
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/x/evidence/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/x/evidence/types"
 
 	"github.com/spf13/cobra"
 )

@@ -3,14 +3,14 @@ package v040
 import (
 	"github.com/golang/protobuf/proto"
 
-	codectypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	codectypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 // SupplyI defines an inflationary supply interface for modules that handle
 // token supply.
 // It is copy-pasted from:
-// https://github.com/onomyprotocol/cosmos-sdk/blob/v042.3/x/bank/exported/exported.go
+// https://github.com/onomyprotocol/onomy-sdk/blob/v042.3/x/bank/exported/exported.go
 // where we stripped off the unnecessary methods.
 //
 // It is used in the migration script, because we save this interface as an Any

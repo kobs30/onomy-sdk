@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/params/types"
+	"github.com/onomyprotocol/onomy-sdk/x/params/types"
 )
 
 func TestKeyTable(t *testing.T) {

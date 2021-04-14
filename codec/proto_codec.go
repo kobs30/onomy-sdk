@@ -9,7 +9,7 @@ import (
 	"github.com/gogo/protobuf/jsonpb"
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/codec/types"
 )
 
 // ProtoCodecMarshaler defines an interface for codecs that utilize Protobuf for both

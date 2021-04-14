@@ -5,9 +5,9 @@ package types
 
 import (
 	fmt "fmt"
-	_ "github.com/onomyprotocol/cosmos-sdk/codec/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
+	_ "github.com/onomyprotocol/onomy-sdk/codec/types"
 	_ "google.golang.org/protobuf/types/known/timestamppb"
 	io "io"
 	math "math"

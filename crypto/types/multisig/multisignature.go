@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
+	"github.com/onomyprotocol/onomy-sdk/crypto/types"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
 )
 
 // AminoMultisignature is used to represent amino multi-signatures for StdTx's.

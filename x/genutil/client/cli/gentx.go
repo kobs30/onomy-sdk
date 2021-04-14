@@ -15,18 +15,18 @@ import (
 	tmos "github.com/tendermint/tendermint/libs/os"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keyring"
-	"github.com/onomyprotocol/cosmos-sdk/server"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	"github.com/onomyprotocol/cosmos-sdk/version"
-	authclient "github.com/onomyprotocol/cosmos-sdk/x/auth/client"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keyring"
+	"github.com/onomyprotocol/onomy-sdk/server"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	"github.com/onomyprotocol/onomy-sdk/version"
+	authclient "github.com/onomyprotocol/onomy-sdk/x/auth/client"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil/types"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/client/cli"
 )
 
 // GenTxCmd builds the application's gentx command.
@@ -139,13 +139,13 @@ $ %s gentx my-key-name 1000000stake --home=/path/to/home/dir --keyring-backend=o
 			// and `create-validator` commands:
 			// - `gentx` expects amount as an arg,
 			// - `create-validator` expects amount as a required flag.
-			// ref: https://github.com/onomyprotocol/cosmos-sdk/issues/8251
+			// ref: https://github.com/onomyprotocol/onomy-sdk/issues/8251
 			// Since gentx doesn't set the amount flag (which `create-validator`
 			// reads from), we copy the amount arg into the valCfg directly.
 			//
 			// Ideally, the `create-validator` command should take a validator
 			// config file instead of so many flags.
-			// ref: https://github.com/onomyprotocol/cosmos-sdk/issues/8177
+			// ref: https://github.com/onomyprotocol/onomy-sdk/issues/8177
 			createValCfg.Amount = amount
 
 			// create a 'create-validator' message

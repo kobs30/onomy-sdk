@@ -8,11 +8,11 @@ import (
 	"github.com/spf13/cobra"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/server"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/server"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil/types"
 )
 
 const flagGenTxDir = "gentx-dir"

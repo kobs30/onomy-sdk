@@ -14,14 +14,14 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmrpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/server/config"
-	"github.com/onomyprotocol/cosmos-sdk/telemetry"
-	grpctypes "github.com/onomyprotocol/cosmos-sdk/types/grpc"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/server/config"
+	"github.com/onomyprotocol/onomy-sdk/telemetry"
+	grpctypes "github.com/onomyprotocol/onomy-sdk/types/grpc"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
 
 	// unnamed import of statik for swagger UI support
-	_ "github.com/onomyprotocol/cosmos-sdk/client/docs/statik"
+	_ "github.com/onomyprotocol/onomy-sdk/client/docs/statik"
 )
 
 // Server defines the server's API interface.

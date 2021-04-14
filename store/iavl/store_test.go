@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/cachekv"
+	"github.com/onomyprotocol/onomy-sdk/store/cachekv"
 
 	"github.com/cosmos/iavl"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/kv"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/types/kv"
 )
 
 var (

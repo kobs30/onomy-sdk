@@ -3,9 +3,9 @@ package rest
 import (
 	"github.com/gorilla/mux"
 
-	"github.com/onomyprotocol/cosmos-sdk/client/rest"
+	"github.com/onomyprotocol/onomy-sdk/client/rest"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client"
 )
 
 // RegisterHandlers registers all x/bank transaction and query HTTP REST handlers

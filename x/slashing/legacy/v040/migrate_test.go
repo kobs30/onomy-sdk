@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	v039slashing "github.com/onomyprotocol/cosmos-sdk/x/slashing/legacy/v039"
-	v040slashing "github.com/onomyprotocol/cosmos-sdk/x/slashing/legacy/v040"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	v039slashing "github.com/onomyprotocol/onomy-sdk/x/slashing/legacy/v039"
+	v040slashing "github.com/onomyprotocol/onomy-sdk/x/slashing/legacy/v040"
 )
 
 func TestMigrate(t *testing.T) {

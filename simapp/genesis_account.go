@@ -3,8 +3,8 @@ package simapp
 import (
 	"errors"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
 )
 
 var _ authtypes.GenesisAccount = (*SimGenesisAccount)(nil)

@@ -6,12 +6,12 @@ import (
 	"io"
 	"testing"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	codecTypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	"github.com/onomyprotocol/cosmos-sdk/store/dbadapter"
-	"github.com/onomyprotocol/cosmos-sdk/store/listenkv"
-	"github.com/onomyprotocol/cosmos-sdk/store/prefix"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	codecTypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	"github.com/onomyprotocol/onomy-sdk/store/dbadapter"
+	"github.com/onomyprotocol/onomy-sdk/store/listenkv"
+	"github.com/onomyprotocol/onomy-sdk/store/prefix"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 
 	"github.com/stretchr/testify/require"
 

@@ -8,14 +8,14 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/onomyprotocol/cosmos-sdk/baseapp"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/query"
-	authtypes "github.com/onomyprotocol/cosmos-sdk/x/auth/types"
-	banktypes "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/testslashing"
-	"github.com/onomyprotocol/cosmos-sdk/x/slashing/types"
+	"github.com/onomyprotocol/onomy-sdk/baseapp"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/query"
+	authtypes "github.com/onomyprotocol/onomy-sdk/x/auth/types"
+	banktypes "github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/testslashing"
+	"github.com/onomyprotocol/onomy-sdk/x/slashing/types"
 )
 
 type SlashingTestSuite struct {

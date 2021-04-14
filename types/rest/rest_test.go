@@ -13,15 +13,15 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/flags"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cryptocodec "github.com/onomyprotocol/cosmos-sdk/crypto/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
-	simappparams "github.com/onomyprotocol/cosmos-sdk/simapp/params"
-	"github.com/onomyprotocol/cosmos-sdk/types"
-	"github.com/onomyprotocol/cosmos-sdk/types/rest"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/flags"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cryptocodec "github.com/onomyprotocol/onomy-sdk/crypto/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
+	simappparams "github.com/onomyprotocol/onomy-sdk/simapp/params"
+	"github.com/onomyprotocol/onomy-sdk/types"
+	"github.com/onomyprotocol/onomy-sdk/types/rest"
 )
 
 func TestBaseReq_Sanitize(t *testing.T) {
@@ -202,7 +202,7 @@ func TestProcessPostResponse(t *testing.T) {
 	acc := mockAccount{addr, coins, pubKey, accNumber, sequence}
 	cdc := codec.NewLegacyAmino()
 	cryptocodec.RegisterCrypto(cdc)
-	cdc.RegisterConcrete(&mockAccount{}, "cosmos-sdk/mockAccount", nil)
+	cdc.RegisterConcrete(&mockAccount{}, "onomy-sdk/mockAccount", nil)
 	ctx = ctx.WithLegacyAmino(cdc)
 
 	// setup expected results

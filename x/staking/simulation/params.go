@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/simulation"
 
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
-	"github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 // ParamChanges defines the parameters that can be modified by param change proposals

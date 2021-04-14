@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	cryptotypes "github.com/onomyprotocol/cosmos-sdk/crypto/types"
+	cryptotypes "github.com/onomyprotocol/onomy-sdk/crypto/types"
 )
 
 type byter interface {

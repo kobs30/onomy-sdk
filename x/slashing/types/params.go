@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	paramtypes "github.com/onomyprotocol/cosmos-sdk/x/params/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	paramtypes "github.com/onomyprotocol/onomy-sdk/x/params/types"
 )
 
 // Default parameter namespace

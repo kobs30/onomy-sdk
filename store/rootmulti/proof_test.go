@@ -7,8 +7,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/onomyprotocol/cosmos-sdk/store/iavl"
-	"github.com/onomyprotocol/cosmos-sdk/store/types"
+	"github.com/onomyprotocol/onomy-sdk/store/iavl"
+	"github.com/onomyprotocol/onomy-sdk/store/types"
 )
 
 func TestVerifyIAVLStoreQueryProof(t *testing.T) {

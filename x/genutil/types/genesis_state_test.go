@@ -7,13 +7,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/onomyprotocol/cosmos-sdk/simapp"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	banktypes "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
-	"github.com/onomyprotocol/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/onomyprotocol/cosmos-sdk/x/staking/types"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	"github.com/onomyprotocol/onomy-sdk/simapp"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	banktypes "github.com/onomyprotocol/onomy-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/x/genutil/types"
+	stakingtypes "github.com/onomyprotocol/onomy-sdk/x/staking/types"
 )
 
 var (
@@ -23,7 +23,7 @@ var (
 
 func TestNetGenesisState(t *testing.T) {
 	gen := types.NewGenesisState(nil)
-	assert.NotNil(t, gen.GenTxs) // https://github.com/onomyprotocol/cosmos-sdk/issues/5086
+	assert.NotNil(t, gen.GenTxs) // https://github.com/onomyprotocol/onomy-sdk/issues/5086
 
 	gen = types.NewGenesisState(
 		[]json.RawMessage{

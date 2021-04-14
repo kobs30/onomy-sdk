@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/onomyprotocol/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	bank "github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/crypto/keys/ed25519"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	bank "github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 var granter = sdk.AccAddress(ed25519.GenPrivKey().PubKey().Address())

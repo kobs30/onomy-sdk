@@ -10,19 +10,19 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	sdkclient "github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/codec"
-	cdctypes "github.com/onomyprotocol/cosmos-sdk/codec/types"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
-	"github.com/onomyprotocol/cosmos-sdk/types/module"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/keeper"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/types"
+	sdkclient "github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/codec"
+	cdctypes "github.com/onomyprotocol/onomy-sdk/codec/types"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/types/module"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/keeper"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/types"
 
-	simtypes "github.com/onomyprotocol/cosmos-sdk/types/simulation"
+	simtypes "github.com/onomyprotocol/onomy-sdk/types/simulation"
 
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/client/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/authz/simulation"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/authz/simulation"
 )
 
 var (

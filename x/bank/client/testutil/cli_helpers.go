@@ -6,17 +6,17 @@ import (
 
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/onomyprotocol/cosmos-sdk/client"
-	"github.com/onomyprotocol/cosmos-sdk/client/tx"
-	"github.com/onomyprotocol/cosmos-sdk/testutil"
-	clitestutil "github.com/onomyprotocol/cosmos-sdk/testutil/cli"
-	"github.com/onomyprotocol/cosmos-sdk/testutil/testdata"
-	sdk "github.com/onomyprotocol/cosmos-sdk/types"
-	txtypes "github.com/onomyprotocol/cosmos-sdk/types/tx"
-	"github.com/onomyprotocol/cosmos-sdk/types/tx/signing"
-	authclient "github.com/onomyprotocol/cosmos-sdk/x/auth/client"
-	bankcli "github.com/onomyprotocol/cosmos-sdk/x/bank/client/cli"
-	"github.com/onomyprotocol/cosmos-sdk/x/bank/types"
+	"github.com/onomyprotocol/onomy-sdk/client"
+	"github.com/onomyprotocol/onomy-sdk/client/tx"
+	"github.com/onomyprotocol/onomy-sdk/testutil"
+	clitestutil "github.com/onomyprotocol/onomy-sdk/testutil/cli"
+	"github.com/onomyprotocol/onomy-sdk/testutil/testdata"
+	sdk "github.com/onomyprotocol/onomy-sdk/types"
+	txtypes "github.com/onomyprotocol/onomy-sdk/types/tx"
+	"github.com/onomyprotocol/onomy-sdk/types/tx/signing"
+	authclient "github.com/onomyprotocol/onomy-sdk/x/auth/client"
+	bankcli "github.com/onomyprotocol/onomy-sdk/x/bank/client/cli"
+	"github.com/onomyprotocol/onomy-sdk/x/bank/types"
 )
 
 func MsgSendExec(clientCtx client.Context, from, to, amount fmt.Stringer, extraArgs ...string) (testutil.BufferWriter, error) {

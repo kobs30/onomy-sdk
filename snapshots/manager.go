@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"sync"
 
-	"github.com/onomyprotocol/cosmos-sdk/snapshots/types"
-	sdkerrors "github.com/onomyprotocol/cosmos-sdk/types/errors"
+	"github.com/onomyprotocol/onomy-sdk/snapshots/types"
+	sdkerrors "github.com/onomyprotocol/onomy-sdk/types/errors"
 )
 
 const (
