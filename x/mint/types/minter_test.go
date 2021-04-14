@@ -14,7 +14,7 @@ func TestNextInflation(t *testing.T) {
 	params := DefaultParams()
 	blocksPerYr := sdk.NewDec(int64(params.BlocksPerYear))
 	// Set totalSupply to stabilization regime > 25000000
-	totalStakingSupply := sdk.NewDec(int64(26000000))
+	totalStakingSupply := sdk.NewInt(int64(26000000*10 ^ 18))
 
 	// Governing Mechanism:
 	//    inflationRateChangePerYear = (1- BondedRatio/ GoalBonded) * MaxInflationRateChange
@@ -107,13 +107,13 @@ func BenchmarkBlockProvision(b *testing.B) {
 
 // Next inflation benchmarking
 // BenchmarkNextInflation-4 1000000 1828 ns/op
-func ddddddd(b *testing.B) {
+func BenchmarkNextInflation(b *testing.B) {
 	b.ReportAllocs()
 	minter := InitialMinter(sdk.NewDecWithPrec(1, 1))
 	params := DefaultParams()
 	bondedRatio := sdk.NewDecWithPrec(1, 1)
 	// Initialize in the stabilization regime
-	totalStakingSupply := sdk.NewDec(int64(26000000))
+	totalStakingSupply := sdk.NewInt(int64(26000000*10 ^ 18))
 
 	// run the NextInflationRate function b.N times
 	for n := 0; n < b.N; n++ {
