@@ -1,3 +1,3 @@
-// Package ECDSA implements Cosmos-SDK compatible ECDSA public and private key. The keys
+// Package ECDSA implements Onomy-SDK compatible ECDSA public and private key. The keys
 // can be serialized.
 package ecdsa

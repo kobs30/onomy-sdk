@@ -17,7 +17,7 @@
     - [Point Release Procedure](#point-release-procedure)
   - [Code Owner Membership](#code-owner-membership)
 
-Thank you for considering making contributions to Cosmos-SDK and related
+Thank you for considering making contributions to Onomy-SDK and related
 repositories!
 
 Contributing to this repo can mean many things such as participated in
@@ -115,8 +115,8 @@ For instance, to create a fork and work on a branch of it, I would:
 - `git remote rename origin upstream`
 - `git remote add origin git@github.com:rigeyrigerige/onomy-sdk.git`
 
-Now `origin` refers to my fork and `upstream` refers to the Cosmos-SDK version.
-So I can `git push -u origin master` to update my fork, and make pull requests to Cosmos-SDK from there.
+Now `origin` refers to my fork and `upstream` refers to the Onomy-SDK version.
+So I can `git push -u origin master` to update my fork, and make pull requests to Onomy-SDK from there.
 Of course, replace `rigeyrigerige` with your git handle.
 
 To pull in updates from the origin repo, run
@@ -140,7 +140,7 @@ build, in which case we can fall back on `go mod tidy -v`.
 
 ## Protobuf
 
-We use [Protocol Buffers](https://developers.google.com/protocol-buffers) along with [gogoproto](https://github.com/gogo/protobuf) to generate code for use in Cosmos-SDK.
+We use [Protocol Buffers](https://developers.google.com/protocol-buffers) along with [gogoproto](https://github.com/gogo/protobuf) to generate code for use in Onomy-SDK.
 
 For determinstic behavior around Protobuf tooling, everything is containerized using Docker. Make sure to have Docker installed on your machine, or head to [Docker's website](https://docs.docker.com/get-docker/) to install it.
 

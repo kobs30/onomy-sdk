@@ -1,4 +1,4 @@
-// Package secp256r1 implements Cosmos-SDK compatible ECDSA public and private key. The keys
+// Package secp256r1 implements Onomy-SDK compatible ECDSA public and private key. The keys
 // can be protobuf serialized and packed in Any.
 package secp256r1
 

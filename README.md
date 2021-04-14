@@ -43,7 +43,7 @@ parent:
 
 
 
-The Cosmos-SDK is a framework for building blockchain applications in Golang.
+The Onomy-SDK is a framework for building blockchain applications in Golang.
 It is being used to build [`Gaia`](https://github.com/cosmos/gaia), the first implementation of the Cosmos Hub.
 
 **WARNING**: The SDK has mostly stabilized, but we are still making some
@@ -73,4 +73,4 @@ If you are starting a new app or a new module you can use [Starport](https://git
 
 ## Disambiguation
 
-This Cosmos-SDK project is not related to the [React-Cosmos](https://github.com/react-cosmos/react-cosmos) project (yet). Many thanks to Evan Coury and Ovidiu (@skidding) for this Github organization name. As per our agreement, this disambiguation notice will stay here.
+This Onomy-SDK project is not related to the [React-Cosmos](https://github.com/react-cosmos/react-cosmos) project (yet). Many thanks to Evan Coury and Ovidiu (@skidding) for this Github organization name. As per our agreement, this disambiguation notice will stay here.

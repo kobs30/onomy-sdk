@@ -1,6 +1,6 @@
 # 服务提供商（Service Providers）
 
-我们将“服务提供商”定义为可以为最终用户提供服务的实体，这些实体涉及与基于 Cosmos-SDK 的区块链（包括 Cosmos Hub）的某种形式的交互。更具体地说，本文档将集中于与 token 的交互。
+我们将“服务提供商”定义为可以为最终用户提供服务的实体，这些实体涉及与基于 Onomy-SDK 的区块链（包括 Cosmos Hub）的某种形式的交互。更具体地说，本文档将集中于与 token 的交互。
 
 本节不涉及想要提供[轻客户端](https://github.com/onomyprotocol/onomy-sdk/tree/master/docs/interfaces/lite)功能的钱包开发者。服务提供商将作为最终用户的区块链的可信接入点。
 

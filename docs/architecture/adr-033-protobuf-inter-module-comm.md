@@ -21,7 +21,7 @@ service definitions defined in [ADR 021](./adr-021-protobuf-query-encoding.md) a
 
 In the current Cosmos SDK documentation on the [Object-Capability Model](../core/ocap.md), it is stated that:
 
-> We assume that a thriving ecosystem of Cosmos-SDK modules that are easy to compose into a blockchain application will contain faulty or malicious modules.
+> We assume that a thriving ecosystem of Onomy-SDK modules that are easy to compose into a blockchain application will contain faulty or malicious modules.
 
 There is currently not a thriving ecosystem of Cosmos SDK modules. We hypothesize that this is in part due to:
 1. lack of a stable v1.0 Cosmos SDK to build modules off of. Module interfaces are changing, sometimes dramatically, from

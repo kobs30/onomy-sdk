@@ -13,7 +13,7 @@ Any concrete type of authorization defined in the `x/authz` module must fulfill 
 
 ## Built-in Authorizations
 
-Cosmos-SDK `x/authz` module comes with following authorization types
+Onomy-SDK `x/authz` module comes with following authorization types
 
 ### SendAuthorization
 

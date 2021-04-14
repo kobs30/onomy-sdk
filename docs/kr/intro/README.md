@@ -6,7 +6,7 @@ parent:
 
 # 소개
 
-이 폴더에는 Cosmos-SDK에 대한 소개 자료가 포함되어 있습니다.
+이 폴더에는 Onomy-SDK에 대한 소개 자료가 포함되어 있습니다.
 
 1. [SDK 소개](./overview.md)
 2. [애플리케이션 특화 블록체인](./why-app-specific.md)

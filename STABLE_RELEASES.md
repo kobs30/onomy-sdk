@@ -5,9 +5,9 @@
 Only the following release series are currently supported and receive bug fixes:
 
 The `0.37.x` release series will continue receiving bug fixes until the Cosmos Hub
-migrates to a newer release of the Cosmos-SDK.
+migrates to a newer release of the Onomy-SDK.
 
-* **0.37** will continue receiving bug fixes until the Cosmos Hub migrates to a newer release series of the Cosmos-SDK.
+* **0.37** will continue receiving bug fixes until the Cosmos Hub migrates to a newer release series of the Onomy-SDK.
 * **0.39 «Launchpad»** will be supported until 6 months after **0.40.0** is published. A fairly strict **bugfix-only** rule applies to pull requests that are requested to be included into a stable point-release.
 
 The **0.39 «Launchpad»** release series is maintained in compliance with the **Stable Release Policy** as described in this document.
@@ -20,12 +20,12 @@ This policy presently applies *only* to the following release series:
 
 ### Point Releases
 
-Once a Cosmos-SDK release has been completed and published, updates for it are released under certain circumstances
+Once a Onomy-SDK release has been completed and published, updates for it are released under certain circumstances
 and must follow the [Point Release Procedure](CONTRIBUTING.md).
 
 ### Rationale
 
-Unlike in-development `master` branch snapshots, **Cosmos-SDK** releases are subject to much wider adoption,
+Unlike in-development `master` branch snapshots, **Onomy-SDK** releases are subject to much wider adoption,
 and by a significantly different demographic of users. During development, changes in the `master` branch 
 affect SDK users, application developers, early adopters, and other advanced users that elect to use
 unstable experimental software at their own risk.
@@ -52,7 +52,7 @@ ways in stable releases and `master` branch.
 
 * **High-impact bugs**
   * Bugs that may directly cause a security vulnerability.
-  * *Severe regressions* from a Cosmos-SDK's previous release. This includes all sort of issues
+  * *Severe regressions* from a Onomy-SDK's previous release. This includes all sort of issues
     that may cause the core packages or the `x/` modules unusable.
   * Bugs that may cause **loss of user's data**.
 * Other safe cases:
@@ -113,7 +113,7 @@ It's crucial to make the effort of thinking about what could happen in case a re
 
 ## Stable Release Managers
 
-The **Stable Release Managers** evaluate and approve or reject updates and backports to Cosmos-SDK Stable Release series,
+The **Stable Release Managers** evaluate and approve or reject updates and backports to Onomy-SDK Stable Release series,
 according to the [stable release policy](#stable-release-policy) and [release procedure](#stable-release-exception-procedure).
 Decisions are made by consensus.
 

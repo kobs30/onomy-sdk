@@ -37,7 +37,7 @@ Cosmos Hub (名为 `gaia`) 文档已经迁移到[这里](https://github.com/cosm
 
 ## 开发语言
 
-Cosmos-SDK 目前是用 [Golang](https://golang.org/)编写的, 尽管该框架同样可以在其他语言中实现。请联系我们获取有关资助其他语言实现的信息。
+Onomy-SDK 目前是用 [Golang](https://golang.org/)编写的, 尽管该框架同样可以在其他语言中实现。请联系我们获取有关资助其他语言实现的信息。
 
 ## 贡献
 
