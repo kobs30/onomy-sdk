@@ -1134,8 +1134,8 @@ that error is that the account doesn't exist.
   - Added a `ModuleAccount` for the mint module
   [\#4472](https://github.com/onomyprotocol/onomy-sdk/issues/4472) validation for crisis genesis
 * [\#3985](https://github.com/onomyprotocol/onomy-sdk/issues/3985) `ValidatorPowerRank` uses potential consensus power instead of tendermint power
-* [\#4104](https://github.com/onomyprotocol/onomy-sdk/issues/4104) Gaia has been moved to its own repository: https://github.com/cosmos/gaia
-* [\#4104](https://github.com/onomyprotocol/onomy-sdk/issues/4104) Rename gaiad.toml to app.toml. The internal contents of the application
+* [\#4104](https://github.com/onomyprotocol/onomy-sdk/issues/4104) Ochain has been moved to its own repository: https://github.com/cosmos/ochain
+* [\#4104](https://github.com/onomyprotocol/onomy-sdk/issues/4104) Rename ochaind.toml to app.toml. The internal contents of the application
   config remain unchanged.
 * [\#4159](https://github.com/onomyprotocol/onomy-sdk/issues/4159) create the default module patterns and module manager
 * [\#4230](https://github.com/onomyprotocol/onomy-sdk/issues/4230) Change the type of ABCIMessageLog#MsgIndex to uint16 for proper serialization.
@@ -1366,7 +1366,7 @@ genesis.
 ### Bug Fixes
 
 * Bump Tendermint version to v0.31.9 to fix the p2p panic error.
-* Update gaiareplay's use of an internal Tendermint API
+* Update ochainreplay's use of an internal Tendermint API
 
 ## 0.34.7
 
@@ -1402,7 +1402,7 @@ unbonding period has elapsed regardless of the validator's status.
 * [\#3655](https://github.com/onomyprotocol/onomy-sdk/issues/3655) Improve signature verification failure error message.
 * [\#4384](https://github.com/onomyprotocol/onomy-sdk/issues/4384) Allow splitting withdrawal transaction in several chunks.
 
-#### Gaia CLI
+#### Ochain CLI
 
 * [\#4227](https://github.com/onomyprotocol/onomy-sdk/issues/4227) Support for Ledger App v1.5.
 * [#4345](https://github.com/onomyprotocol/onomy-sdk/pull/4345) Update `ledger-cosmos-go`
@@ -1417,13 +1417,13 @@ to v0.10.3.
 * [#4234](https://github.com/onomyprotocol/onomy-sdk/pull/4234) Allow `tx send --generate-only` to
 actually work offline.
 
-#### Gaia
+#### Ochain
 
 * [\#4219](https://github.com/onomyprotocol/onomy-sdk/issues/4219) Return an error when an empty mnemonic is provided during key recovery.
 
 ### Improvements
 
-#### Gaia
+#### Ochain
 
 * [\#2007](https://github.com/onomyprotocol/onomy-sdk/issues/2007) Return 200 status code on empty results
 
@@ -1437,7 +1437,7 @@ actually work offline.
 
 ### Bug Fixes
 
-#### Gaia
+#### Ochain
 
 * [\#4196](https://github.com/onomyprotocol/onomy-sdk/pull/4196) Set default invariant
 check period to zero.
@@ -1457,7 +1457,7 @@ to generate only usage.
 
 * [\#4135](https://github.com/onomyprotocol/onomy-sdk/pull/4135) Fix `NewResponseFormatBroadcastTxCommit`
 * [\#4053](https://github.com/onomyprotocol/onomy-sdk/issues/4053) Add `--inv-check-period`
-flag to gaiad to set period at which invariants checks will run.
+flag to ochaind to set period at which invariants checks will run.
 * [\#4099](https://github.com/onomyprotocol/onomy-sdk/issues/4099) Update the /staking/validators endpoint to support
 status and pagination query flags.
 
@@ -1465,7 +1465,7 @@ status and pagination query flags.
 
 ### Bug Fixes
 
-#### Gaia
+#### Ochain
 
 * [#4163](https://github.com/onomyprotocol/onomy-sdk/pull/4163) Fix v0.33.x export script to port gov data correctly.
 
@@ -1473,14 +1473,14 @@ status and pagination query flags.
 
 ### Breaking Changes
 
-#### Gaia
+#### Ochain
 
 * [\#3463](https://github.com/onomyprotocol/onomy-sdk/issues/3463) Revert bank module handler fork (re-enables transfers)
 * [\#3875](https://github.com/onomyprotocol/onomy-sdk/issues/3875) Replace `async` flag with `--broadcast-mode` flag where the default
   value is `sync`. The `block` mode should not be used. The REST client now
   uses `mode` parameter instead of the `return` parameter.
 
-#### Gaia CLI
+#### Ochain CLI
 
 * [\#3938](https://github.com/onomyprotocol/onomy-sdk/issues/3938) Remove REST server's SSL support altogether.
 
@@ -1503,43 +1503,43 @@ status and pagination query flags.
 * [\#3858](https://github.com/onomyprotocol/onomy-sdk/issues/3858) add website, details and identity to gentx cli command
 * Implement coin conversion and denomination registration utilities
 
-#### Gaia
+#### Ochain
 
-* [\#2935](https://github.com/onomyprotocol/onomy-sdk/issues/2935) Optionally assert invariants on a blockly basis using `gaiad --assert-invariants-blockly`
+* [\#2935](https://github.com/onomyprotocol/onomy-sdk/issues/2935) Optionally assert invariants on a blockly basis using `ochaind --assert-invariants-blockly`
 * [\#3886](https://github.com/onomyprotocol/onomy-sdk/issues/3886) Implement minting module querier and CLI/REST clients.
 
-#### Gaia CLI
+#### Ochain CLI
 
 * [\#3937](https://github.com/onomyprotocol/onomy-sdk/issues/3937) Add command to query community-pool
 
-#### Gaia REST API
+#### Ochain REST API
 
 * [\#3937](https://github.com/onomyprotocol/onomy-sdk/issues/3937) Add route to fetch community-pool
 * [\#3949](https://github.com/onomyprotocol/onomy-sdk/issues/3949) added /slashing/signing_infos to get signing_info for all validators
 
 ### Improvements
 
-#### Gaia
+#### Ochain
 
-* [\#3808](https://github.com/onomyprotocol/onomy-sdk/issues/3808) `gaiad` and `gaiacli` integration tests use ./build/ binaries.
-* \[\#3819](https://github.com/onomyprotocol/onomy-sdk/issues/3819) Simulation refactor, log output now stored in ~/.gaiad/simulation/
+* [\#3808](https://github.com/onomyprotocol/onomy-sdk/issues/3808) `ochaind` and `ochaincli` integration tests use ./build/ binaries.
+* \[\#3819](https://github.com/onomyprotocol/onomy-sdk/issues/3819) Simulation refactor, log output now stored in ~/.ochaind/simulation/
   * Simulation moved to its own module (not a part of mock)
   * Logger type instead of passing function variables everywhere
   * Logger json output (for reloadable simulation running)
   * Cleanup bank simulation messages / remove dup code in bank simulation
-  * Simulations saved in `~/.gaiad/simulations/`
+  * Simulations saved in `~/.ochaind/simulations/`
   * "Lean" simulation output option to exclude No-ops and !ok functions (`--SimulationLean` flag)
-* [\#3893](https://github.com/onomyprotocol/onomy-sdk/issues/3893) Improve `gaiacli tx sign` command
+* [\#3893](https://github.com/onomyprotocol/onomy-sdk/issues/3893) Improve `ochaincli tx sign` command
   * Add shorthand flags -a and -s for the account and sequence numbers respectively
   * Mark the account and sequence numbers required during "offline" mode
   * Always do an RPC query for account and sequence number during "online" mode
 * [\#4018](https://github.com/onomyprotocol/onomy-sdk/issues/4018) create genesis port script for release v.0.34.0
 
-#### Gaia CLI
+#### Ochain CLI
 
-* [\#3833](https://github.com/onomyprotocol/onomy-sdk/issues/3833) Modify stake to atom in gaia's doc.
-* [\#3841](https://github.com/onomyprotocol/onomy-sdk/issues/3841) Add indent to JSON of `gaiacli keys [add|show|list]`
-* [\#3859](https://github.com/onomyprotocol/onomy-sdk/issues/3859) Add newline to echo of `gaiacli keys ...`
+* [\#3833](https://github.com/onomyprotocol/onomy-sdk/issues/3833) Modify stake to atom in ochain's doc.
+* [\#3841](https://github.com/onomyprotocol/onomy-sdk/issues/3841) Add indent to JSON of `ochaincli keys [add|show|list]`
+* [\#3859](https://github.com/onomyprotocol/onomy-sdk/issues/3859) Add newline to echo of `ochaincli keys ...`
 * [\#3959](https://github.com/onomyprotocol/onomy-sdk/issues/3959) Improving error messages when signing with ledger devices fails
 
 #### SDK
@@ -1564,7 +1564,7 @@ status and pagination query flags.
 
 ### Bug Fixes
 
-#### Gaia
+#### Ochain
 
 * [\#3825](https://github.com/onomyprotocol/onomy-sdk/issues/3825) Validate genesis before running gentx
 * [\#3889](https://github.com/onomyprotocol/onomy-sdk/issues/3889) When `--generate-only` is provided, the Keybase is not used and as a result
@@ -1572,10 +1572,10 @@ status and pagination query flags.
 * 3974 Fix go env setting in installation.md
 * 3996 Change 'make get_tools' to 'make tools' in DOCS_README.md.
 
-#### Gaia CLI
+#### Ochain CLI
 
 * [\#3883](https://github.com/onomyprotocol/onomy-sdk/issues/3883) Remove Height Flag from CLI Queries
-* [\#3899](https://github.com/onomyprotocol/onomy-sdk/issues/3899) Using 'gaiacli config node' breaks ~/config/config.toml
+* [\#3899](https://github.com/onomyprotocol/onomy-sdk/issues/3899) Using 'ochaincli config node' breaks ~/config/config.toml
 
 #### SDK
 
@@ -1603,7 +1603,7 @@ by accounting for rounding errors when multiplying stake by slashing fractions.
 
 ### Bug Fixes
 
-#### Gaia
+#### Ochain
 
 * [\#3999](https://github.com/onomyprotocol/onomy-sdk/pull/3999) Fix distribution delegation for zero height export bug
 
@@ -1611,7 +1611,7 @@ by accounting for rounding errors when multiplying stake by slashing fractions.
 
 BREAKING CHANGES
 
-* Gaia REST API
+* Ochain REST API
   * [\#3641](https://github.com/onomyprotocol/onomy-sdk/pull/3641) Remove the ability to use a Keybase from the REST API client:
     * `password` and `generate_only` have been removed from the `base_req` object
     * All txs that used to sign or use the Keybase now only generate the tx
@@ -1621,8 +1621,8 @@ BREAKING CHANGES
       * The `Tx` field now accepts a `StdTx` and not raw tx bytes
     * Move encoding endpoint to `/txs/encode`
 
-* Gaia
-  * [\#3787](https://github.com/onomyprotocol/onomy-sdk/pull/3787) Fork the `x/bank` module into the Gaia application with only a
+* Ochain
+  * [\#3787](https://github.com/onomyprotocol/onomy-sdk/pull/3787) Fork the `x/bank` module into the Ochain application with only a
   modified message handler, where the modified message handler behaves the same as
   the standard `x/bank` message handler except for `MsgMultiSend` that must burn
   exactly 9 atoms and transfer 1 atom, and `MsgSend` is disabled.
@@ -1657,20 +1657,20 @@ FEATURES
 
 IMPROVEMENTS
 
-* Gaia REST API
+* Ochain REST API
   * Update the `TxResponse` type allowing for the `Logs` result to be JSON decoded automatically.
 
-* Gaia CLI
+* Ochain CLI
   * [\#3653](https://github.com/onomyprotocol/onomy-sdk/pull/3653) Prompt user confirmation prior to signing and broadcasting a transaction.
   * [\#3670](https://github.com/onomyprotocol/onomy-sdk/pull/3670) CLI support for showing bech32 addresses in Ledger devices
   * [\#3711](https://github.com/onomyprotocol/onomy-sdk/pull/3711) Update `tx sign` to use `--from` instead of the deprecated `--name`
   CLI flag.
   * [\#3738](https://github.com/onomyprotocol/onomy-sdk/pull/3738) Improve multisig UX:
-    * `gaiacli keys show -o json` now includes constituent pubkeys, respective weights and threshold
-    * `gaiacli keys show --show-multisig` now displays constituent pubkeys, respective weights and threshold
-    * `gaiacli tx sign --validate-signatures` now displays multisig signers with their respective weights
+    * `ochaincli keys show -o json` now includes constituent pubkeys, respective weights and threshold
+    * `ochaincli keys show --show-multisig` now displays constituent pubkeys, respective weights and threshold
+    * `ochaincli tx sign --validate-signatures` now displays multisig signers with their respective weights
   * [\#3730](https://github.com/onomyprotocol/onomy-sdk/issues/3730) Improve workflow for
-  `gaiad gentx` with offline public keys, by outputting stdtx file that needs to be signed.
+  `ochaind gentx` with offline public keys, by outputting stdtx file that needs to be signed.
   * [\#3761](https://github.com/onomyprotocol/onomy-sdk/issues/3761) Querying account related information using custom querier in auth module
 
 * SDK
@@ -1690,12 +1690,12 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia CLI
+* Ochain CLI
   * [\#3731](https://github.com/onomyprotocol/onomy-sdk/pull/3731) `keys add --interactive` bip32 passphrase regression fix
-  * [\#3714](https://github.com/onomyprotocol/onomy-sdk/issues/3714) Fix USB raw access issues with gaiacli when installed via snap
+  * [\#3714](https://github.com/onomyprotocol/onomy-sdk/issues/3714) Fix USB raw access issues with ochaincli when installed via snap
 
-* Gaia
-  * [\#3777](https://github.com/cosmso/onomy-sdk/pull/3777) `gaiad export` no longer panics when the database is empty
+* Ochain
+  * [\#3777](https://github.com/cosmso/onomy-sdk/pull/3777) `ochaind export` no longer panics when the database is empty
   * [\#3806](https://github.com/onomyprotocol/onomy-sdk/pull/3806) Properly return errors from a couple of struct Unmarshal functions
 
 * SDK
@@ -1718,7 +1718,7 @@ BUG FIXES
 
 BREAKING CHANGES
 
-* Gaia REST API
+* Ochain REST API
   * [\#3642](https://github.com/onomyprotocol/onomy-sdk/pull/3642) `GET /tx/{hash}` now returns `404` instead of `500` if the transaction is not found
 
 * SDK
@@ -1775,7 +1775,7 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia
+* Ochain
   * [\#3585] Fix setting the tx hash in `NewResponseFormatBroadcastTxCommit`.
   * [\#3585] Return an empty `TxResponse` when Tendermint returns an empty
   `ResultBroadcastTx`.
@@ -1789,24 +1789,24 @@ BUG FIXES
 
 BREAKING CHANGES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
   * [\#3284](https://github.com/onomyprotocol/onomy-sdk/issues/3284) Rename the `name`
   field to `from` in the `base_req` body.
   * [\#3485](https://github.com/onomyprotocol/onomy-sdk/pull/3485) Error responses are now JSON objects.
   * [\#3477][distribution] endpoint changed "all_delegation_rewards" -> "delegator_total_rewards"
 
-* Gaia CLI  (`gaiacli`)
-  - [#3399](https://github.com/onomyprotocol/onomy-sdk/pull/3399) Add `gaiad validate-genesis` command to facilitate checking of genesis files
+* Ochain CLI  (`ochaincli`)
+  - [#3399](https://github.com/onomyprotocol/onomy-sdk/pull/3399) Add `ochaind validate-genesis` command to facilitate checking of genesis files
   - [\#1894](https://github.com/onomyprotocol/onomy-sdk/issues/1894) `version` prints out short info by default. Add `--long` flag. Proper handling of `--format` flag introduced.
-  - [\#3465](https://github.com/onomyprotocol/onomy-sdk/issues/3465) `gaiacli rest-server` switched back to insecure mode by default:
+  - [\#3465](https://github.com/onomyprotocol/onomy-sdk/issues/3465) `ochaincli rest-server` switched back to insecure mode by default:
     - `--insecure` flag is removed.
     - `--tls` is now used to enable secure layer.
-  - [\#3451](https://github.com/onomyprotocol/onomy-sdk/pull/3451) `gaiacli` now returns transactions in plain text including tags.
-  - [\#3497](https://github.com/onomyprotocol/onomy-sdk/issues/3497) `gaiad init` now takes moniker as required arguments, not as parameter.
+  - [\#3451](https://github.com/onomyprotocol/onomy-sdk/pull/3451) `ochaincli` now returns transactions in plain text including tags.
+  - [\#3497](https://github.com/onomyprotocol/onomy-sdk/issues/3497) `ochaind init` now takes moniker as required arguments, not as parameter.
   * [\#3501](https://github.com/onomyprotocol/onomy-sdk/issues/3501) Change validator
   address Bech32 encoding to consensus address in `tendermint-validator-set`.
 
-* Gaia
+* Ochain
   *  [\#3457](https://github.com/onomyprotocol/onomy-sdk/issues/3457) Changed governance tally validatorGovInfo to use sdk.Int power instead of sdk.Dec
   *  [\#3495](https://github.com/onomyprotocol/onomy-sdk/issues/3495) Added Validator Minimum Self Delegation
   *  Reintroduce OR semantics for tx fees
@@ -1825,18 +1825,18 @@ BREAKING CHANGES
 
 FEATURES
 
-* Gaia REST API
+* Ochain REST API
 
 * [\#2358](https://github.com/onomyprotocol/onomy-sdk/issues/2358) Add distribution module REST interface
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [\#3429](https://github.com/onomyprotocol/onomy-sdk/issues/3429) Support querying
   for all delegator distribution rewards.
   * [\#3449](https://github.com/onomyprotocol/onomy-sdk/issues/3449) Proof verification now works with absence proofs
   * [\#3484](https://github.com/onomyprotocol/onomy-sdk/issues/3484) Add support
   vesting accounts to the add-genesis-account command.
 
-* Gaia
+* Ochain
   - [\#3397](https://github.com/onomyprotocol/onomy-sdk/pull/3397) Implement genesis file sanitization to avoid failures at chain init.
   * [\#3428](https://github.com/onomyprotocol/onomy-sdk/issues/3428) Run the simulation from a particular genesis state loaded from a file
 
@@ -1850,8 +1850,8 @@ FEATURES
 
 IMPROVEMENTS
 
-* Gaia REST API
-  * [\#3284](https://github.com/onomyprotocol/onomy-sdk/issues/3284) Update Gaia Lite
+* Ochain REST API
+  * [\#3284](https://github.com/onomyprotocol/onomy-sdk/issues/3284) Update Ochain Lite
   REST service to support the following:
     * Automatic account number and sequence population when fields are omitted
     * Generate only functionality no longer requires access to a local Keybase
@@ -1861,21 +1861,21 @@ IMPROVEMENTS
   * [\#3514](https://github.com/onomyprotocol/onomy-sdk/pull/3514) REST server calls to keybase does not lock the underlying storage anymore.
   * [\#3523](https://github.com/onomyprotocol/onomy-sdk/pull/3523) Added `/tx/encode` endpoint to serialize a JSON tx to base64-encoded Amino.
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [\#3476](https://github.com/onomyprotocol/onomy-sdk/issues/3476) New `withdraw-all-rewards` command to withdraw all delegations rewards for delegators.
-  * [\#3497](https://github.com/onomyprotocol/onomy-sdk/issues/3497) `gaiad gentx` supports `--ip` and `--node-id` flags to override defaults.
+  * [\#3497](https://github.com/onomyprotocol/onomy-sdk/issues/3497) `ochaind gentx` supports `--ip` and `--node-id` flags to override defaults.
   * [\#3518](https://github.com/onomyprotocol/onomy-sdk/issues/3518) Fix flow in
   `keys add` to show the mnemonic by default.
   * [\#3517](https://github.com/onomyprotocol/onomy-sdk/pull/3517) Increased test coverage
   * [\#3523](https://github.com/onomyprotocol/onomy-sdk/pull/3523) Added `tx encode` command to serialize a JSON tx to base64-encoded Amino.
 
-* Gaia
+* Ochain
   * [\#3418](https://github.com/onomyprotocol/onomy-sdk/issues/3418) Add vesting account
-  genesis validation checks to `GaiaValidateGenesisState`.
+  genesis validation checks to `OchainValidateGenesisState`.
   * [\#3420](https://github.com/onomyprotocol/onomy-sdk/issues/3420) Added maximum length to governance proposal descriptions and titles
   * [\#3256](https://github.com/onomyprotocol/onomy-sdk/issues/3256) Add gas consumption
   for tx size in the ante handler.
-  * [\#3454](https://github.com/onomyprotocol/onomy-sdk/pull/3454) Add `--jail-whitelist` to `gaiad export` to enable testing of complex exports
+  * [\#3454](https://github.com/onomyprotocol/onomy-sdk/pull/3454) Add `--jail-whitelist` to `ochaind export` to enable testing of complex exports
   * [\#3424](https://github.com/onomyprotocol/onomy-sdk/issues/3424) Allow generation of gentxs with empty memo field.
   * [\#3507](https://github.com/onomyprotocol/onomy-sdk/issues/3507) General cleanup, removal of unnecessary struct fields, undelegation bugfix, and comment clarification in x/staking and x/slashing
 
@@ -1893,17 +1893,17 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   - [\#3417](https://github.com/onomyprotocol/onomy-sdk/pull/3417) Fix `q slashing signing-info` panic by ensuring safety of user input and properly returning not found error
   - [\#3345](https://github.com/onomyprotocol/onomy-sdk/issues/3345) Upgrade ledger-cosmos-go dependency to v0.9.3 to pull
-    https://github.com/ZondaX/ledger-cosmos-go/commit/ed9aa39ce8df31bad1448c72d3d226bf2cb1a8d1 in order to fix a derivation path issue that causes `gaiacli keys add --recover`
+    https://github.com/ZondaX/ledger-cosmos-go/commit/ed9aa39ce8df31bad1448c72d3d226bf2cb1a8d1 in order to fix a derivation path issue that causes `ochaincli keys add --recover`
     to malfunction.
   - [\#3419](https://github.com/onomyprotocol/onomy-sdk/pull/3419) Fix `q distr slashes` panic
   - [\#3453](https://github.com/onomyprotocol/onomy-sdk/pull/3453) The `rest-server` command didn't respect persistent flags such as `--chain-id` and `--trust-node` if they were
     passed on the command line.
   - [\#3441](https://github.com/onomyprotocol/onomy-sdk/pull/3431) Improved resource management and connection handling (ledger devices). Fixes issue with DER vs BER signatures.
 
-* Gaia
+* Ochain
   * [\#3486](https://github.com/onomyprotocol/onomy-sdk/pull/3486) Use AmountOf in
     vesting accounts instead of zipping/aligning denominations.
 
@@ -1912,8 +1912,8 @@ BUG FIXES
 
 BREAKING CHANGES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
-  * [gaia-lite] [\#2182] Renamed and merged all redelegations endpoints into `/staking/redelegations`
+* Ochain REST API (`ochaincli advanced rest-server`)
+  * [ochain-lite] [\#2182] Renamed and merged all redelegations endpoints into `/staking/redelegations`
   * [\#3176](https://github.com/onomyprotocol/onomy-sdk/issues/3176) `tx/sign` endpoint now expects `BaseReq` fields as nested object.
   * [\#2222] all endpoints renamed from `/stake` -> `/staking`
   * [\#1268] `LooseTokens` -> `NotBondedTokens`
@@ -1922,21 +1922,21 @@ BREAKING CHANGES
     * `Delegation` -> `Value` in `MsgCreateValidator` and `MsgDelegate`
     * `MsgBeginUnbonding` -> `MsgUndelegate`
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [\#810](https://github.com/onomyprotocol/onomy-sdk/issues/810) Don't fallback to any default values for chain ID.
     * Users need to supply chain ID either via config file or the `--chain-id` flag.
-    * Change `chain_id` and `trust_node` in `gaiacli` configuration to `chain-id` and `trust-node` respectively.
+    * Change `chain_id` and `trust_node` in `ochaincli` configuration to `chain-id` and `trust-node` respectively.
   * [\#3069](https://github.com/onomyprotocol/onomy-sdk/pull/3069) `--fee` flag renamed to `--fees` to support multiple coins
-  * [\#3156](https://github.com/onomyprotocol/onomy-sdk/pull/3156) Remove unimplemented `gaiacli init` command
-  * [\#2222] `gaiacli tx stake` -> `gaiacli tx staking`, `gaiacli query stake` -> `gaiacli query staking`
+  * [\#3156](https://github.com/onomyprotocol/onomy-sdk/pull/3156) Remove unimplemented `ochaincli init` command
+  * [\#2222] `ochaincli tx stake` -> `ochaincli tx staking`, `ochaincli query stake` -> `ochaincli query staking`
   * [\#1894](https://github.com/onomyprotocol/onomy-sdk/issues/1894) `version` command now shows latest commit, vendor dir hash, and build machine info.
-  * [\#3320](https://github.com/onomyprotocol/onomy-sdk/pull/3320) Ensure all `gaiacli query` commands respect the `--output` and `--indent` flags
+  * [\#3320](https://github.com/onomyprotocol/onomy-sdk/pull/3320) Ensure all `ochaincli query` commands respect the `--output` and `--indent` flags
 
-* Gaia
+* Ochain
   * https://github.com/onomyprotocol/onomy-sdk/issues/2838 - Move store keys to constants
   * [\#3162](https://github.com/onomyprotocol/onomy-sdk/issues/3162) The `--gas` flag now takes `auto` instead of `simulate`
     in order to trigger a simulation of the tx before the actual execution.
-  * [\#3285](https://github.com/onomyprotocol/onomy-sdk/pull/3285) New `gaiad tendermint version` to print libs versions
+  * [\#3285](https://github.com/onomyprotocol/onomy-sdk/pull/3285) New `ochaind tendermint version` to print libs versions
   * [\#1894](https://github.com/onomyprotocol/onomy-sdk/pull/1894) `version` command now shows latest commit, vendor dir hash, and build machine info.
   * [\#3249\(https://github.com/onomyprotocol/onomy-sdk/issues/3249) `tendermint`'s `show-validator` and `show-address` `--json` flags removed in favor of `--output-format=json`.
 
@@ -1968,13 +1968,13 @@ BREAKING CHANGES
 
 FEATURES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
   * [\#3067](https://github.com/onomyprotocol/onomy-sdk/issues/3067) Add support for fees on transactions
   * [\#3069](https://github.com/onomyprotocol/onomy-sdk/pull/3069) Add a custom memo on transactions
   * [\#3027](https://github.com/onomyprotocol/onomy-sdk/issues/3027) Implement
   `/gov/proposals/{proposalID}/proposer` to query for a proposal's proposer.
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [\#2399](https://github.com/onomyprotocol/onomy-sdk/issues/2399) Implement `params` command to query slashing parameters.
   * [\#2730](https://github.com/onomyprotocol/onomy-sdk/issues/2730) Add tx search pagination parameter
   * [\#3027](https://github.com/onomyprotocol/onomy-sdk/issues/3027) Implement
@@ -1982,11 +1982,11 @@ FEATURES
   * [\#3198](https://github.com/onomyprotocol/onomy-sdk/issues/3198) New `keys add --multisig` flag to store multisig keys locally.
   * [\#3198](https://github.com/onomyprotocol/onomy-sdk/issues/3198) New `multisign` command to generate multisig signatures.
   * [\#3198](https://github.com/onomyprotocol/onomy-sdk/issues/3198) New `sign --multisig` flag to enable multisig mode.
-  * [\#2715](https://github.com/onomyprotocol/onomy-sdk/issues/2715) Reintroduce gaia server's insecure mode.
-  * [\#3334](https://github.com/onomyprotocol/onomy-sdk/pull/3334) New `gaiad completion` and `gaiacli completion` to generate Bash/Zsh completion scripts.
-  * [\#2607](https://github.com/onomyprotocol/onomy-sdk/issues/2607) Make `gaiacli config` handle the boolean `indent` flag to beautify commands JSON output.
+  * [\#2715](https://github.com/onomyprotocol/onomy-sdk/issues/2715) Reintroduce ochain server's insecure mode.
+  * [\#3334](https://github.com/onomyprotocol/onomy-sdk/pull/3334) New `ochaind completion` and `ochaincli completion` to generate Bash/Zsh completion scripts.
+  * [\#2607](https://github.com/onomyprotocol/onomy-sdk/issues/2607) Make `ochaincli config` handle the boolean `indent` flag to beautify commands JSON output.
 
-* Gaia
+* Ochain
   * [\#2182] [x/staking] Added querier for querying a single redelegation
   * [\#3305](https://github.com/onomyprotocol/onomy-sdk/issues/3305) Add support for
     vesting accounts at genesis.
@@ -2005,14 +2005,14 @@ FEATURES
 
 IMPROVEMENTS
 
-* Gaia REST API
+* Ochain REST API
   * [\#3176](https://github.com/onomyprotocol/onomy-sdk/issues/3176) Validate tx/sign endpoint POST body.
   * [\#2948](https://github.com/onomyprotocol/onomy-sdk/issues/2948) Swagger UI now makes requests to light client node
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [\#3224](https://github.com/onomyprotocol/onomy-sdk/pull/3224) Support adding offline public keys to the keystore
 
-* Gaia
+* Ochain
   * [\#2186](https://github.com/onomyprotocol/onomy-sdk/issues/2186) Add Address Interface
   * [\#3158](https://github.com/onomyprotocol/onomy-sdk/pull/3158) Validate slashing genesis
   * [\#3172](https://github.com/onomyprotocol/onomy-sdk/pull/3172) Support minimum fees in a local testnet.
@@ -2022,9 +2022,9 @@ IMPROVEMENTS
     * Validators specify minimum gas prices instead of minimum fees
     * Clients may provide either fees or gas prices directly
     * The gas prices of a tx must meet a validator's minimum
-    * `gaiad start` and `gaia.toml` take --minimum-gas-prices flag and minimum-gas-price config key respectively.
+    * `ochaind start` and `ochain.toml` take --minimum-gas-prices flag and minimum-gas-price config key respectively.
   * [\#2859](https://github.com/onomyprotocol/onomy-sdk/issues/2859) Rename `TallyResult` in gov proposals to `FinalTallyResult`
-  * [\#3286](https://github.com/onomyprotocol/onomy-sdk/pull/3286) Fix `gaiad gentx` printout of account's addresses, i.e. user bech32 instead of hex.
+  * [\#3286](https://github.com/onomyprotocol/onomy-sdk/pull/3286) Fix `ochaind gentx` printout of account's addresses, i.e. user bech32 instead of hex.
   * [\#3249\(https://github.com/onomyprotocol/onomy-sdk/issues/3249) `--json` flag removed, users should use `--output=json` instead.
 
 * SDK
@@ -2043,17 +2043,17 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [\#3141](https://github.com/onomyprotocol/onomy-sdk/issues/3141) Fix the bug in GetAccount when `len(res) == 0` and `err == nil`
-  * [\#810](https://github.com/onomyprotocol/onomy-sdk/pull/3316) Fix regression in gaiacli config file handling
+  * [\#810](https://github.com/onomyprotocol/onomy-sdk/pull/3316) Fix regression in ochaincli config file handling
 
-* Gaia
-  * [\#3148](https://github.com/onomyprotocol/onomy-sdk/issues/3148) Fix `gaiad export` by adding a boolean to `NewGaiaApp` determining whether or not to load the latest version
+* Ochain
+  * [\#3148](https://github.com/onomyprotocol/onomy-sdk/issues/3148) Fix `ochaind export` by adding a boolean to `NewOchainApp` determining whether or not to load the latest version
   * [\#3181](https://github.com/onomyprotocol/onomy-sdk/issues/3181) Correctly reset total accum update height and jailed-validator bond height / unbonding height on export-for-zero-height
-  * [\#3172](https://github.com/onomyprotocol/onomy-sdk/pull/3172) Fix parsing `gaiad.toml`
+  * [\#3172](https://github.com/onomyprotocol/onomy-sdk/pull/3172) Fix parsing `ochaind.toml`
   when it already exists.
   * [\#3223](https://github.com/onomyprotocol/onomy-sdk/issues/3223) Fix unset governance proposal queues when importing state from old chain
-  * [#3187](https://github.com/onomyprotocol/onomy-sdk/issues/3187) Fix `gaiad export`
+  * [#3187](https://github.com/onomyprotocol/onomy-sdk/issues/3187) Fix `ochaind export`
   by resetting each validator's slashing period.
 
 ## 0.29.1
@@ -2067,8 +2067,8 @@ BUG FIXES
 
 BREAKING CHANGES
 
-* Gaia
-  * [\#3148](https://github.com/onomyprotocol/onomy-sdk/issues/3148) Fix `gaiad export` by adding a boolean to `NewGaiaApp` determining whether or not to load the latest version
+* Ochain
+  * [\#3148](https://github.com/onomyprotocol/onomy-sdk/issues/3148) Fix `ochaind export` by adding a boolean to `NewOchainApp` determining whether or not to load the latest version
 
 * SDK
   * [\#3163](https://github.com/onomyprotocol/onomy-sdk/issues/3163) Withdraw commission on self bond removal
@@ -2078,19 +2078,19 @@ BREAKING CHANGES
 
 BREAKING CHANGES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
   * [lcd] [\#3045](https://github.com/onomyprotocol/onomy-sdk/pull/3045) Fix quoted json return on GET /keys (keys list)
-  * [gaia-lite] [\#2191](https://github.com/onomyprotocol/onomy-sdk/issues/2191) Split `POST /stake/delegators/{delegatorAddr}/delegations` into `POST /stake/delegators/{delegatorAddr}/delegations`, `POST /stake/delegators/{delegatorAddr}/unbonding_delegations` and `POST /stake/delegators/{delegatorAddr}/redelegations`
-  * [gaia-lite] [\#3056](https://github.com/onomyprotocol/onomy-sdk/pull/3056) `generate_only` and `simulate` have moved from query arguments to POST requests body.
+  * [ochain-lite] [\#2191](https://github.com/onomyprotocol/onomy-sdk/issues/2191) Split `POST /stake/delegators/{delegatorAddr}/delegations` into `POST /stake/delegators/{delegatorAddr}/delegations`, `POST /stake/delegators/{delegatorAddr}/unbonding_delegations` and `POST /stake/delegators/{delegatorAddr}/redelegations`
+  * [ochain-lite] [\#3056](https://github.com/onomyprotocol/onomy-sdk/pull/3056) `generate_only` and `simulate` have moved from query arguments to POST requests body.
 * Tendermint
   * [tendermint] Now using Tendermint 0.27.3
 
 FEATURES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
   * [slashing] [\#2399](https://github.com/onomyprotocol/onomy-sdk/issues/2399)  Implement `/slashing/parameters` endpoint to query slashing parameters.
-* Gaia CLI  (`gaiacli`)
-  * [gaiacli] [\#2399](https://github.com/onomyprotocol/onomy-sdk/issues/2399) Implement `params` command to query slashing parameters.
+* Ochain CLI  (`ochaincli`)
+  * [ochaincli] [\#2399](https://github.com/onomyprotocol/onomy-sdk/issues/2399) Implement `params` command to query slashing parameters.
 * SDK
   - [client] [\#2926](https://github.com/onomyprotocol/onomy-sdk/issues/2926) Add TxEncoder to client TxBuilder.
 * Other
@@ -2098,35 +2098,35 @@ FEATURES
 
 IMPROVEMENTS
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
   * [\#2879](https://github.com/onomyprotocol/onomy-sdk/issues/2879), [\#2880](https://github.com/onomyprotocol/onomy-sdk/issues/2880) Update deposit and vote endpoints to perform a direct txs query
     when a given proposal is inactive and thus having votes and deposits removed
     from state.
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [\#2879](https://github.com/onomyprotocol/onomy-sdk/issues/2879), [\#2880](https://github.com/onomyprotocol/onomy-sdk/issues/2880) Update deposit and vote CLI commands to perform a direct txs query
     when a given proposal is inactive and thus having votes and deposits removed
     from state.
-* Gaia
-  * [\#3021](https://github.com/onomyprotocol/onomy-sdk/pull/3021) Add `--gentx-dir` to `gaiad collect-gentxs` to specify a directory from which collect and load gentxs. Add `--output-document` to `gaiad init` to allow one to redirect output to file.
+* Ochain
+  * [\#3021](https://github.com/onomyprotocol/onomy-sdk/pull/3021) Add `--gentx-dir` to `ochaind collect-gentxs` to specify a directory from which collect and load gentxs. Add `--output-document` to `ochaind init` to allow one to redirect output to file.
 
 
 ## 0.28.0
 
 BREAKING CHANGES
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [cli] [\#2595](https://github.com/onomyprotocol/onomy-sdk/issues/2595) Remove `keys new` in favor of `keys add` incorporating existing functionality with addition of key recovery functionality.
-  * [cli] [\#2987](https://github.com/onomyprotocol/onomy-sdk/pull/2987) Add shorthand `-a` to `gaiacli keys show` and update docs
-  * [cli] [\#2971](https://github.com/onomyprotocol/onomy-sdk/pull/2971) Additional verification when running `gaiad gentx`
-  * [cli] [\#2734](https://github.com/onomyprotocol/onomy-sdk/issues/2734) Rewrite `gaiacli config`. It is now a non-interactive config utility.
+  * [cli] [\#2987](https://github.com/onomyprotocol/onomy-sdk/pull/2987) Add shorthand `-a` to `ochaincli keys show` and update docs
+  * [cli] [\#2971](https://github.com/onomyprotocol/onomy-sdk/pull/2971) Additional verification when running `ochaind gentx`
+  * [cli] [\#2734](https://github.com/onomyprotocol/onomy-sdk/issues/2734) Rewrite `ochaincli config`. It is now a non-interactive config utility.
 
-* Gaia
+* Ochain
   * [#128](https://github.com/tendermint/devops/issues/128) Updated CircleCI job to trigger website build on every push to master/develop.
   * [\#2994](https://github.com/onomyprotocol/onomy-sdk/pull/2994) Change wrong-password error message.
-  * [\#3009](https://github.com/onomyprotocol/onomy-sdk/issues/3009) Added missing Gaia genesis verification
+  * [\#3009](https://github.com/onomyprotocol/onomy-sdk/issues/3009) Added missing Ochain genesis verification
   * [#128](https://github.com/tendermint/devops/issues/128) Updated CircleCI job to trigger website build on every push to master/develop.
   * [\#2994](https://github.com/onomyprotocol/onomy-sdk/pull/2994) Change wrong-password error message.
-  * [\#3009](https://github.com/onomyprotocol/onomy-sdk/issues/3009) Added missing Gaia genesis verification
+  * [\#3009](https://github.com/onomyprotocol/onomy-sdk/issues/3009) Added missing Ochain genesis verification
   * [gas] [\#3052](https://github.com/onomyprotocol/onomy-sdk/issues/3052) Updated gas costs to more reasonable numbers
 
 * SDK
@@ -2136,13 +2136,13 @@ BREAKING CHANGES
 
 FEATURES
 
-* Gaia CLI  (`gaiacli`)
-  * [\#2961](https://github.com/onomyprotocol/onomy-sdk/issues/2961) Add --force flag to gaiacli keys delete command to skip passphrase check and force key deletion unconditionally.
+* Ochain CLI  (`ochaincli`)
+  * [\#2961](https://github.com/onomyprotocol/onomy-sdk/issues/2961) Add --force flag to ochaincli keys delete command to skip passphrase check and force key deletion unconditionally.
 
 IMPROVEMENTS
 
-* Gaia CLI  (`gaiacli`)
-  * [\#2991](https://github.com/onomyprotocol/onomy-sdk/issues/2991) Fully validate transaction signatures during `gaiacli tx sign --validate-signatures`
+* Ochain CLI  (`ochaincli`)
+  * [\#2991](https://github.com/onomyprotocol/onomy-sdk/issues/2991) Fully validate transaction signatures during `ochaincli tx sign --validate-signatures`
 
 * SDK
   * [\#1277](https://github.com/onomyprotocol/onomy-sdk/issues/1277) Complete bank module specification
@@ -2153,10 +2153,10 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [\#2921](https://github.com/onomyprotocol/onomy-sdk/issues/2921) Fix `keys delete` inability to delete offline and ledger keys.
 
-* Gaia
+* Ochain
   * [\#3003](https://github.com/onomyprotocol/onomy-sdk/issues/3003) CollectStdTxs() must validate DelegatorAddr against genesis accounts.
 
 * SDK
@@ -2169,19 +2169,19 @@ BUG FIXES
 
 BREAKING CHANGES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
-  * [gaia-lite] [\#2819](https://github.com/onomyprotocol/onomy-sdk/pull/2819) Txs query param format is now: `/txs?tag=value` (removed '' wrapping the query parameter `value`)
+* Ochain REST API (`ochaincli advanced rest-server`)
+  * [ochain-lite] [\#2819](https://github.com/onomyprotocol/onomy-sdk/pull/2819) Txs query param format is now: `/txs?tag=value` (removed '' wrapping the query parameter `value`)
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [cli] [\#2728](https://github.com/onomyprotocol/onomy-sdk/pull/2728) Seperate `tx` and `query` subcommands by module
   * [cli] [\#2727](https://github.com/onomyprotocol/onomy-sdk/pull/2727) Fix unbonding command flow
   * [cli] [\#2786](https://github.com/onomyprotocol/onomy-sdk/pull/2786) Fix redelegation command flow
   * [cli] [\#2829](https://github.com/onomyprotocol/onomy-sdk/pull/2829) add-genesis-account command now validates state when adding accounts
   * [cli] [\#2804](https://github.com/onomyprotocol/onomy-sdk/issues/2804) Check whether key exists before passing it on to `tx create-validator`.
-  * [cli] [\#2874](https://github.com/onomyprotocol/onomy-sdk/pull/2874) `gaiacli tx sign` takes an optional `--output-document` flag to support output redirection.
-  * [cli] [\#2875](https://github.com/onomyprotocol/onomy-sdk/pull/2875) Refactor `gaiad gentx` and avoid redirection to `gaiacli tx sign` for tx signing.
+  * [cli] [\#2874](https://github.com/onomyprotocol/onomy-sdk/pull/2874) `ochaincli tx sign` takes an optional `--output-document` flag to support output redirection.
+  * [cli] [\#2875](https://github.com/onomyprotocol/onomy-sdk/pull/2875) Refactor `ochaind gentx` and avoid redirection to `ochaincli tx sign` for tx signing.
 
-* Gaia
+* Ochain
   * [mint] [\#2825] minting now occurs every block, inflation parameter updates still hourly
 
 * SDK
@@ -2197,22 +2197,22 @@ BREAKING CHANGES
 
 FEATURES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
   * [gov] [\#2479](https://github.com/onomyprotocol/onomy-sdk/issues/2479) Added governance parameter
     query REST endpoints.
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [gov][cli] [\#2479](https://github.com/onomyprotocol/onomy-sdk/issues/2479) Added governance
     parameter query commands.
   * [stake][cli] [\#2027] Add CLI query command for getting all delegations to a specific validator.
   * [\#2840](https://github.com/onomyprotocol/onomy-sdk/pull/2840) Standardize CLI exports from modules
 
-* Gaia
-  * [app] [\#2791](https://github.com/onomyprotocol/onomy-sdk/issues/2791) Support export at a specific height, with `gaiad export --height=HEIGHT`.
+* Ochain
+  * [app] [\#2791](https://github.com/onomyprotocol/onomy-sdk/issues/2791) Support export at a specific height, with `ochaind export --height=HEIGHT`.
   * [x/gov] [#2479](https://github.com/onomyprotocol/onomy-sdk/issues/2479) Implemented querier
   for getting governance parameters.
   * [app] [\#2663](https://github.com/onomyprotocol/onomy-sdk/issues/2663) - Runtime-assertable invariants
-  * [app] [\#2791](https://github.com/onomyprotocol/onomy-sdk/issues/2791) Support export at a specific height, with `gaiad export --height=HEIGHT`.
+  * [app] [\#2791](https://github.com/onomyprotocol/onomy-sdk/issues/2791) Support export at a specific height, with `ochaind export --height=HEIGHT`.
   * [app] [\#2812](https://github.com/onomyprotocol/onomy-sdk/issues/2812) Support export alterations to prepare for restarting at zero-height
 
 * SDK
@@ -2222,17 +2222,17 @@ FEATURES
 
 IMPROVEMENTS
 
-* Gaia REST API (`gaiacli advanced rest-server`)
-  * [gaia-lite] [\#2819](https://github.com/onomyprotocol/onomy-sdk/pull/2819) Tx search now supports multiple tags as query parameters
+* Ochain REST API (`ochaincli advanced rest-server`)
+  * [ochain-lite] [\#2819](https://github.com/onomyprotocol/onomy-sdk/pull/2819) Tx search now supports multiple tags as query parameters
   * [\#2836](https://github.com/onomyprotocol/onomy-sdk/pull/2836) Expose LCD router to allow users to register routes there.
 
-* Gaia CLI  (`gaiacli`)
-  * [\#2749](https://github.com/onomyprotocol/onomy-sdk/pull/2749) Add --chain-id flag to gaiad testnet
+* Ochain CLI  (`ochaincli`)
+  * [\#2749](https://github.com/onomyprotocol/onomy-sdk/pull/2749) Add --chain-id flag to ochaind testnet
   * [\#2819](https://github.com/onomyprotocol/onomy-sdk/pull/2819) Tx search now supports multiple tags as query parameters
 
-* Gaia
+* Ochain
   * [\#2772](https://github.com/onomyprotocol/onomy-sdk/issues/2772) Update BaseApp to not persist state when the ante handler fails on DeliverTx.
-  * [\#2773](https://github.com/onomyprotocol/onomy-sdk/issues/2773) Require moniker to be provided on `gaiad init`.
+  * [\#2773](https://github.com/onomyprotocol/onomy-sdk/issues/2773) Require moniker to be provided on `ochaind init`.
   * [\#2672](https://github.com/onomyprotocol/onomy-sdk/issues/2672) [Makefile] Updated for better Windows compatibility and ledger support logic, get_tools was rewritten as a cross-compatible Makefile.
   * [\#2766](https://github.com/onomyprotocol/onomy-sdk/issues/2766) [Makefile] Added goimports tool to get_tools. Get_tools now only builds new versions if binaries are missing.
   * [#110](https://github.com/tendermint/devops/issues/110) Updated CircleCI job to trigger website build when cosmos docs are updated.
@@ -2255,11 +2255,11 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
-  * [gaia-lite] [\#2868](https://github.com/onomyprotocol/onomy-sdk/issues/2868) Added handler for governance tally endpoint
-  * [\#2907](https://github.com/onomyprotocol/onomy-sdk/issues/2907) Refactor and fix the way Gaia Lite is started.
+* Ochain REST API (`ochaincli advanced rest-server`)
+  * [ochain-lite] [\#2868](https://github.com/onomyprotocol/onomy-sdk/issues/2868) Added handler for governance tally endpoint
+  * [\#2907](https://github.com/onomyprotocol/onomy-sdk/issues/2907) Refactor and fix the way Ochain Lite is started.
 
-* Gaia
+* Ochain
   * [\#2723] Use `cosmosvalcons` Bech32 prefix in `tendermint show-address`
   * [\#2742](https://github.com/onomyprotocol/onomy-sdk/issues/2742) Fix time format of TimeoutCommit override
   * [\#2898](https://github.com/onomyprotocol/onomy-sdk/issues/2898) Remove redundant '$' in docker-compose.yml
@@ -2276,8 +2276,8 @@ BUG FIXES
 
 BREAKING CHANGES
 
-* Gaia
-  * [gaiad init] [\#2602](https://github.com/onomyprotocol/onomy-sdk/issues/2602) New genesis workflow
+* Ochain
+  * [ochaind init] [\#2602](https://github.com/onomyprotocol/onomy-sdk/issues/2602) New genesis workflow
 
 * SDK
   * [simulation] [\#2665](https://github.com/onomyprotocol/onomy-sdk/issues/2665) only argument to sdk.Invariant is now app
@@ -2287,10 +2287,10 @@ BREAKING CHANGES
 
 FEATURES
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [cli] [\#2569](https://github.com/onomyprotocol/onomy-sdk/pull/2569) Add commands to query validator unbondings and redelegations
   * [cli] [\#2569](https://github.com/onomyprotocol/onomy-sdk/pull/2569) Add commands to query validator unbondings and redelegations
-  * [cli] [\#2524](https://github.com/onomyprotocol/onomy-sdk/issues/2524) Add support offline mode to `gaiacli tx sign`. Lookups are not performed if the flag `--offline` is on.
+  * [cli] [\#2524](https://github.com/onomyprotocol/onomy-sdk/issues/2524) Add support offline mode to `ochaincli tx sign`. Lookups are not performed if the flag `--offline` is on.
   * [cli] [\#2558](https://github.com/onomyprotocol/onomy-sdk/issues/2558) Rename --print-sigs to --validate-signatures. It now performs a complete set of sanity checks and reports to the user. Also added --print-signature-only to print the signature only, not the whole transaction.
   * [cli] [\#2704](https://github.com/onomyprotocol/onomy-sdk/pull/2704) New add-genesis-account convenience command to populate genesis.json with genesis accounts.
 
@@ -2299,7 +2299,7 @@ FEATURES
 
 IMPROVEMENTS
 
-* Gaia
+* Ochain
  * [\#2637](https://github.com/onomyprotocol/onomy-sdk/issues/2637) [x/gov] Switched inactive and active proposal queues to an iterator based queue
 
 * SDK
@@ -2317,17 +2317,17 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia
+* Ochain
  * [\#2670](https://github.com/onomyprotocol/onomy-sdk/issues/2670) [x/stake] fixed incorrect `IterateBondedValidators` and split into two functions: `IterateBondedValidators` and `IterateLastBlockConsValidators`
  * [\#2691](https://github.com/onomyprotocol/onomy-sdk/issues/2691) Fix local testnet creation by using a single canonical genesis time
- * [\#2648](https://github.com/onomyprotocol/onomy-sdk/issues/2648) [gaiad] Fix `gaiad export` / `gaiad import` consistency, test in CI
+ * [\#2648](https://github.com/onomyprotocol/onomy-sdk/issues/2648) [ochaind] Fix `ochaind export` / `ochaind import` consistency, test in CI
 
 * SDK
  * [\#2625](https://github.com/onomyprotocol/onomy-sdk/issues/2625) [x/gov] fix AppendTag function usage error
  * [\#2677](https://github.com/onomyprotocol/onomy-sdk/issues/2677) [x/stake, x/distribution] various staking/distribution fixes as found by the simulator
  * [\#2674](https://github.com/onomyprotocol/onomy-sdk/issues/2674) [types] Fix coin.IsLT() impl, coins.IsLT() impl, and renamed coins.Is\* to coins.IsAll\* (see [\#2686](https://github.com/onomyprotocol/onomy-sdk/issues/2686))
  * [\#2711](https://github.com/onomyprotocol/onomy-sdk/issues/2711) [x/stake] Add commission data to `MsgCreateValidator` signature bytes.
- * Temporarily disable insecure mode for Gaia Lite
+ * Temporarily disable insecure mode for Ochain Lite
 
 ## 0.25.0
 
@@ -2335,29 +2335,29 @@ BUG FIXES
 
 BREAKING CHANGES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
     * [x/stake] Validator.Owner renamed to Validator.Operator
     * [\#595](https://github.com/onomyprotocol/onomy-sdk/issues/595) Connections to the REST server are now secured using Transport Layer Security by default. The --insecure flag is provided to switch back to insecure HTTP.
-    * [gaia-lite] [\#2258](https://github.com/onomyprotocol/onomy-sdk/issues/2258) Split `GET stake/delegators/{delegatorAddr}` into `GET stake/delegators/{delegatorAddr}/delegations`, `GET stake/delegators/{delegatorAddr}/unbonding_delegations` and `GET stake/delegators/{delegatorAddr}/redelegations`
+    * [ochain-lite] [\#2258](https://github.com/onomyprotocol/onomy-sdk/issues/2258) Split `GET stake/delegators/{delegatorAddr}` into `GET stake/delegators/{delegatorAddr}/delegations`, `GET stake/delegators/{delegatorAddr}/unbonding_delegations` and `GET stake/delegators/{delegatorAddr}/redelegations`
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
     * [x/stake] Validator.Owner renamed to Validator.Operator
     * [cli] unsafe_reset_all, show_validator, and show_node_id have been renamed to unsafe-reset-all, show-validator, and show-node-id
     * [cli] [\#1983](https://github.com/onomyprotocol/onomy-sdk/issues/1983) --print-response now defaults to true in commands that create and send a transaction
-    * [cli] [\#1983](https://github.com/onomyprotocol/onomy-sdk/issues/1983) you can now pass --pubkey or --address to gaiacli keys show to return a plaintext representation of the key's address or public key for use with other commands
+    * [cli] [\#1983](https://github.com/onomyprotocol/onomy-sdk/issues/1983) you can now pass --pubkey or --address to ochaincli keys show to return a plaintext representation of the key's address or public key for use with other commands
     * [cli] [\#2061](https://github.com/onomyprotocol/onomy-sdk/issues/2061) changed proposalID in governance REST endpoints to proposal-id
-    * [cli] [\#2014](https://github.com/onomyprotocol/onomy-sdk/issues/2014) `gaiacli advanced` no longer exists - to access `ibc`, `rest-server`, and `validator-set` commands use `gaiacli ibc`, `gaiacli rest-server`, and `gaiacli tendermint`, respectively
+    * [cli] [\#2014](https://github.com/onomyprotocol/onomy-sdk/issues/2014) `ochaincli advanced` no longer exists - to access `ibc`, `rest-server`, and `validator-set` commands use `ochaincli ibc`, `ochaincli rest-server`, and `ochaincli tendermint`, respectively
     * [makefile] `get_vendor_deps` no longer updates lock file it just updates vendor directory. Use `update_vendor_deps` to update the lock file. [#2152](https://github.com/onomyprotocol/onomy-sdk/pull/2152)
     * [cli] [\#2221](https://github.com/onomyprotocol/onomy-sdk/issues/2221) All commands that
     utilize a validator's operator address must now use the new Bech32 prefix,
     `cosmosvaloper`.
-    * [cli] [\#2190](https://github.com/onomyprotocol/onomy-sdk/issues/2190) `gaiacli init --gen-txs` is now `gaiacli init --with-txs` to reduce confusion
+    * [cli] [\#2190](https://github.com/onomyprotocol/onomy-sdk/issues/2190) `ochaincli init --gen-txs` is now `ochaincli init --with-txs` to reduce confusion
     * [cli] [\#2073](https://github.com/onomyprotocol/onomy-sdk/issues/2073) --from can now be either an address or a key name
     * [cli] [\#1184](https://github.com/onomyprotocol/onomy-sdk/issues/1184) Subcommands reorganisation, see [\#2390](https://github.com/onomyprotocol/onomy-sdk/pull/2390) for a comprehensive list of changes.
-    * [cli] [\#2524](https://github.com/onomyprotocol/onomy-sdk/issues/2524) Add support offline mode to `gaiacli tx sign`. Lookups are not performed if the flag `--offline` is on.
+    * [cli] [\#2524](https://github.com/onomyprotocol/onomy-sdk/issues/2524) Add support offline mode to `ochaincli tx sign`. Lookups are not performed if the flag `--offline` is on.
     * [cli] [\#2570](https://github.com/onomyprotocol/onomy-sdk/pull/2570) Add commands to query deposits on proposals
 
-* Gaia
+* Ochain
     * Make the transient store key use a distinct store key. [#2013](https://github.com/onomyprotocol/onomy-sdk/pull/2013)
     * [x/stake] [\#1901](https://github.com/onomyprotocol/onomy-sdk/issues/1901) Validator type's Owner field renamed to Operator; Validator's GetOwner() renamed accordingly to comply with the SDK's Validator interface.
     * [docs] [#2001](https://github.com/onomyprotocol/onomy-sdk/pull/2001) Update slashing spec for slashing period
@@ -2382,7 +2382,7 @@ BREAKING CHANGES
     * [x/stake] [\#2393](https://github.com/onomyprotocol/onomy-sdk/issues/2393) Removed `CompleteUnbonding` and `CompleteRedelegation` Msg types, and instead added unbonding/redelegation queues to endblocker
     * [x/mock/simulation] [\#2501](https://github.com/onomyprotocol/onomy-sdk/issues/2501) Simulate transactions & invariants for fee distribution, and fix bugs discovered in the process
       * [x/auth] Simulate random fee payments
-      * [cmd/gaia/app] Simulate non-zero inflation
+      * [cmd/ochain/app] Simulate non-zero inflation
       * [x/stake] Call hooks correctly in several cases related to delegation/validator updates
       * [x/stake] Check full supply invariants, including yet-to-be-withdrawn fees
       * [x/stake] Remove no-longer-in-use store key
@@ -2400,11 +2400,11 @@ BREAKING CHANGES
       * [x/distribution] Fix a bug where the fee pool was not correctly tracked on WithdrawDelegatorRewardsAll
     * [x/stake] [\#1673](https://github.com/onomyprotocol/onomy-sdk/issues/1673) Validators are no longer deleted until they can no longer possibly be slashed
     * [\#1890](https://github.com/onomyprotocol/onomy-sdk/issues/1890) Start chain with initial state + sequence of transactions
-      * [cli] Rename `gaiad init gentx` to `gaiad gentx`.
-      * [cli] Add `--skip-genesis` flag to `gaiad init` to prevent `genesis.json` generation.
+      * [cli] Rename `ochaind init gentx` to `ochaind gentx`.
+      * [cli] Add `--skip-genesis` flag to `ochaind init` to prevent `genesis.json` generation.
       * Drop `GenesisTx` in favor of a signed `StdTx` with only one `MsgCreateValidator` message.
-      * [cli] Port `gaiad init` and `gaiad testnet` to work with `StdTx` genesis transactions.
-      * [cli] Add `--moniker` flag to `gaiad init` to override moniker when generating `genesis.json` - i.e. it takes effect when running with the `--with-txs` flag, it is ignored otherwise.
+      * [cli] Port `ochaind init` and `ochaind testnet` to work with `StdTx` genesis transactions.
+      * [cli] Add `--moniker` flag to `ochaind init` to override moniker when generating `genesis.json` - i.e. it takes effect when running with the `--with-txs` flag, it is ignored otherwise.
 
 * SDK
     * [core] [\#2219](https://github.com/onomyprotocol/onomy-sdk/issues/2219) Update to Tendermint 0.24.0
@@ -2455,20 +2455,20 @@ BREAKING CHANGES
 
 FEATURES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
-  * [gaia-lite] Endpoints to query staking pool and params
-  * [gaia-lite] [\#2110](https://github.com/onomyprotocol/onomy-sdk/issues/2110) Add support for `simulate=true` requests query argument to endpoints that send txs to run simulations of transactions
-  * [gaia-lite] [\#966](https://github.com/onomyprotocol/onomy-sdk/issues/966) Add support for `generate_only=true` query argument to generate offline unsigned transactions
-  * [gaia-lite] [\#1953](https://github.com/onomyprotocol/onomy-sdk/issues/1953) Add /sign endpoint to sign transactions generated with `generate_only=true`.
-  * [gaia-lite] [\#1954](https://github.com/onomyprotocol/onomy-sdk/issues/1954) Add /broadcast endpoint to broadcast transactions signed by the /sign endpoint.
-  * [gaia-lite] [\#2113](https://github.com/onomyprotocol/onomy-sdk/issues/2113) Rename `/accounts/{address}/send` to `/bank/accounts/{address}/transfers`, rename `/accounts/{address}` to `/auth/accounts/{address}`, replace `proposal-id` with `proposalId` in all gov endpoints
-  * [gaia-lite] [\#2478](https://github.com/onomyprotocol/onomy-sdk/issues/2478) Add query gov proposal's deposits endpoint
-  * [gaia-lite] [\#2477](https://github.com/onomyprotocol/onomy-sdk/issues/2477) Add query validator's outgoing redelegations and unbonding delegations endpoints
+* Ochain REST API (`ochaincli advanced rest-server`)
+  * [ochain-lite] Endpoints to query staking pool and params
+  * [ochain-lite] [\#2110](https://github.com/onomyprotocol/onomy-sdk/issues/2110) Add support for `simulate=true` requests query argument to endpoints that send txs to run simulations of transactions
+  * [ochain-lite] [\#966](https://github.com/onomyprotocol/onomy-sdk/issues/966) Add support for `generate_only=true` query argument to generate offline unsigned transactions
+  * [ochain-lite] [\#1953](https://github.com/onomyprotocol/onomy-sdk/issues/1953) Add /sign endpoint to sign transactions generated with `generate_only=true`.
+  * [ochain-lite] [\#1954](https://github.com/onomyprotocol/onomy-sdk/issues/1954) Add /broadcast endpoint to broadcast transactions signed by the /sign endpoint.
+  * [ochain-lite] [\#2113](https://github.com/onomyprotocol/onomy-sdk/issues/2113) Rename `/accounts/{address}/send` to `/bank/accounts/{address}/transfers`, rename `/accounts/{address}` to `/auth/accounts/{address}`, replace `proposal-id` with `proposalId` in all gov endpoints
+  * [ochain-lite] [\#2478](https://github.com/onomyprotocol/onomy-sdk/issues/2478) Add query gov proposal's deposits endpoint
+  * [ochain-lite] [\#2477](https://github.com/onomyprotocol/onomy-sdk/issues/2477) Add query validator's outgoing redelegations and unbonding delegations endpoints
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   * [cli] Cmds to query staking pool and params
   * [gov][cli] [\#2062](https://github.com/onomyprotocol/onomy-sdk/issues/2062) added `--proposal` flag to `submit-proposal` that allows a JSON file containing a proposal to be passed in
-  * [\#2040](https://github.com/onomyprotocol/onomy-sdk/issues/2040) Add `--bech` to `gaiacli keys show` and respective REST endpoint to
+  * [\#2040](https://github.com/onomyprotocol/onomy-sdk/issues/2040) Add `--bech` to `ochaincli keys show` and respective REST endpoint to
   provide desired Bech32 prefix encoding
   * [cli] [\#2047](https://github.com/onomyprotocol/onomy-sdk/issues/2047) [\#2306](https://github.com/onomyprotocol/onomy-sdk/pull/2306) Passing --gas=simulate triggers a simulation of the tx before the actual execution.
   The gas estimate obtained via the simulation will be used as gas limit in the actual execution.
@@ -2478,23 +2478,23 @@ FEATURES
     * [\#966](https://github.com/onomyprotocol/onomy-sdk/issues/966) Add --generate-only flag to build an unsigned transaction and write it to STDOUT.
     * [\#1953](https://github.com/onomyprotocol/onomy-sdk/issues/1953) New `sign` command to sign transactions generated with the --generate-only flag.
     * [\#1954](https://github.com/onomyprotocol/onomy-sdk/issues/1954) New `broadcast` command to broadcast transactions generated offline and signed with the `sign` command.
-  * [cli] [\#2220](https://github.com/onomyprotocol/onomy-sdk/issues/2220) Add `gaiacli config` feature to interactively create CLI config files to reduce the number of required flags
+  * [cli] [\#2220](https://github.com/onomyprotocol/onomy-sdk/issues/2220) Add `ochaincli config` feature to interactively create CLI config files to reduce the number of required flags
   * [stake][cli] [\#1672](https://github.com/onomyprotocol/onomy-sdk/issues/1672) Introduced
   new commission flags for validator commands `create-validator` and `edit-validator`.
-  * [stake][cli] [\#1890](https://github.com/onomyprotocol/onomy-sdk/issues/1890) Add `--genesis-format` flag to `gaiacli tx create-validator` to produce transactions in genesis-friendly format.
-  * [cli][\#2554](https://github.com/onomyprotocol/onomy-sdk/issues/2554) Make `gaiacli keys show` multisig ready.
+  * [stake][cli] [\#1890](https://github.com/onomyprotocol/onomy-sdk/issues/1890) Add `--genesis-format` flag to `ochaincli tx create-validator` to produce transactions in genesis-friendly format.
+  * [cli][\#2554](https://github.com/onomyprotocol/onomy-sdk/issues/2554) Make `ochaincli keys show` multisig ready.
 
-* Gaia
-  * [cli] [\#2170](https://github.com/onomyprotocol/onomy-sdk/issues/2170) added ability to show the node's address via `gaiad tendermint show-address`
-  * [simulation] [\#2313](https://github.com/onomyprotocol/onomy-sdk/issues/2313) Reworked `make test_sim_gaia_slow` to `make test_sim_gaia_full`, now simulates from multiple starting seeds in parallel
+* Ochain
+  * [cli] [\#2170](https://github.com/onomyprotocol/onomy-sdk/issues/2170) added ability to show the node's address via `ochaind tendermint show-address`
+  * [simulation] [\#2313](https://github.com/onomyprotocol/onomy-sdk/issues/2313) Reworked `make test_sim_ochain_slow` to `make test_sim_ochain_full`, now simulates from multiple starting seeds in parallel
   * [cli] [\#1921] (https://github.com/onomyprotocol/onomy-sdk/issues/1921)
-    * New configuration file `gaiad.toml` is now created to host Gaia-specific configuration.
+    * New configuration file `ochaind.toml` is now created to host Ochain-specific configuration.
     * New --minimum_fees/minimum_fees flag/config option to set a minimum fee.
 
 * SDK
   * [querier] added custom querier functionality, so ABCI query requests can be handled by keepers
   * [simulation] [\#1924](https://github.com/onomyprotocol/onomy-sdk/issues/1924) allow operations to specify future operations
-  * [simulation] [\#1924](https://github.com/onomyprotocol/onomy-sdk/issues/1924) Add benchmarking capabilities, with makefile commands "test_sim_gaia_benchmark, test_sim_gaia_profile"
+  * [simulation] [\#1924](https://github.com/onomyprotocol/onomy-sdk/issues/1924) Add benchmarking capabilities, with makefile commands "test_sim_ochain_benchmark, test_sim_ochain_profile"
   * [simulation] [\#2349](https://github.com/onomyprotocol/onomy-sdk/issues/2349) Add time-based future scheduled operations to simulator
   * [x/auth] [\#2376](https://github.com/onomyprotocol/onomy-sdk/issues/2376) Remove FeePayer() from StdTx
   * [x/stake] [\#1672](https://github.com/onomyprotocol/onomy-sdk/issues/1672) Implement
@@ -2506,20 +2506,20 @@ IMPROVEMENTS
 * [tools] Improved terraform and ansible scripts for infrastructure deployment
 * [tools] Added ansible script to enable process core dumps
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
     * [x/stake] [\#2000](https://github.com/onomyprotocol/onomy-sdk/issues/2000) Added tests for new staking endpoints
-    * [gaia-lite] [\#2445](https://github.com/onomyprotocol/onomy-sdk/issues/2445) Standarized REST error responses
-    * [gaia-lite] Added example to Swagger specification for /keys/seed.
+    * [ochain-lite] [\#2445](https://github.com/onomyprotocol/onomy-sdk/issues/2445) Standarized REST error responses
+    * [ochain-lite] Added example to Swagger specification for /keys/seed.
     * [x/stake] Refactor REST utils
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
     * [cli] [\#2060](https://github.com/onomyprotocol/onomy-sdk/issues/2060) removed `--select` from `block` command
-    * [cli] [\#2128](https://github.com/onomyprotocol/onomy-sdk/issues/2128) fixed segfault when exporting directly after `gaiad init`
+    * [cli] [\#2128](https://github.com/onomyprotocol/onomy-sdk/issues/2128) fixed segfault when exporting directly after `ochaind init`
     * [cli] [\#1255](https://github.com/onomyprotocol/onomy-sdk/issues/1255) open KeyBase in read-only mode
      for query-purpose CLI commands
     * [docs] Added commands for querying governance deposits, votes and tally
 
-* Gaia
+* Ochain
     * [x/stake] [#2023](https://github.com/onomyprotocol/onomy-sdk/pull/2023) Terminate iteration loop in `UpdateBondedValidators` and `UpdateBondedValidatorsFull` when the first revoked validator is encountered and perform a sanity check.
     * [x/auth] Signature verification's gas cost now accounts for pubkey type. [#2046](https://github.com/tendermint/tendermint/pull/2046)
     * [x/stake] [x/slashing] Ensure delegation invariants to jailed validators [#1883](https://github.com/onomyprotocol/onomy-sdk/issues/1883).
@@ -2542,8 +2542,8 @@ IMPROVEMENTS
     * [simulation] Add a concept of weighting the operations [\#2303](https://github.com/onomyprotocol/onomy-sdk/issues/2303)
     * [simulation] Logs get written to file if large, and also get printed on panics [\#2285](https://github.com/onomyprotocol/onomy-sdk/issues/2285)
     * [simulation] Bank simulations now makes testing auth configurable [\#2425](https://github.com/onomyprotocol/onomy-sdk/issues/2425)
-    * [gaiad] [\#1992](https://github.com/onomyprotocol/onomy-sdk/issues/1992) Add optional flag to `gaiad testnet` to make config directory of daemon (default `gaiad`) and cli (default `gaiacli`) configurable
-    * [x/stake] Add stake `Queriers` for Gaia-lite endpoints. This increases the staking endpoints performance by reusing the staking `keeper` logic for queries. [#2249](https://github.com/onomyprotocol/onomy-sdk/pull/2149)
+    * [ochaind] [\#1992](https://github.com/onomyprotocol/onomy-sdk/issues/1992) Add optional flag to `ochaind testnet` to make config directory of daemon (default `ochaind`) and cli (default `ochaincli`) configurable
+    * [x/stake] Add stake `Queriers` for Ochain-lite endpoints. This increases the staking endpoints performance by reusing the staking `keeper` logic for queries. [#2249](https://github.com/onomyprotocol/onomy-sdk/pull/2149)
     * [store] [\#2017](https://github.com/onomyprotocol/onomy-sdk/issues/2017) Refactor
     gas iterator gas consumption to only consume gas for iterator creation and `Next`
     calls which includes dynamic consumption of value length.
@@ -2554,12 +2554,12 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia CLI  (`gaiacli`)
-    * [cli] [\#1997](https://github.com/onomyprotocol/onomy-sdk/issues/1997) Handle panics gracefully when `gaiacli stake {delegation,unbond}` fail to unmarshal delegation.
-    * [cli] [\#2265](https://github.com/onomyprotocol/onomy-sdk/issues/2265) Fix JSON formatting of the `gaiacli send` command.
-    * [cli] [\#2547](https://github.com/onomyprotocol/onomy-sdk/issues/2547) Mark --to and --amount as required flags for `gaiacli tx send`.
+* Ochain CLI  (`ochaincli`)
+    * [cli] [\#1997](https://github.com/onomyprotocol/onomy-sdk/issues/1997) Handle panics gracefully when `ochaincli stake {delegation,unbond}` fail to unmarshal delegation.
+    * [cli] [\#2265](https://github.com/onomyprotocol/onomy-sdk/issues/2265) Fix JSON formatting of the `ochaincli send` command.
+    * [cli] [\#2547](https://github.com/onomyprotocol/onomy-sdk/issues/2547) Mark --to and --amount as required flags for `ochaincli tx send`.
 
-* Gaia
+* Ochain
   * [x/stake] Return correct Tendermint validator update set on `EndBlocker` by not
   including non previously bonded validators that have zero power. [#2189](https://github.com/onomyprotocol/onomy-sdk/issues/2189)
   * [docs] Fixed light client section links
@@ -2591,7 +2591,7 @@ BUG FIXES
 
 BUG FIXES
 
-* Gaia
+* Ochain
   - [x/slashing] Evidence tracking now uses validator address instead of validator pubkey
 
 ## 0.24.0
@@ -2600,23 +2600,23 @@ BUG FIXES
 
 BREAKING CHANGES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
   - [x/stake] [\#1880](https://github.com/onomyprotocol/onomy-sdk/issues/1880) More REST-ful endpoints (large refactor)
   - [x/slashing] [\#1866](https://github.com/onomyprotocol/onomy-sdk/issues/1866) `/slashing/signing_info` takes cosmosvalpub instead of cosmosvaladdr
   - use time.Time instead of int64 for time. See Tendermint v0.23.0
   - Signatures are no longer Amino encoded with prefixes (just encoded as raw
     bytes) - see Tendermint v0.23.0
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   -  [x/stake] change `--keybase-sig` to `--identity`
   -  [x/stake] [\#1828](https://github.com/onomyprotocol/onomy-sdk/issues/1828) Force user to specify amount on create-validator command by removing default
   -  [x/gov] Change `--proposalID` to `--proposal-id`
   -  [x/stake, x/gov] [\#1606](https://github.com/onomyprotocol/onomy-sdk/issues/1606) Use `--from` instead of adhoc flags like `--address-validator`
         and `--proposer` to indicate the sender address.
   -  [\#1551](https://github.com/onomyprotocol/onomy-sdk/issues/1551) Remove `--name` completely
-  -  Genesis/key creation (`gaiad init`) now supports user-provided key passwords
+  -  Genesis/key creation (`ochaind init`) now supports user-provided key passwords
 
-* Gaia
+* Ochain
   - [x/stake] Inflation doesn't use rationals in calculation (performance boost)
   - [x/stake] Persist a map from `addr->pubkey` in the state since BeginBlock
     doesn't provide pubkeys.
@@ -2645,14 +2645,14 @@ BREAKING CHANGES
 
 FEATURES
 
-* Gaia REST API (`gaiacli advanced rest-server`)
+* Ochain REST API (`ochaincli advanced rest-server`)
     - [x/gov] Can now query governance proposals by ProposalStatus
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
     - [x/gov] added `query-proposals` command. Can filter by `depositer`, `voter`, and `status`
     - [x/stake] [\#2043](https://github.com/onomyprotocol/onomy-sdk/issues/2043) Added staking query cli cmds for unbonding-delegations and redelegations
 
-* Gaia
+* Ochain
   - [networks] Added ansible scripts to upgrade seed nodes on a network
 
 * SDK
@@ -2672,7 +2672,7 @@ FEATURES
 
 IMPROVEMENTS
 
-* Gaia
+* Ochain
   - [spec] [\#967](https://github.com/onomyprotocol/onomy-sdk/issues/967) Inflation and distribution specs drastically improved
   - [x/gov] [\#1773](https://github.com/onomyprotocol/onomy-sdk/issues/1773) Votes on a proposal can now be queried
   - [x/gov] Initial governance parameters can now be set in the genesis file
@@ -2694,14 +2694,14 @@ IMPROVEMENTS
 
 BUG FIXES
 
-* Gaia CLI  (`gaiacli`)
+* Ochain CLI  (`ochaincli`)
   -  [\#1766](https://github.com/onomyprotocol/onomy-sdk/issues/1766) Fixes bad example for keybase identity
   -  [x/stake] [\#2021](https://github.com/onomyprotocol/onomy-sdk/issues/2021) Fixed repeated CLI commands in staking
 
-* Gaia
+* Ochain
   - [x/stake] [#2077](https://github.com/onomyprotocol/onomy-sdk/pull/2077) Fixed invalid cliff power comparison
   - [\#1804](https://github.com/onomyprotocol/onomy-sdk/issues/1804) Fixes gen-tx genesis generation logic temporarily until upstream updates
-  - [\#1799](https://github.com/onomyprotocol/onomy-sdk/issues/1799) Fix `gaiad export`
+  - [\#1799](https://github.com/onomyprotocol/onomy-sdk/issues/1799) Fix `ochaind export`
   - [\#1839](https://github.com/onomyprotocol/onomy-sdk/issues/1839) Fixed bug where intra-tx counter wasn't set correctly for genesis validators
   - [x/stake] [\#1858](https://github.com/onomyprotocol/onomy-sdk/issues/1858) Fixed bug where the cliff validator was not updated correctly
   - [tests] [\#1675](https://github.com/onomyprotocol/onomy-sdk/issues/1675) Fix non-deterministic `test_cover`
@@ -2747,7 +2747,7 @@ BREAKING CHANGES
 * [x/gov] Increase VotingPeriod, DepositPeriod, and MinDeposit
 
 IMPROVEMENTS
-* [gaiad] Default config updates:
+* [ochaind] Default config updates:
     - `timeout_commit=5000` so blocks only made every 5s
     - `prof_listen_addr=localhost:6060` so profile server is on by default
     - `p2p.send_rate` and `p2p.recv_rate` increases 10x (~5MB/s)
@@ -2780,13 +2780,13 @@ FEATURES
 IMPROVEMENTS
 * Updated docs folder to accommodate cosmos.network docs project
 * [store] Added support for tracing multi-store operations via `--trace-store`
-* [store] Pruning strategy configurable with pruning flag on gaiad start
+* [store] Pruning strategy configurable with pruning flag on ochaind start
 
 BUG FIXES
 * [\#1630](https://github.com/onomyprotocol/onomy-sdk/issues/1630) - redelegation nolonger removes tokens from the delegator liquid account
 * [keys] [\#1629](https://github.com/onomyprotocol/onomy-sdk/issues/1629) - updating password no longer asks for a new password when the first entered password was incorrect
 * [lcd] importing an account would create a random account
-* [server] 'gaiad init' command family now writes provided name as the moniker in `config.toml`
+* [server] 'ochaind init' command family now writes provided name as the moniker in `config.toml`
 * [build] Added Ledger build support via `LEDGER_ENABLED=true|false`
   * True by default except when cross-compiling
 
@@ -2829,14 +2829,14 @@ BREAKING CHANGES
 * [x/stake] most index keys nolonger hold a value - inputs are rearranged to form the desired key
 * [x/stake] store-value for delegation, validator, ubd, and red do not hold duplicate information contained store-key
 * [x/stake] Introduce concept of unbonding for delegations and validators
-  * `gaiacli stake unbond` replaced with `gaiacli stake begin-unbonding`
+  * `ochaincli stake unbond` replaced with `ochaincli stake begin-unbonding`
   * Introduced:
-    * `gaiacli stake complete-unbonding`
-    * `gaiacli stake begin-redelegation`
-    * `gaiacli stake complete-redelegation`
+    * `ochaincli stake complete-unbonding`
+    * `ochaincli stake begin-redelegation`
+    * `ochaincli stake complete-redelegation`
 * [lcd] Switch key creation output to return bech32
 * [lcd] Removed shorthand CLI flags (`a`, `c`, `n`, `o`)
-* [gaiad] genesis transactions now use bech32 addresses / pubkeys
+* [ochaind] genesis transactions now use bech32 addresses / pubkeys
 * [gov] VoteStatus renamed to ProposalStatus
 * [gov] VoteOption, ProposalType, and ProposalStatus all marshal to string form in JSON
 
@@ -2848,11 +2848,11 @@ FEATURES
   * Supported proposal types: just binary (pass/fail) TextProposals for now
   * Proposals need deposits to be votable; deposits are burned if proposal fails
   * Delegators delegate votes to validator by default but can override (for their stake)
-* [gaiacli] Ledger support added
-  - You can now use a Ledger with `gaiacli --ledger` for all key-related commands
+* [ochaincli] Ledger support added
+  - You can now use a Ledger with `ochaincli --ledger` for all key-related commands
   - Ledger keys can be named and tracked locally in the key DB
-* [gaiacli] You can now attach a simple text-only memo to any transaction, with the `--memo` flag
-* [gaiacli] added the following flags for commands that post transactions to the chain:
+* [ochaincli] You can now attach a simple text-only memo to any transaction, with the `--memo` flag
+* [ochaincli] added the following flags for commands that post transactions to the chain:
   * async -- send the tx without waiting for a tendermint response
   * json  -- return the output in json format for increased readability
   * print-response -- return the tx response. (includes fields like gas cost)
@@ -2875,7 +2875,7 @@ FEATURES
 * [server] Default config now creates a profiler at port 6060, and increase p2p send/recv rates
 * [types] Switches internal representation of Int/Uint/Rat to use pointers
 * [types] Added MinInt and MinUint functions
-* [gaiad] `unsafe_reset_all` now resets addrbook.json
+* [ochaind] `unsafe_reset_all` now resets addrbook.json
 * [democoin] add x/oracle, x/assoc
 * [tests] created a randomized testing framework.
   - Currently bank has limited functionality in the framework
@@ -2895,7 +2895,7 @@ IMPROVEMENTS
 * [stake] clearer staking logic
 * [types] added common tag constants
 * [keys] improve error message when deleting non-existent key
-* [gaiacli] improve error messages on `send` and `account` commands
+* [ochaincli] improve error messages on `send` and `account` commands
 * added contributing guidelines
 * [docs] Added commands for governance CLI on testnet README
 
@@ -2907,7 +2907,7 @@ BUG FIXES
 * [x/stake] pool loose tokens now accounts for unbonding and unbonding tokens not associated with any validator
 * [x/stake] fix revoke bytes ordering (was putting revoked candidates at the top of the list)
 * [x/stake] bond count was counting revoked validators as bonded, fixed
-* [gaia] Added self delegation for validators in the genesis creation
+* [ochain] Added self delegation for validators in the genesis creation
 * [lcd] tests now don't depend on raw json text
 * Retry on HTTP request failure in CLI tests, add option to retry tests in Makefile
 * Fixed bug where chain ID wasn't passed properly in x/bank REST handler, removed Viper hack from ante handler
@@ -2921,7 +2921,7 @@ BUG FIXES
 * [\#1353](https://github.com/onomyprotocol/onomy-sdk/issues/1353) - CLI: Show pool shares fractions in human-readable format
 * [\#1367](https://github.com/onomyprotocol/onomy-sdk/issues/1367) - set ChainID in InitChain
 * [\#1461](https://github.com/onomyprotocol/onomy-sdk/issues/1461) - CLI tests now no longer reset your local environment data
-* [\#1505](https://github.com/onomyprotocol/onomy-sdk/issues/1505) - `gaiacli stake validator` no longer panics if validator doesn't exist
+* [\#1505](https://github.com/onomyprotocol/onomy-sdk/issues/1505) - `ochaincli stake validator` no longer panics if validator doesn't exist
 * [\#1565](https://github.com/onomyprotocol/onomy-sdk/issues/1565) - fix cliff validator persisting when validator set shrinks from max
 * [\#1287](https://github.com/onomyprotocol/onomy-sdk/issues/1287) - prevent zero power validators at genesis
 * [x/stake] fix bug when unbonding/redelegating using `--shares-percent`
@@ -2944,9 +2944,9 @@ FEATURES
 IMPROVEMENTS
 * export command now writes current validator set for Tendermint
 * [tests] Application module tests now use a mock application
-* [gaiacli] Fix error message when account isn't found when running gaiacli account
+* [ochaincli] Fix error message when account isn't found when running ochaincli account
 * [lcd] refactored to eliminate use of global variables, and interdependent tests
-* [tests] Added testnet command to gaiad
+* [tests] Added testnet command to ochaind
 * [tests] Added localnet targets to Makefile
 * [x/stake] More stake tests added to test ByPower index
 
@@ -2956,7 +2956,7 @@ FIXES
 * [lcd] Switch to bech32 for addresses on all human readable inputs and outputs
 * [lcd] fixed tx indexing/querying
 * [cli] Added `--gas` flag to specify transaction gas limit
-* [gaia] Registered slashing message handler
+* [ochain] Registered slashing message handler
 * [x/slashing] Set signInfo.StartHeight correctly for newly bonded validators
 
 FEATURES
@@ -2971,8 +2971,8 @@ BREAKING CHANGES
 
 * [stake] candidate -> validator throughout (details in refactor comment)
 * [stake] delegate-bond -> delegation throughout
-* [stake] `gaiacli query validator` takes and argument instead of using the `--address-candidate` flag
-* [stake] introduce `gaiacli query delegations`
+* [stake] `ochaincli query validator` takes and argument instead of using the `--address-candidate` flag
+* [stake] introduce `ochaincli query delegations`
 * [stake] staking refactor
   * ValidatorsBonded store now take sorted pubKey-address instead of validator owner-address,
     is sorted like Tendermint by pk's address
@@ -3028,7 +3028,7 @@ BUG FIXES
 * query sequence via account store
 * fixed duplicate pub_key in stake.Validator
 * Auto-sequencing now works correctly
-* [gaiacli] Fix error message when account isn't found when running gaiacli account
+* [ochaincli] Fix error message when account isn't found when running ochaincli account
 
 
 ## 0.17.5
@@ -3088,14 +3088,14 @@ BREAKING CHANGES
 
 FEATURES
 
-* [gaiacli] Support queries for candidates, delegator-bonds
-* [gaiad] Added `gaiad export` command to export current state to JSON
+* [ochaincli] Support queries for candidates, delegator-bonds
+* [ochaind] Added `ochaind export` command to export current state to JSON
 * [x/bank] Tx tags with sender/recipient for indexing & later retrieval
 * [x/stake] Tx tags with delegator/candidate for delegation & unbonding, and candidate info for declare candidate / edit validator
 
 IMPROVEMENTS
 
-* [gaiad] Update for Tendermint v0.19.3 (improve `/dump_consensus_state` and add
+* [ochaind] Update for Tendermint v0.19.3 (improve `/dump_consensus_state` and add
   `/consensus_state`)
 * [spec/ibc] Added spec!
 * [spec/stake] Cleanup structure, include details about slashing and
@@ -3113,25 +3113,25 @@ BUG FIXES
 BREAKING CHANGES
 
 * Move module REST/CLI packages to x/[module]/client/rest and x/[module]/client/cli
-* Gaia simple-staking bond and unbond functions replaced
+* Ochain simple-staking bond and unbond functions replaced
 * [stake] Delegator bonds now store the height at which they were updated
 * All module keepers now require a codespace, see basecoin or democoin for usage
 * Many changes to names throughout
   * Type as a prefix naming convention applied (ex. BondMsg -> MsgBond)
   * Removed redundancy in names (ex. stake.StakingKeeper -> stake.Keeper)
 * Removed SealedAccountMapper
-* gaiad init now requires use of `--name` flag
+* ochaind init now requires use of `--name` flag
 * Removed Get from Msg interface
 * types/rational now extends big.Rat
 
 FEATURES:
 
-* Gaia stake commands include, CreateValidator, EditValidator, Delegate, Unbond
+* Ochain stake commands include, CreateValidator, EditValidator, Delegate, Unbond
 * MountStoreWithDB without providing a custom store works.
 * Repo is now lint compliant / GoMetaLinter with tendermint-lint integrated into CI
 * Better key output, pubkey go-amino hex bytes now output by default
-* gaiad init overhaul
-  * Create genesis transactions with `gaiad init gen-tx`
+* ochaind init overhaul
+  * Create genesis transactions with `ochaind init gen-tx`
   * New genesis account keys are automatically added to the client keybase (introduce `--client-home` flag)
   * Initialize with genesis txs using `--gen-txs` flag
 * Context now has access to the application-configured logger
@@ -3140,7 +3140,7 @@ FEATURES:
 
 BUG FIXES
 
-* Gaia now uses stake, ported from github.com/cosmos/gaia
+* Ochain now uses stake, ported from github.com/cosmos/ochain
 
 
 ## 0.15.1 (April 29, 2018)
@@ -3178,7 +3178,7 @@ BUG FIXES
 
 BUG FIXES
 
-* [gaiacli] Fix all commands (just a duplicate of basecli for now)
+* [ochaincli] Fix all commands (just a duplicate of basecli for now)
 
 ## 0.14.0 (April 9, 2018)
 
@@ -3188,8 +3188,8 @@ BREAKING CHANGES:
   struct
 * [server] Refactor to improve useability and de-duplicate code
 * [types] `Result.ToQuery -> Error.QueryResult`
-* [makefile] `make build` and `make install` only build/install `gaiacli` and
-  `gaiad`. Use `make build_examples` and `make install_examples` for
+* [makefile] `make build` and `make install` only build/install `ochaincli` and
+  `ochaind`. Use `make build_examples` and `make install_examples` for
   `basecoind/basecli` and `democoind/democli`
 * [staking] Various fixes/improvements
 
@@ -3289,7 +3289,7 @@ BUG FIXES
 BREAKING CHANGES
 
 * [examples] dummy -> kvstore
-* [examples] Remove gaia
+* [examples] Remove ochain
 * [examples/basecoin] MakeTxCodec -> MakeCodec
 * [types] CommitMultiStore interface has new `GetCommitKVStore(key StoreKey) CommitKVStore` method
 
@@ -3320,7 +3320,7 @@ BREAKING CHANGES
 
 FEATURES
 
-* [examples/gaia] Mock CLI !
+* [examples/ochain] Mock CLI !
 * [baseapp] InitChainer, BeginBlocker, EndBlocker
 * [baseapp] MountStoresIAVL
 

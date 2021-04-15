@@ -78,7 +78,7 @@ to keep track of the highest infraction amount for every single slashing period.
 > a new slashing period when a validator gets unjailed.
 
 The maximum number of slashing periods is the `len(UnbondingPeriod) / len(JailPeriod)`.
-The current defaults in Gaia for the `UnbondingPeriod` and `JailPeriod` are 3 weeks
+The current defaults in Ochain for the `UnbondingPeriod` and `JailPeriod` are 3 weeks
 and 2 days, respectively. This means there could potentially be up to 11 slashing
 periods concurrently being tracked per validator. If we set the `JailPeriod >= UnbondingPeriod`,
 we only have to track 1 slashing period (i.e not have to track slashing periods).

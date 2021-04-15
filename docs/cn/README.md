@@ -29,11 +29,11 @@ This documentation is not complete and it's outdated. Please use the English ver
 - **[模块目录](../../x/)**：模块的实现和文档
 - **[规范](./spec/):** Cosmos SDK 的模块及其他规范。
 - **[SDK API 参考](https://godoc.org/github.com/onomyprotocol/onomy-sdk):** Cosmos SDK Godocs 文档 。
-- **[REST API 规范](https://cosmos.network/rpc/):** 通过 REST 与 `gaia` 全节点交互的 API 列表。
+- **[REST API 规范](https://cosmos.network/rpc/):** 通过 REST 与 `ochain` 全节点交互的 API 列表。
 
 ## Cosmos Hub
 
-Cosmos Hub (名为 `gaia`) 文档已经迁移到[这里](https://github.com/cosmos/gaia/tree/master/docs).
+Cosmos Hub (名为 `ochain`) 文档已经迁移到[这里](https://github.com/cosmos/ochain/tree/master/docs).
 
 ## 开发语言
 

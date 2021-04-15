@@ -9,7 +9,7 @@ paths:
       description: Information about the connected node
       summary: The properties of the connected node
       tags:
-        - Gaia REST
+        - Ochain REST
       produces:
         - application/json
       responses:
@@ -54,7 +54,7 @@ paths:
                         example: 0
                   network:
                     type: string
-                    example: gaia-2
+                    example: ochain-2
                   channels:
                     type: string
                   listen_addr:

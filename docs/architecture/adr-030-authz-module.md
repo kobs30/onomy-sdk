@@ -31,7 +31,7 @@ Or an individual (or group) with a multisig wallet could grant the ability to vo
 keys.
 
 The current
-implementation is based on work done by the [Gaian's team at Hackatom Berlin 2019](https://github.com/cosmos-gaians/onomy-sdk/tree/hackatom/x/delegation).
+implementation is based on work done by the [Ochainn's team at Hackatom Berlin 2019](https://github.com/cosmos-ochainns/onomy-sdk/tree/hackatom/x/delegation).
 
 ## Decision
 
@@ -159,7 +159,7 @@ permissions as described in [ADR 033](https://github.com/onomyprotocol/onomy-sdk
 #### `tx exec` Method
 
 When a CLI user wants to run a transaction on behalf of another account using `MsgExecAuthorized`, they
-can use the `exec` method. For instance `gaiacli tx gov vote 1 yes --from <grantee> --generate-only | gaiacli tx authz exec --send-as <granter> --from <grantee>`
+can use the `exec` method. For instance `ochaincli tx gov vote 1 yes --from <grantee> --generate-only | ochaincli tx authz exec --send-as <granter> --from <grantee>`
 would send a transaction like this:
 
 ```go
@@ -225,6 +225,6 @@ SDK users
 
 ## References
 
-- Initial Hackatom implementation: https://github.com/cosmos-gaians/onomy-sdk/tree/hackatom/x/delegation
+- Initial Hackatom implementation: https://github.com/cosmos-ochainns/onomy-sdk/tree/hackatom/x/delegation
 - Post-Hackatom spec: https://gist.github.com/aaronc/b60628017352df5983791cad30babe56#delegation-module
 - B-Harvest subkeys spec: https://github.com/onomyprotocol/onomy-sdk/issues/4480

@@ -66,7 +66,7 @@ sumValue := externalModule.ComputeSumValue(*account)
 ```
 
 In the Cosmos SDK, you can see the application of this principle in the
-gaia app.
+ochain app.
 
 +++ https://github.com/onomyprotocol/onomy-sdk/blob/v0.41.4/simapp/app.go#L249-L273
 

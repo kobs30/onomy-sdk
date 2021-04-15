@@ -26,7 +26,7 @@ func MigrateCommand() *cobra.Command {
 		Short: "Migrate keys from the legacy (db-based) Keybase",
 		Long: `Migrate key information from the legacy (db-based) Keybase to the new keyring-based Keyring.
 The legacy Keybase used to persist keys in a LevelDB database stored in a 'keys' sub-directory of
-the old client application's home directory, e.g. $HOME/.gaiacli/keys/.
+the old client application's home directory, e.g. $HOME/.ochaincli/keys/.
 For each key material entry, the command will prompt if the key should be skipped or not. If the key
 is not to be skipped, the passphrase must be entered. The key will only be migrated if the passphrase
 is correct. Otherwise, the command will exit and migration must be repeated.

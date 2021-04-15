@@ -13,9 +13,9 @@ REST 서버를 가동하기 위해서는 다음과 같은 파라미터 값을 �
 예를 들어::
 
 ```bash
-gaiacli rest-server --chain-id=test \
+ochaincli rest-server --chain-id=test \
     --laddr=tcp://localhost:1317 \
     --node tcp://localhost:26657
 ```
 
-Gaia-Lite RPC에 대한 추가적인 정보를 원하시면 [Swagger 문서](https://cosmos.network/rpc/)를 확인하세요.
+Ochain-Lite RPC에 대한 추가적인 정보를 원하시면 [Swagger 문서](https://cosmos.network/rpc/)를 확인하세요.

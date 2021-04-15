@@ -17,8 +17,8 @@ binary).
 
 `cosmovisor` reads its configuration from environment variables:
 
-* `DAEMON_HOME` is the location where upgrade binaries should be kept (e.g. `$HOME/.gaiad` or `$HOME/.xrnd`).
-* `DAEMON_NAME` is the name of the binary itself (eg. `xrnd`, `gaiad`, `simd`, etc).
+* `DAEMON_HOME` is the location where upgrade binaries should be kept (e.g. `$HOME/.ochaind` or `$HOME/.xrnd`).
+* `DAEMON_NAME` is the name of the binary itself (eg. `xrnd`, `ochaind`, `simd`, etc).
 * `DAEMON_ALLOW_DOWNLOAD_BINARIES` (*optional*) if set to `true` will enable auto-downloading of new binaries
 (for security reasons, this is intended for full nodes rather than validators).
 * `DAEMON_RESTART_AFTER_UPGRADE` (*optional*) if set to `true` it will restart the sub-process with the same
@@ -51,13 +51,13 @@ active folder (so `current/bin/$DAEMON_NAME` is the currently active binary).
 
 Please note that `$DAEMON_HOME/cosmovisor` just stores the *binaries* and associated *program code*.
 The `cosmovisor` binary can be stored in any typical location (eg `/usr/local/bin`). The actual blockchain
-program will store it's data under their default data directory (e.g. `$HOME/.gaiad`) which is independent of
+program will store it's data under their default data directory (e.g. `$HOME/.ochaind`) which is independent of
 the `$DAEMON_HOME`. You can choose to set `$DAEMON_HOME` to the actual binary's home directory and then end up
 with a configuation like the following, but this is left as a choice to the system admininstrator for best
 directory layout:
 
 ```
-.gaiad
+.ochaind
 ├── config
 ├── data
 └── cosmovisor

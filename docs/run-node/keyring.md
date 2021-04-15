@@ -51,9 +51,9 @@ for multiple prompts:
 
 ```sh
 # assuming that KEYPASSWD is set in the environment
-$ gaiacli config keyring-backend file                             # use file backend
-$ (echo $KEYPASSWD; echo $KEYPASSWD) | gaiacli keys add me        # multiple prompts
-$ echo $KEYPASSWD | gaiacli keys show me                          # single prompt
+$ ochaincli config keyring-backend file                             # use file backend
+$ (echo $KEYPASSWD; echo $KEYPASSWD) | ochaincli keys add me        # multiple prompts
+$ echo $KEYPASSWD | ochaincli keys show me                          # single prompt
 ```
 
 ::: tip

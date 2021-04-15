@@ -12,9 +12,9 @@
 示例：
 
 ```bash
-gaiacli rest-server --chain-id=test \
+ochaincli rest-server --chain-id=test \
     --laddr=tcp://localhost:1317 \
     --node tcp://localhost:26657 \
 ```
 
-有关 Gaia-Lite RPC 的更多信息，请参阅 [swagger documentation](https://cosmos.network/rpc/)
+有关 Ochain-Lite RPC 的更多信息，请参阅 [swagger documentation](https://cosmos.network/rpc/)

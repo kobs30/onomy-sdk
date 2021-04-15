@@ -65,11 +65,11 @@ aside: false
 - **[Module Directory](../x/)**: Module implementations and their respective documentation.
 - **[Specifications](./spec/)**: Specifications of modules and other parts of the Cosmos SDK.
 - **[SDK API Reference](https://godoc.org/github.com/onomyprotocol/onomy-sdk)**: Godocs of the Cosmos SDK.
-- **[REST API spec](https://cosmos.network/rpc/)**: List of endpoints to interact with a `gaia` full-node through REST.
+- **[REST API spec](https://cosmos.network/rpc/)**: List of endpoints to interact with a `ochain` full-node through REST.
 
 ## Cosmos Hub
 
-The Cosmos Hub (`gaia`) docs have moved [here](https://github.com/cosmos/gaia/tree/master/docs).
+The Cosmos Hub (`ochain`) docs have moved [here](https://github.com/cosmos/ochain/tree/master/docs).
 
 ## Languages
 

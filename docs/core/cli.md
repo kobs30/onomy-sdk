@@ -50,7 +50,7 @@ Every application CLI first constructs a root command, then adds functionality b
 
 ### Root Command
 
-The root command (called `rootCmd`) is what the user first types into the command line to indicate which application they wish to interact with. The string used to invoke the command (the "Use" field) is typically the name of the application suffixed with `-d`, e.g. `simd` or `gaiad`. The root command typically includes the following commands to support basic functionality in the application.
+The root command (called `rootCmd`) is what the user first types into the command line to indicate which application they wish to interact with. The string used to invoke the command (the "Use" field) is typically the name of the application suffixed with `-d`, e.g. `simd` or `ochaind`. The root command typically includes the following commands to support basic functionality in the application.
 
 - **Status** command from the SDK rpc client tools, which prints information about the status of the connected [`Node`](../core/node.md). The Status of a node includes `NodeInfo`,`SyncInfo` and `ValidatorInfo`.
 - **Keys** [commands](https://github.com/onomyprotocol/onomy-sdk/blob/v0.40.0/client/keys) from the SDK client tools, which includes a collection of subcommands for using the key functions in the SDK crypto tools, including adding a new key and saving it to the keyring, listing all public keys stored in the keyring, and deleting a key. For example, users can type `simd keys add <name>` to add a new key and save an encrypted copy to the keyring, using the flag `--recover` to recover a private key from a seed phrase or the flag `--multisig` to group multiple keys together to create a multisig key. For full details on the `add` key command, see the code [here](https://github.com/onomyprotocol/onomy-sdk/blob/v0.40.0/client/keys/add.go). For more details about usage of `--keyring-backend` for storage of key credentials look at the [keyring docs](../run-node/keyring.md).
@@ -112,7 +112,7 @@ Flags are added to commands directly (generally in the [module's CLI file](../bu
 
 Each flag is bound to it's respecteve named environment variable. Then name of the environment variable consist of two parts - capital case `basename` followed by flag name of the flag. `-` must be substituted with `_`. For example flag `--home` for application with basename `GAIA` is bound to `GAIA_HOME`. It allows to reduce amount of flags typed for routine operations. For example instead of:
 ```sh
-gaia --home=./ --node=<node address> --chain-id="testchain-1" --keyring-backend=test tx ... --from=<key name>
+ochain --home=./ --node=<node address> --chain-id="testchain-1" --keyring-backend=test tx ... --from=<key name>
 ```
 this will be more convinient:
 ```sh
@@ -123,7 +123,7 @@ GAIA_CHAIN_ID="testchain-1"
 GAIA_KEYRING_BACKEND="test"
 
 # and later just use
-gaia tx ... --from=<key name>
+ochain tx ... --from=<key name>
 ```
 
 ## Configurations
