@@ -44,7 +44,7 @@ parent:
 
 
 The Onomy-SDK is a framework for building blockchain applications in Golang.
-It is being used to build [`Gaia`](https://github.com/cosmos/gaia), the first implementation of the Cosmos Hub.
+It is being used to build [`Ochain`](https://github.com/onomyprotocol/ochain), the first implementation of the Cosmos Hub.
 
 **WARNING**: The SDK has mostly stabilized, but we are still making some
 breaking changes.
